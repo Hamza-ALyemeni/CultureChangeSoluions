@@ -12,7 +12,7 @@
         <img src="@/assets/images/just-dimenstions.png" alt="ohxray" class="mobile-img">
         <div class="equal-container">
 
-            <div class="equal-box Ohxray-Unique">
+            <div class="equal-box Ohxray-Unique first-section">
                 <h4>What Makes OHX-RAY <br/> Unique?</h4>
                 <p>The <span style="color: #db0e15; font-weight: bold;">OHX-RAY</span> has a total of <span style="font-weight: bold;"> 34 indicators </span> to measure organizational culture health allowing for great value benchmarking across <span style="font-weight: bold;">FOUR</span> different demographics (Gender, Age, Level and Nationality).</p>
                 <div class="stats">
@@ -197,9 +197,13 @@ h4{
         flex-direction: column;
     }
 
+    .first-section{
+        height: 700px;
+    }
+
     .Ohxray-Unique h4{
         font-size: 25px;
-        width: 300px;
+        width: 372px;
     }
 
     .Ohxray-Unique p{
