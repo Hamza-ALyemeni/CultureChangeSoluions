@@ -29,6 +29,11 @@ const routes: Array<RouteRecordRaw> = [
         path:'/services',
         name:'services',
         component: () => import(/* webpackChunkName: "services" */ '../views/ServicesView.vue')
+    },
+    {
+        path:'/cmdp',
+        name:'cmdp',
+        component: () => import(/* webpackChunkName: "cmdp" */ '../views/CMDPView.vue')
     }
 ]
 

@@ -29,6 +29,11 @@
             </router-link>
           </li>
           <li>
+            <router-link to="/cmdp">
+              CMDP
+            </router-link>
+          </li>
+          <li>
             <router-link to="/contact">
               Contact
             </router-link>
@@ -60,6 +65,11 @@
             <li>
               <router-link to="/services">
                 Services
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/cmdp">
+                CMDP
               </router-link>
             </li>
             <li>
