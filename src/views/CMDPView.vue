@@ -3,8 +3,8 @@
   <v-container>
     <div class="cmdp-page">
       <div class="cmdp-header">
-        <h1 class="cmdp-title">CMDP – Client Q&A</h1>
-        <p class="cmdp-subtitle">Change Management Digital Platform</p>
+        <h1 class="cmdp-title">Change Management Digital Platform</h1>
+        <p class="cmdp-subtitle">CMDP – FAQs</p>
       </div>
 
       <div class="cmdp-section">
