@@ -18,6 +18,12 @@
             <p>It is fully customizable to reflect your organization's brand, structure, and internal programs.</p>
           </div>
         </div>
+
+        <div class="summary-content" style="margin-top: 30px; padding: 20px; background: linear-gradient(135deg, rgba(77, 141, 62, 0.1) 0%, rgba(219, 8, 18, 0.1) 100%); border-radius: 8px; border-left: 4px solid #DB0812;">
+          <p style="font-size: 16px; line-height: 1.8; color: #333; margin-bottom: 15px;">The Change Management Digital Platform is more than a digital learning tool — it's an AI-powered ecosystem for organizational growth.</p>
+          <p style="font-size: 16px; line-height: 1.8; color: #333; margin-bottom: 15px;">It helps employees build habits, leaders measure progress, and organizations sustain cultural transformation.</p>
+          <p style="font-size: 16px; line-height: 1.8; color: #333;">By combining learning, engagement, and measurable impact, it turns change management into a continuous, empowering experience for everyone involved.</p>
+        </div>
       </div>
 
       <div class="cmdp-section">
@@ -197,14 +203,6 @@
         </div>
       </div>
 
-      <div class="cmdp-section summary">
-        <h2 class="section-title">Summary</h2>
-        <div class="answer">
-          <p>The Change Management Digital Platform is more than a digital learning tool — it's an AI-powered ecosystem for organizational growth.</p>
-          <p>It helps employees build habits, leaders measure progress, and organizations sustain cultural transformation.</p>
-          <p>By combining learning, engagement, and measurable impact, it turns change management into a continuous, empowering experience for everyone involved.</p>
-        </div>
-      </div>
     </div>
   </v-container>
   <MainFooter/>
@@ -279,11 +277,6 @@ import MainFooter from "@/components/layout/MainFooter.vue";
   @media screen and (max-width: 768px) {
     padding: 20px 15px;
     margin-bottom: 30px;
-  }
-
-  &.summary {
-    border-left-color: #DB0812;
-    background: linear-gradient(135deg, rgba(77, 141, 62, 0.1) 0%, rgba(219, 8, 18, 0.1) 100%);
   }
 }
 
