@@ -7,6 +7,13 @@
         <p class="cmdp-subtitle">CMDP – FAQs</p>
       </div>
 
+       <div class="cmdp-section">
+        <h2 class="section-title">CMDP Structure</h2>
+        <div class="brochure-wrap">
+          <img :src="cmdpBrochure" alt="CMDP Brochure" class="brochure-image" />
+        </div>
+      </div>
+
       <div class="cmdp-section">
         <h2 class="section-title">General Overview</h2>
         
@@ -211,6 +218,7 @@
 <script setup lang="ts">
 import MainHeader from "@/components/layout/MainHeader.vue";
 import MainFooter from "@/components/layout/MainFooter.vue";
+import cmdpBrochure from "@/assets/images/CMDP brochure.png";
 </script>
 
 <style lang="scss" scoped>
@@ -355,6 +363,19 @@ import MainFooter from "@/components/layout/MainFooter.vue";
       line-height: 1.6;
     }
   }
+}
+
+.brochure-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.brochure-image {
+  width: min(520px, 100%);
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  background: #fff;
 }
 </style>
 
