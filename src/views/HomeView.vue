@@ -6,6 +6,7 @@
           <MainBanner/>
           <WhatWeDo/>
           <About/>
+          <SuccessPartners/>
           <UniqueSlider/>
           <MainFooter/>
         </v-col>
@@ -23,6 +24,7 @@ import MainBanner from '@/components/home/MainBanner.vue';
 import WhatWeDo from '@/components/home/WhatWeDo.vue';
 import About from "@/components/home/About.vue";
 import Clients from "@/components/home/Clients.vue";
+import SuccessPartners from "@/components/home/SuccessPartners.vue";
 import UniqueSlider from "@/components/home/UniqueSlider.vue";
 import MainFooter from "@/components/layout/MainFooter.vue";
 
@@ -37,6 +39,7 @@ export default defineComponent({
     MainHeaderVue,
     MainBanner,
     WhatWeDo,
+    SuccessPartners,
   },
 });
 </script>
