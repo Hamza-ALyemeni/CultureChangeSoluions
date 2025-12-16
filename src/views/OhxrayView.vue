@@ -73,7 +73,9 @@
               <div class="step-content">
                 <h5>Register as an organization</h5>
                 <p>Create an account to onboard your company into the platform.</p>
-                <div class="step-image-placeholder">Step image goes here</div>
+                <div class="step-image">
+                  <img src="/rigester-demo.png" alt="Registration screen demo">
+                </div>
               </div>
             </div>
             <div class="demo-step">
@@ -81,7 +83,9 @@
               <div class="step-content">
                 <h5>Log in</h5>
                 <p>Sign in with your new credentials to access your dashboard.</p>
-                <div class="step-image-placeholder">Step image goes here</div>
+                <div class="step-image">
+                  <img src="/demo-login.png" alt="Login and dashboard access">
+                </div>
               </div>
             </div>
             <div class="demo-step">
@@ -89,7 +93,9 @@
               <div class="step-content">
                 <h5>Go to the Organization page</h5>
                 <p>Open the organization section to manage company details and data.</p>
-                <div class="step-image-placeholder">Step image goes here</div>
+                <div class="step-image">
+                  <img src="/dashboard-demo.png" alt="Organization page navigation">
+                </div>
               </div>
             </div>
             <div class="demo-step">
@@ -97,7 +103,9 @@
               <div class="step-content">
                 <h5>Click “Add New” to add employees</h5>
                 <p>Start building your employee list for the survey audience.</p>
-                <div class="step-image-placeholder">Step image goes here</div>
+                <div class="step-image">
+                  <img src="/add-employee.png" alt="Add new employee action">
+                </div>
               </div>
             </div>
             <div class="demo-step">
@@ -105,7 +113,9 @@
               <div class="step-content">
                 <h5>Fill employees’ data</h5>
                 <p>Enter the required employee information to include them in the survey.</p>
-                <div class="step-image-placeholder">Step image goes here</div>
+                <div class="step-image">
+                  <img src="/fill-employee-data.png" alt="Employee data entry form">
+                </div>
               </div>
             </div>
             <div class="demo-step">
@@ -113,7 +123,9 @@
               <div class="step-content">
                 <h5>Go to the Surveys tab</h5>
                 <p>Access available surveys from the surveys area.</p>
-                <div class="step-image-placeholder">Step image goes here</div>
+                <div class="step-image">
+                  <img src="/survey-tab.png" alt="Surveys tab view">
+                </div>
               </div>
             </div>
             <div class="demo-step">
@@ -121,7 +133,9 @@
               <div class="step-content">
                 <h5>Send the surveys</h5>
                 <p>Dispatch surveys to the employees you added.</p>
-                <div class="step-image-placeholder">Step image goes here</div>
+                <div class="step-image">
+                  <img src="/send-survey.png" alt="Send survey screen">
+                </div>
               </div>
             </div>
             <div class="demo-step">
@@ -129,7 +143,9 @@
               <div class="step-content">
                 <h5>After completion, open Survey Report</h5>
                 <p>Review the survey results and insights once responses are submitted.</p>
-                <div class="step-image-placeholder">Step image goes here</div>
+                <div class="step-image">
+                  <img src="/survey-tab.png" alt="Survey report results">
+                </div>
               </div>
             </div>
           </div>
@@ -345,9 +361,9 @@ h4{
 
 .demo-steps{
     display:grid;
-    grid-template-columns:repeat(2, minmax(0, 1fr));
-    gap:22px;
-    max-width:960px;
+    grid-template-columns:1fr;
+    gap:24px;
+    max-width:820px;
     margin:0 auto;
 }
 
@@ -387,16 +403,18 @@ h4{
     line-height:1.5;
 }
 
-.step-image-placeholder{
-    height:140px;
-    border:2px dashed #cbd5e1;
-    border-radius:10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#94a3b8;
-    font-size:14px;
+.step-image{
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    overflow:hidden;
     background:#f8fafc;
+    box-shadow:0 6px 20px rgba(0,0,0,0.04);
+}
+
+.step-image img{
+    display:block;
+    width:100%;
+    height:auto;
 }
 
 .second-section{
@@ -505,9 +523,6 @@ h4{
         grid-template-columns:1fr;
     }
 
-    .step-image-placeholder{
-        height:120px;
-    }
   }
 
 </style>
