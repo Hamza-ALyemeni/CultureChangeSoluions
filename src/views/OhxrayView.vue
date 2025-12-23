@@ -4,6 +4,10 @@
         <section class="intro">
           <h2> <span class="brand-green">OHX-</span><span class="brand-red">RAY</span> مقدمة تعريفية عن نظام </h2>
           <p class="intro-subtitle">نظرة شاملة توضح مؤشرات الصحة الثقافية داخل المنظمة</p>
+          <div class="intro-actions">
+            <RouterLink class="primary-cta" to="/ohxray-demo">Explore the Demo Steps</RouterLink>
+            <a class="secondary-cta" href="https://demo.ohxray.com" target="_blank" rel="noopener">Free Live Demo</a>
+          </div>
         </section>
         <div class="video-wrapper">
            <video ref="ohxVideo" class="hero-video" controls>
@@ -61,96 +65,6 @@
             </div>
         </div>
 
-        <section class="demo-section">
-          <div class="demo-header">
-            <h3>See How the OHX-RAY Survey Works</h3>
-            <p>Follow the steps below, then open the live demo to experience the survey flow end-to-end.</p>
-            <a class="demo-link" href="https://demo.ohxray.com" target="_blank" rel="noopener">Go to demo.ohxray.com</a>
-          </div>
-          <div class="demo-steps">
-            <div class="demo-step">
-              <div class="step-number">1</div>
-              <div class="step-content">
-                <h5>Register as an organization</h5>
-                <p>Create an account to onboard your company into the platform.</p>
-                <div class="step-image">
-                  <img src="/rigester-demo.png" alt="Registration screen demo">
-                </div>
-              </div>
-            </div>
-            <div class="demo-step">
-              <div class="step-number">2</div>
-              <div class="step-content">
-                <h5>Log in</h5>
-                <p>Sign in with your new credentials to access your dashboard.</p>
-                <div class="step-image">
-                  <img src="/demo-login.png" alt="Login and dashboard access">
-                </div>
-              </div>
-            </div>
-            <div class="demo-step">
-              <div class="step-number">3</div>
-              <div class="step-content">
-                <h5>Go to the Organization page</h5>
-                <p>Open the organization section to manage company details and data.</p>
-                <div class="step-image">
-                  <img src="/dashboard-demo.png" alt="Organization page navigation">
-                </div>
-              </div>
-            </div>
-            <div class="demo-step">
-              <div class="step-number">4</div>
-              <div class="step-content">
-                <h5>Click “Add New” to add employees</h5>
-                <p>Start building your employee list for the survey audience.</p>
-                <div class="step-image">
-                  <img src="/add-employee.png" alt="Add new employee action">
-                </div>
-              </div>
-            </div>
-            <div class="demo-step">
-              <div class="step-number">5</div>
-              <div class="step-content">
-                <h5>Fill employees’ data</h5>
-                <p>Enter the required employee information to include them in the survey.</p>
-                <div class="step-image">
-                  <img src="/fill-employee-data.png" alt="Employee data entry form">
-                </div>
-              </div>
-            </div>
-            <div class="demo-step">
-              <div class="step-number">6</div>
-              <div class="step-content">
-                <h5>Go to the Surveys tab</h5>
-                <p>Access available surveys from the surveys area.</p>
-                <div class="step-image">
-                  <img src="/survey-tab.png" alt="Surveys tab view">
-                </div>
-              </div>
-            </div>
-            <div class="demo-step">
-              <div class="step-number">7</div>
-              <div class="step-content">
-                <h5>Send the surveys</h5>
-                <p>Dispatch surveys to the employees you added.</p>
-                <div class="step-image">
-                  <img src="/send-survey.png" alt="Send survey screen">
-                </div>
-              </div>
-            </div>
-            <div class="demo-step">
-              <div class="step-number">8</div>
-              <div class="step-content">
-                <h5>After completion, open Survey Report</h5>
-                <p>Review the survey results and insights once responses are submitted.</p>
-                <div class="step-image">
-                  <img src="/survey-tab.png" alt="Survey report results">
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
     <MainFooter/>
   </div>
 </template>
@@ -200,6 +114,48 @@
 
 .brand-green{ color:#4d8d3e; }
 .brand-red{ color:#db0e15; }
+
+.intro-actions{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top:14px;
+}
+
+.primary-cta{
+    display:inline-block;
+    background:#4d8d3e;
+    color:#fff;
+    padding:12px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+    transition:background 0.2s ease, transform 0.2s ease;
+}
+
+.primary-cta:hover{
+    background:#3f7433;
+    transform:translateY(-1px);
+}
+
+.secondary-cta{
+    display:inline-block;
+    padding:12px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+    color:#213547;
+    border:1px solid #d1d5db;
+    background:#fff;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.secondary-cta:hover{
+    transform:translateY(-1px);
+    box-shadow:0 10px 24px rgba(0,0,0,0.06);
+}
 
 .video-wrapper{
     display:flex;
@@ -318,105 +274,6 @@ h4{
     display:none;
 }
 
-.demo-section{
-    background:#f6f7f9;
-    padding:50px 20px 70px;
-    margin-top:40px;
-    border-top:4px solid #4d8d3e;
-}
-
-.demo-header{
-    text-align:center;
-    max-width:800px;
-    margin:0 auto 30px;
-}
-
-.demo-header h3{
-    font-size:32px;
-    color:#213547;
-    margin-bottom:12px;
-}
-
-.demo-header p{
-    font-size:18px;
-    color:#4b5563;
-    margin-bottom:16px;
-}
-
-.demo-link{
-    display:inline-block;
-    background:#db0e15;
-    color:#fff;
-    padding:12px 24px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:600;
-    transition:background 0.2s ease, transform 0.2s ease;
-}
-
-.demo-link:hover{
-    background:#b70b11;
-    transform:translateY(-1px);
-}
-
-.demo-steps{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:24px;
-    max-width:820px;
-    margin:0 auto;
-}
-
-.demo-step{
-    background:#fff;
-    border:1px solid #e5e7eb;
-    border-radius:12px;
-    padding:18px;
-    display:flex;
-    gap:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.04);
-}
-
-.step-number{
-    width:36px;
-    height:36px;
-    border-radius:50%;
-    background:#4d8d3e;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:700;
-    flex-shrink:0;
-}
-
-.step-content h5{
-    margin:0 0 6px;
-    font-size:18px;
-    color:#111827;
-}
-
-.step-content p{
-    margin:0 0 10px;
-    color:#4b5563;
-    font-size:14px;
-    line-height:1.5;
-}
-
-.step-image{
-    border:1px solid #e5e7eb;
-    border-radius:12px;
-    overflow:hidden;
-    background:#f8fafc;
-    box-shadow:0 6px 20px rgba(0,0,0,0.04);
-}
-
-.step-image img{
-    display:block;
-    width:100%;
-    height:auto;
-}
-
 .second-section{
     background-color: #db0e15;
     color: white;
@@ -440,6 +297,10 @@ h4{
 
     .intro-subtitle{
         font-size:16px;
+    }
+
+    .intro-actions{
+        margin-top:12px;
     }
 
     .hero-video{
@@ -505,22 +366,6 @@ h4{
 
     .samples{
         display:none;
-    }
-
-    .demo-section{
-        padding:32px 16px 48px;
-    }
-
-    .demo-header h3{
-        font-size:24px;
-    }
-
-    .demo-header p{
-        font-size:16px;
-    }
-
-    .demo-steps{
-        grid-template-columns:1fr;
     }
 
   }
