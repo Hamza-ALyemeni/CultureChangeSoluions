@@ -26,7 +26,7 @@
             <h5>Register as an organization</h5>
             <p>Create an account to onboard your company into the platform.</p>
             <div class="step-image">
-              <img src="/rigester-demo.png" alt="Registration screen demo" />
+              <img :src="rigesterDemo" alt="Registration screen demo" />
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@
             <h5>Log in</h5>
             <p>Sign in with your new credentials to access your dashboard.</p>
             <div class="step-image">
-              <img src="/demo-login.png" alt="Login and dashboard access" />
+              <img :src="demoLogin" alt="Login and dashboard access" />
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@
             <h5>Go to the Organization page</h5>
             <p>Open the organization section to manage company details and data.</p>
             <div class="step-image">
-              <img src="/dashboard-demo.png" alt="Organization page navigation" />
+              <img :src="dashboardDemo" alt="Organization page navigation" />
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
             <h5>Click “Add New” to add employees</h5>
             <p>Start building your employee list for the survey audience.</p>
             <div class="step-image">
-              <img src="/add-employee.png" alt="Add new employee action" />
+              <img :src="addEmployee" alt="Add new employee action" />
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@
             <h5>Fill employees’ data</h5>
             <p>Enter the required employee information to include them in the survey.</p>
             <div class="step-image">
-              <img src="/fill-employee-data.png" alt="Employee data entry form" />
+              <img :src="fillEmployeeData" alt="Employee data entry form" />
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@
             <h5>Go to the Surveys tab</h5>
             <p>Access available surveys from the surveys area.</p>
             <div class="step-image">
-              <img src="/survey-tab.png" alt="Surveys tab view" />
+              <img :src="surveyTab" alt="Surveys tab view" />
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@
             <h5>Send the surveys</h5>
             <p>Dispatch surveys to the employees you added.</p>
             <div class="step-image">
-              <img src="/send-survey.png" alt="Send survey screen" />
+              <img :src="sendSurvey" alt="Send survey screen" />
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
             <h5>Go to the Surveys tab</h5>
             <p>Upon completion of the employee surveys, please proceed to the designated survey area</p>
             <div class="step-image">
-              <img src="/survey-tab.png" alt="Surveys tab view" />
+              <img :src="surveyTab" alt="Surveys tab view" />
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@
             <h5>Review Survey Results</h5>
             <p>Click the Survey Report button to view the results.</p>
             <div class="step-image">
-              <img src="/go-surveys-tab-report.png" alt="Surveys tab view" />
+              <img :src="goSurveysTabReport" alt="Surveys tab view" />
             </div>
           </div>
         </div>
@@ -134,6 +134,14 @@
 <script setup lang="ts">
 import MainHeader from "@/components/layout/MainHeader.vue";
 import MainFooter from "@/components/layout/MainFooter.vue";
+import rigesterDemo from "@/assets/images/rigester-demo.png";
+import demoLogin from "@/assets/images/demo-login.png";
+import dashboardDemo from "@/assets/images/dashboard-demo.png";
+import addEmployee from "@/assets/images/add-employee.png";
+import fillEmployeeData from "@/assets/images/fill-employee-data.png";
+import surveyTab from "@/assets/images/survey-tab.png";
+import sendSurvey from "@/assets/images/send-survey.png";
+import goSurveysTabReport from "@/assets/images/go-surveys-tab-report.png";
 </script>
 
 <style scoped lang="scss">
