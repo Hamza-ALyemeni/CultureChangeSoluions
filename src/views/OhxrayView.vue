@@ -5,8 +5,7 @@
           <h2> <span class="brand-green">OHX-</span><span class="brand-red">RAY</span> مقدمة تعريفية عن نظام </h2>
           <p class="intro-subtitle">نظرة شاملة توضح مؤشرات الصحة الثقافية داخل المنظمة</p>
           <div class="intro-actions">
-            <RouterLink class="primary-cta" to="/ohxray-demo">Explore the Demo Steps</RouterLink>
-            <a class="secondary-cta" href="https://demo.ohxray.com" target="_blank" rel="noopener">Free Live Demo</a>
+            <RouterLink class="primary-cta" to="/ohxray-demo">Free Live Demo</RouterLink>
           </div>
         </section>
         <div class="video-wrapper">

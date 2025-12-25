@@ -9,8 +9,7 @@
       <p class="intro-subtitle">Step-by-step guide to create, send, and report surveys.</p>
 
       <div class="intro-actions">
-        <a class="demo-link" href="https://demo.ohxray.com" target="_blank" rel="noopener">Open Live Demo</a>
-        <RouterLink class="secondary-link" to="/ohxray">Back to OHX-RAY</RouterLink>
+        <a class="demo-link" href="https://demo.ohxray.com" target="_blank" rel="noopener">Start Free Live Demo</a>
       </div>
     </section>
 
@@ -120,6 +119,12 @@
           </div>
         </div>
       </div>
+
+      <div class="support-callout">
+        <h5>Need help with the demo?</h5>
+        <p>If you need any support please contact support at <a href="mailto:info@ccsconsulting.com.sa">info@ccsconsulting.com.sa</a>.</p>
+      </div>
+
     </section>
 
     <MainFooter />
@@ -283,6 +288,38 @@ import MainFooter from "@/components/layout/MainFooter.vue";
   width:100%;
   height:auto;
 }
+
+.support-callout{
+  margin:10px auto 0;
+  max-width:900px;
+  background:white;
+  color:black;
+  border-radius:16px;
+  padding:18px 20px;
+  border:1px solid #4d8d3e;
+  box-shadow:0 12px 30px rgba(0,0,0,0.1);
+}
+
+.support-callout h5{
+  margin:0 0 6px;
+  font-size:18px;
+}
+
+.support-callout p{
+  margin:0;
+  font-size:14px;
+}
+
+.support-callout a{
+  color:#4d8d3e;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.support-callout a:hover{
+  text-decoration:underline;
+}
+
 
 @media screen and (max-width: 768px){
   .intro h2{ font-size:26px; }
