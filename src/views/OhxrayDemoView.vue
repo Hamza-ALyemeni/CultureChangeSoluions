@@ -15,7 +15,7 @@
 
     <section class="demo-section">
       <div class="demo-header">
-        <h3>Survey system walkthrough</h3>
+        <h3>Survey system steps to start free survey</h3>
         <p>Use the steps below to explore the full workflow inside the demo environment.</p>
       </div>
 
@@ -122,7 +122,7 @@
 
       <div class="support-callout">
         <h5>Need help with the demo?</h5>
-        <p>If you need any support please contact support at <a href="mailto:info@ccsconsulting.com.sa">info@ccsconsulting.com.sa</a>.</p>
+        <p>If you need any support please contact support at <a href="mailto:info@ohxray.com">info@ohxray.com</a>.</p>
       </div>
 
     </section>
