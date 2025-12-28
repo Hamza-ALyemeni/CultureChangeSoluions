@@ -60,10 +60,57 @@
                     <img src="@/assets/images/Overall_Image_Sample.jpeg" alt="ohxray" class="desktop-image" style="height: 100%; width: 50%;">
                 </div>
                 <!-- Second Row: Third image below -->
-                <img src="@/assets/images/Benchmark_Sample.jpeg" alt="ohxray" class="desktop-image" style="height: 50%; width: 60%; margin-top: 20px; align-self: center;">
+        <img src="@/assets/images/Benchmark_Sample.jpeg" alt="ohxray" class="desktop-image" style="height: 50%; width: 60%; margin-top: 20px; align-self: center;">
             </div>
         </div>
 
+        <section class="recognition-section">
+            <div class="recognition-header">
+                <h3>Recognizing Organizations</h3>
+                <p class="lede">
+                    Not just an evaluation... but a <span class="bold">SEAL OF TRUST</span> that signals a healthy, reliable workplace culture and strengthens your organization's reputation and brand internally and externally.
+                </p>
+            </div>
+            <div class="certificate-table">
+                <div class="certificate-label">
+                    <span>Certificate Level</span>
+                </div>
+                <div class="certificate-cards">
+                    <div v-for="level in certificateLevels" :key="level.label" class="certificate-card">
+                        <img :src="level.image" :alt="`${level.label} OHX-RAY badge`" />
+                        <p class="certificate-name">{{ level.label }}</p>
+                        <p class="certificate-criteria">{{ level.criteria }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="accreditation-section">
+            <div class="accreditation-header">
+                <h3 >Healthy Organizational Accreditation Journey</h3>
+                <p class="lede">Achieving organizations will earn a certificate for a healthy culture.</p>
+            </div>
+            <div class="accreditation-grid">
+                <div class="journey-track">
+                    <div
+                        v-for="(step, index) in accreditationSteps"
+                        :key="step"
+                        class="journey-step"
+                    >
+                        <div class="journey-step__label">{{ step }}</div>
+                        <div v-if="index < accreditationSteps.length - 1" class="journey-step__arrow">&darr;</div>
+                    </div>
+                </div>
+                <div class="journey-benefits">
+                    <h4 class="journey-benefits__title">Benefits and Added Value from Accreditation</h4>
+                    <ul>
+                        <li v-for="benefit in accreditationBenefits" :key="benefit">{{ benefit }}</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        
     <MainFooter/>
   </div>
 </template>
@@ -72,8 +119,37 @@
     import { ref, onMounted } from 'vue';
     import MainHeader from "@/components/layout/MainHeader.vue";
     import MainFooter from "@/components/layout/MainFooter.vue";
+    import badge70 from "@/assets/images/badge-70.svg";
+    import badge75 from "@/assets/images/badge-75.svg";
+    import badge85 from "@/assets/images/badge-85.svg";
+    import badge90 from "@/assets/images/badge-90.svg";
 
     const ohxVideo = ref<HTMLVideoElement | null>(null);
+
+    const accreditationSteps = [
+        "Kick-off OHX-RAY",
+        "Diagnostic Results & Reporting",
+        "Scoring Verification & CCS Board Review",
+        "Badge Award",
+        "Celebrating the Accreditation",
+        "Feedback Report and WHAT NEXT"
+    ];
+
+    const accreditationBenefits = [
+        "Credibility.",
+        "Benchmarking.",
+        "Internal alignment.",
+        "Public recognition.",
+        "Continuous improvement.",
+        "Recruitment & retention appeal."
+    ];
+
+    const certificateLevels = [
+        { label: "Verified", criteria: "≥70%", image: badge70 },
+        { label: "Certified", criteria: "≥75%", image: badge75 },
+        { label: "Excellence", criteria: "≥85%", image: badge85 },
+        { label: "Winner", criteria: "≥90% and within the 10% top-quartile organization", image: badge90 }
+    ];
 
     onMounted(() => {
     if (ohxVideo.value) {
@@ -368,5 +444,217 @@ h4{
     }
 
   }
+
+.accreditation-section,
+.recognition-section{
+    padding:50px 16px;
+    background:#f8fafc;
+    color:#1f2933;
+}
+
+.accreditation-header,
+.recognition-header{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 28px;
+    
+}
+
+.eyebrow{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:700;
+    color:#4d8d3e;
+    margin-bottom:8px;
+}
+
+.accreditation-header h3,
+.recognition-header h3{
+    font-size:32px;
+    margin:0;
+    font-weight:800;
+    color:#4d8d3e;
+}
+
+.accreditation-header .lede,
+.recognition-header .lede{
+    margin-top:12px;
+    font-size:18px;
+    color:#4b5563;
+}
+
+.recognition-header .bold{
+    font-weight:800;
+    color:#1f2933;
+}
+
+.accreditation-grid{
+    display:flex;
+    gap:20px;
+    max-width:1100px;
+    margin:0 auto;
+    flex-wrap:wrap;
+    align-items:flex-start;
+}
+
+.journey-track{
+    flex:1 1 340px;
+    background:#fff;
+    padding:20px;
+    border-radius:16px;
+    border:1px solid #e5e7eb;
+    box-shadow:0 12px 30px rgba(0,0,0,0.05);
+}
+
+.journey-step{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    text-align:center;
+}
+
+.journey-step__label{
+    background:#f1f5f9;
+    border:1px solid #e5e7eb;
+    color:#1f2933;
+    padding:12px 14px;
+    margin-bottom:8px;
+    border-radius:10px;
+    font-weight:700;
+}
+
+.journey-step__arrow{
+    color:#4d8d3e;
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.journey-benefits{
+    flex:1 1 260px;
+    background:#fff;
+    color:#1f2933;
+    padding:20px;
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.05);
+    border:1px solid #e5e7eb;
+}
+
+.journey-benefits__title{
+    margin-top:0;
+    margin-bottom:12px;
+    font-size:22px;
+    color:#1f2933;
+    background:none;
+    border-radius:0;
+    width:auto;
+    text-align:left;
+    padding:0;
+}
+
+.journey-benefits ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:grid;
+    gap:8px;
+}
+
+.journey-benefits li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+    color:#374151;
+}
+
+.journey-benefits li::before{
+    content:"•";
+    color:#4d8d3e;
+    font-size:16px;
+}
+
+.certificate-table{
+    max-width:1150px;
+    margin:0 auto;
+    background:#fff;
+    border-radius:16px;
+    border:1px solid #e5e7eb;
+    padding:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.05);
+}
+
+.certificate-label{
+    background:#f1f5f9;
+    color:#1f2933;
+    padding:16px;
+    border-radius:12px;
+    font-weight:800;
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:14px;
+}
+
+.certificate-label.criteria{
+    margin-top:14px;
+}
+
+.certificate-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:14px;
+}
+
+.certificate-card{
+    background:#fff;
+    color:#0f2735;
+    border-radius:12px;
+    padding:16px;
+    text-align:center;
+    box-shadow:0 10px 24px rgba(0,0,0,0.06);
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    height:100%;
+    justify-content:space-between;
+    border:1px solid #e5e7eb;
+}
+
+.certificate-card img{
+    width:100%;
+    max-width:180px;
+    margin:0 auto;
+}
+
+.certificate-name{
+    font-weight:800;
+    font-size:20px;
+    margin:0;
+}
+
+.certificate-criteria{
+    margin:0;
+    font-weight:600;
+    color:#4d8d3e;
+}
+
+@media screen and (max-width: 768px){
+    .accreditation-grid{
+        gap:16px;
+    }
+
+    .journey-step__label{
+        font-size:14px;
+    }
+
+    .recognition-header h3,
+    .accreditation-header h3{
+        font-size:26px;
+    }
+
+    .certificate-card img{
+        max-width:150px;
+    }
+}
 
 </style>
