@@ -41,8 +41,8 @@
                 <img src="@/assets/images/just-dimenstions.png" alt="ohxray" class="desktop-image" style="height:500px">
             </div>
             <div class="equal-box Ohxray-Unique">
-                <h4 class="second-section">OHX-RAY as a Published and <br/>Approved Scientific Model</h4>
-                <p>The OHX-RAY is scientifically credible as it has been published as a Proof-of-Concept from <span style="font-weight: bold;">Emerald Publishing </span>, with a research paper regarding its effectiveness in helping organizations become sustainable through its practices in the globally recognized journal, <span style="font-weight: bold;"> International Journal Of Organizational Analysis. </span></p>
+                <h4 class="second-section">OHX-RAY a Quantitative Product of Vast Practical Experience</h4>
+                <p>The <span style="font-weight:bold" > OHX-RAY </span> is a product of 25 years of continuous research, studies and deep understanding of global models, CCS designed its health check model framework introducing multiple benefits to organization management.</p>
             </div>
         </div>
          <div class="equal-container samples">

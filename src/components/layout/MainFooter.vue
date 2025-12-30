@@ -48,9 +48,12 @@
             <ul class="footer-social">
               <li>
                 <a href="https://twitter.com/ccsconsultingSA" target="_blank">
-                  <v-icon>
-                    mdi-twitter
-                  </v-icon>
+                  <svg class="social-icon" viewBox="0 0 24 24" role="img" aria-label="X (formerly Twitter)">
+                    <path
+                        d="M17.43 3H21L13.21 11.67L22 21H15.56L9.95 14.82L3.8 21H0L8.35 11.7L0 3H6.56L11.6 8.72L17.43 3Z"
+                        fill="currentColor"
+                    />
+                  </svg>
                 </a>
               </li>
               <li>
@@ -135,6 +138,12 @@
     list-style: none;
     padding: 0;
     margin: 0;
+
+    .social-icon {
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
   }
 
   &-logo {

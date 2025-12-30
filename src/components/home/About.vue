@@ -20,7 +20,7 @@
             <b>
               CCS
             </b>
-          </span>CCS is a Saudi Company Specialized in organizations culture and change management,
+          </span> is a Saudi Company Specialized in organizations culture and change management,
            provide consultancy services through the best-in-class Saudi and non-Saudi experts for private,
             public and non-profit sectors.
           </p>
