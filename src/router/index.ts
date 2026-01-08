@@ -39,6 +39,16 @@ const routes: Array<RouteRecordRaw> = [
         path:'/cmdp',
         name:'cmdp',
         component: () => import(/* webpackChunkName: "cmdp" */ '../views/CMDPView.vue')
+    },
+    {
+        path:'/ccs-program',
+        name:'ccs-program',
+        component: () => import(/* webpackChunkName: "ccs-program" */ '../views/CcsProgramView.vue')
+    },
+    {
+        path: '/training-program',
+        name: 'training-program',
+        component: () => import(/* webpackChunkName: "training-program" */ '../views/TrainingProgramView.vue')
     }
 ]
 

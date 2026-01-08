@@ -72,6 +72,7 @@
                 CMDP
               </router-link>
             </li>
+         
             <li>
               <router-link to="/ohxray" style="white-space: nowrap;">
                 <span style="color:#4d8d3e">OHX-</span><span style="color:#db0e15;">RAY</span>
@@ -87,10 +88,22 @@
                 Contact
               </router-link>
             </li>
+               <li>
+              <router-link to="/training-program" class="nav-cta">
+                 Join Our Training Program
+              </router-link>
+            </li>
           </ul>
         </transition>
-        <div class="header-logo">
-          <img src="@/assets/images/logo.svg" alt="CSS | KSA" width="200" height="100" class="header-logo-img">
+        <div class="header-right">
+          <div class="header-cta">
+            <router-link to="/training-program" class="header-cta__button">
+              Join Our Training Program
+            </router-link>
+          </div>
+          <div class="header-logo">
+            <img src="@/assets/images/logo.svg" alt="CSS | KSA" width="200" height="100" class="header-logo-img">
+          </div>
         </div>
       </nav>
     </v-container>
@@ -204,13 +217,11 @@
   }
 
   &-logo {
-    flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
-    width: 100%;
-    padding: 1rem 2rem;
+    padding: 1rem 0 1rem 1.5rem;
     @media screen and (max-width: 768px) {
       padding: 0;
     }
@@ -238,6 +249,43 @@
     background: rgba(77, 141, 62, 0.2);
     border-radius: 50%;
     z-index: -1;
+  }
+}
+
+.header-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 2rem;
+  @media screen and (max-width: 768px) {
+    padding-right: 0;
+  }
+}
+
+.header-cta {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  &__button {
+    background: linear-gradient(90deg, #4d8d3e, #db0812);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 10px 20px rgba(77, 141, 62, 0.2);
+    transition: opacity 0.2s ease, transform 0.1s ease;
+
+    &:hover {
+      opacity: 0.95;
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
   }
 }
 
@@ -304,7 +352,22 @@
         }
       }
     }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #4d8d3e, #db0812);
+      color: #fff;
+      padding: 0.7rem 1.1rem;
+      border-radius: 12px;
+      font-weight: 700;
+    }
   }
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 
