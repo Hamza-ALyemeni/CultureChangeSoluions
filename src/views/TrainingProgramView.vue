@@ -3,17 +3,11 @@
     <MainHeader />
     <v-container class="page-body">
       <section class="hero">
-        <p class="hero__eyebrow">OC Training Accreditation</p>
-        <h1 class="hero__title">Join Our Accredited Training Program</h1>
+        <p class="hero__eyebrow">Organization Culture Training Accreditation</p>
+        <h1 class="hero__title">A 3-day CCS Training Program to equip participants with skills and confidence</h1>
         <p class="hero__subtitle">
-          A 3-day CCS Training Program to equip participants with skills and confidence
+          Accredited certificates included.
         </p>
-        <div class="hero__actions">
-          <router-link to="#" class="cta-button">
-            Reserve Your Seat
-          </router-link>
-          <span class="hero__note">Accredited certificates included.</span>
-        </div>
       </section>
 
       <section class="overview">
@@ -44,6 +38,9 @@
             what they learn into tangible behaviors practiced daily to support their
             organizations' success.
           </p>
+        </div>
+        <div class="overview__brochure">
+          <img src="@/assets/images/Training Brochure.JPG" alt="Training brochure">
         </div>
       </section>
 
@@ -97,8 +94,8 @@
           <h2>Ready to lead culture change in your organization?</h2>
           <p>Secure your place in CCS Training Program.</p>
         </div>
-        <router-link to="#" class="cta-button">
-          Join Our Training Program
+        <router-link to="/ccs-program" class="cta-button">
+           Reserve Your Seat
         </router-link>
       </section>
     </v-container>
@@ -202,6 +199,32 @@ import MainHeader from '@/components/layout/MainHeader.vue'
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   border-left: 4px solid #db0812;
+}
+
+.overview__brochure {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #db0812;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.overview__brochure h3 {
+  margin: 0;
+  color: #331B3B;
+}
+
+.overview__brochure img {
+  width: 100%;
+  height: auto;
+  max-width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .overview__card h3 {

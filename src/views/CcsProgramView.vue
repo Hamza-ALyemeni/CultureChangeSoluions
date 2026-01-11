@@ -27,10 +27,10 @@
             />
           </div>
           <div class="form-card__field">
-            <label for="mobile">Mobile Number</label>
+            <label for="phone">Mobile Number</label>
             <input
-              id="mobile"
-              v-model="form.mobile"
+              id="phone"
+              v-model="form.phone"
               type="tel"
               required
               placeholder="05XXXXXXXX"
@@ -47,13 +47,13 @@
             />
           </div>
           <div class="form-card__field">
-            <label for="location">Work Location</label>
+            <label for="organization">Organization</label>
             <input
-              id="location"
-              v-model="form.location"
+              id="organization"
+              v-model="form.organization"
               type="text"
               required
-              placeholder="City / Region"
+              placeholder="Company / Organization name"
             />
           </div>
           <div class="form-card__field">
@@ -70,10 +70,10 @@
             <label for="experience">Years of Experience</label>
             <input
               id="experience"
-              v-model="form.experience"
+              v-model.number="form.yearsExperience"
               type="number"
               min="0"
-              step="0.5"
+              step="1"
               required
               placeholder="e.g., 5"
             />
@@ -102,11 +102,11 @@ import MainFooter from '@/components/layout/MainFooter.vue'
 
 interface CcsForm {
   fullName: string
-  mobile: string
+  phone: string
   email: string
-  location: string
+  organization: string
   department: string
-  experience: string
+  yearsExperience: number | null
 }
 
 export default defineComponent({
@@ -116,36 +116,73 @@ export default defineComponent({
     return {
       form: {
         fullName: '',
-        mobile: '',
+        phone: '',
         email: '',
-        location: '',
+        organization: '',
         department: '',
-        experience: '',
+        yearsExperience: null,
       } as CcsForm,
       submitting: false,
       statusMessage: '',
     }
   },
   methods: {
-    handleSubmit() {
+    async handleSubmit() {
       this.submitting = true
-      // Placeholder: replace with real API call when available.
-      const payload = { ...this.form }
-      console.info('CCS Program signup (API pending):', payload)
+      this.statusMessage = ''
 
-      this.statusMessage = 'Thank you! Your interest has been recorded. We will reach out shortly.'
-      this.form = {
-        fullName: '',
-        mobile: '',
-        email: '',
-        location: '',
-        department: '',
-        experience: '',
+      const payload = {
+        full_name: this.form.fullName.trim(),
+        phone: this.form.phone.trim(),
+        email: this.form.email.trim(),
+        organization: this.form.organization.trim(),
+        department: this.form.department.trim(),
+        years_experience: this.form.yearsExperience ?? 0,
       }
-      setTimeout(() => {
-        this.statusMessage = ''
-      }, 4000)
-      this.submitting = false
+
+      try {
+        const response = await fetch(
+          'https://training.ccsconsulting.com.sa/api/courses/foundations-of-corporate-culture-program/register',
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          }
+        )
+
+        if (!response.ok) {
+          let errorMessage = 'Something went wrong. Please try again.'
+          try {
+            const errorBody = await response.json()
+            if (errorBody?.message) {
+              errorMessage = errorBody.message
+            }
+          } catch {
+            // Ignore JSON parsing errors and use default message.
+          }
+          throw new Error(errorMessage)
+        }
+
+        this.statusMessage = 'Thank you! Your registration has been received.'
+        this.form = {
+          fullName: '',
+          phone: '',
+          email: '',
+          organization: '',
+          department: '',
+          yearsExperience: null,
+        }
+      } catch (error) {
+        this.statusMessage =
+          error instanceof Error ? error.message : 'Unable to submit the form right now.'
+      } finally {
+        this.submitting = false
+        if (this.statusMessage) {
+          setTimeout(() => {
+            this.statusMessage = ''
+          }, 4000)
+        }
+      }
     },
   },
 })
