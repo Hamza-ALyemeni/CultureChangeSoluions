@@ -40,7 +40,7 @@
           </p>
         </div>
         <div class="overview__brochure">
-          <img src="@/assets/images/Training Brochure.JPG" alt="Training brochure">
+          <img src="@/assets/images/Training-Brochure.JPG" alt="Training brochure">
         </div>
       </section>
 
@@ -94,9 +94,9 @@
           <h2>Ready to lead culture change in your organization?</h2>
           <p>Secure your place in CCS Training Program.</p>
         </div>
-        <router-link to="/ccs-program" class="cta-button">
-           Reserve Your Seat
-        </router-link>
+       <a href="https://training.ccsconsulting.com.sa/" class="cta-button">
+          Reserve Your Seat
+        </a>
       </section>
     </v-container>
     <MainFooter />

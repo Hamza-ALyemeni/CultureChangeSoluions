@@ -27,7 +27,7 @@ import partnereBen from '@/assets/images/eBen.png';
 import partnerISRAR from '@/assets/images/ISRAR.jpg';
 import partnerEmdad from '@/assets/images/Emdad by elm.jpg';
 import partnerPotenial from '@/assets/images/Potential.png';
-import partnerTransfiguration from '@/assets/images/TRANSFIGURATION ADVISORY.png';
+import partnerTransfiguration from '@/assets/images/TRANSFIGURATION-ADVISORY.png';
 
 const partners = ref([
   { id: 1, name: "365", logo: partner365 },
