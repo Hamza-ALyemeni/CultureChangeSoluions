@@ -5,22 +5,22 @@
         <ul class="header-nav-list">
           <li>
             <router-link to="/">
-              Home
+              {{ $t('common.home') }}
             </router-link>
           </li>
           <li>
             <router-link to="/services">
-              Services
+              {{ $t('common.services') }}
             </router-link>
           </li>
           <li v-if="false">
             <router-link to="/about">
-              About
+              {{ $t('common.about') }}
             </router-link>
           </li>
           <li>
             <router-link to="/about">
-              About
+              {{ $t('common.about') }}
             </router-link>
           </li>
           <li>
@@ -30,17 +30,17 @@
           </li>
           <li>
             <router-link to="/cmdp">
-              CMDP
+              {{ $t('common.cmdp') }}
             </router-link>
           </li>
           <li>
             <router-link to="/contact">
-              Contact
+              {{ $t('common.contact') }}
             </router-link>
           </li>
           <li>
             <router-link to="/training-program" class="nav-cta">
-              Join Our Training Program
+              {{ $t('header.nav.training') }}
             </router-link>
           </li>
 
@@ -64,20 +64,20 @@
             </li>
             <li>
               <router-link to="/">
-                Home
+                {{ $t('common.home') }}
               </router-link>
             </li>
             <li>
               <router-link to="/services">
-                Services
+                {{ $t('common.services') }}
               </router-link>
             </li>
             <li>
               <router-link to="/cmdp">
-                CMDP
+                {{ $t('common.cmdp') }}
               </router-link>
             </li>
-         
+
             <li>
               <router-link to="/ohxray" style="white-space: nowrap;">
                 <span style="color:#4d8d3e">OHX-</span><span style="color:#db0e15;">RAY</span>
@@ -85,22 +85,38 @@
             </li>
             <li>
               <router-link to="/about">
-                About
+                {{ $t('common.about') }}
               </router-link>
             </li>
             <li>
               <router-link to="/contact">
-                Contact
+                {{ $t('common.contact') }}
               </router-link>
             </li>
                <li>
               <router-link to="/training-program" class="nav-cta">
-                 Join Our Training Program
+                 {{ $t('header.nav.training') }}
               </router-link>
             </li>
+            <!-- HIDDEN: Language toggle - uncomment to re-enable -->
+            <!--
+            <li class="language-toggle-item">
+              <button @click="switchLanguage(currentLocale === 'en' ? 'ar' : 'en')" class="mobile-language-btn">
+                {{ currentLocale === 'en' ? 'العربية' : 'English' }}
+              </button>
+            </li>
+            -->
           </ul>
         </transition>
         <div class="header-right">
+          <!-- HIDDEN: Language toggle - uncomment to re-enable -->
+          <!--
+          <button @click="switchLanguage(currentLocale === 'en' ? 'ar' : 'en')"
+                  class="language-toggle-btn"
+                  :aria-label="currentLocale === 'en' ? 'Switch to Arabic' : 'Switch to English'">
+            {{ currentLocale === 'en' ? 'العربية' : 'English' }}
+          </button>
+          -->
           <div class="header-logo">
             <img src="@/assets/images/logo.svg" alt="CSS | KSA" width="200" height="100" class="header-logo-img">
           </div>
@@ -406,11 +422,56 @@
   opacity: 0;
 }
 
+.language-toggle-btn {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 2px solid #4d8d3e;
+  border-radius: 8px;
+  color: #331B3B;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-size: 1rem;
 
+  &:hover {
+    background: #4d8d3e;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-language-btn {
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(90deg, #4d8d3e, #db0812);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.95;
+  }
+}
+
+.language-toggle-item {
+  width: 100%;
+  list-style: none;
+}
 
 </style>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { useLanguage } from '@/composables/useLanguage'
+
 const showMobileMenu = ref(false)
+const { currentLocale, switchLanguage } = useLanguage()
 </script>

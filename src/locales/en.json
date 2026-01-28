@@ -1,0 +1,197 @@
+{
+  "common": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "cmdp": "CMDP",
+    "ohxray": "OHX-RAY",
+    "contactUs": "Contact Us"
+  },
+  "header": {
+    "nav": {
+      "training": "Join Our Training Program"
+    }
+  },
+  "footer": {
+    "companyName": "CCS Consulting",
+    "description": "has a solid track record of assisting organizations in planning culture change journeys and effectively connecting the change journey to the organization's strategic objectives.",
+    "contactUs": "Contact Us",
+    "email": "Email:",
+    "phone": "Phone:",
+    "officeAddress": "Office Address:",
+    "address": "Riyadh - King Abdulaziz Road - Aban Center - Second Floor - Office 213",
+    "followUs": "Follow us:"
+  },
+  "pages": {
+    "home": {
+      "banner": {
+        "titleStart": "We Help you to",
+        "titleEnd": "scale up your organization culture",
+        "description": "We believe in <b class='green'>'being' culture not 'doing culture</b>, and we provide tangible solutions designed to overcome any cultural challenge by leveraging our deep understanding and awareness of Saudi Cultural context.",
+        "descriptionBold": "'being' culture not 'doing culture"
+      },
+      "whatWeDo": {
+        "title": "What We Do",
+        "forYour": "For Your organization"
+      },
+      "about": {
+        "title": "About CCS"
+      },
+      "successPartners": {
+        "title": "Our Success Partners"
+      },
+      "clients": {
+        "title": "Our Clients"
+      }
+    },
+    "services": {
+      "banner": {
+        "title": "We are here to help you",
+        "description": "We are a team of experienced consultants who are passionate about helping organizations achieve their goals. We are here to help you build a healthy organizational culture that will help you achieve your goals.",
+        "button": "Contact Us"
+      },
+      "title": "Our Services",
+      "items": {
+        "healthyCulture": {
+          "title": "Build healthy organizational culture",
+          "description": "Articulate mechanisms that lead to the creation and maintenance of a healthy organizational culture through 3Ds model. This process will begin with diagnosing the current culture, then designing tailored solutions to address diagnosis gaps, then delivering the solutions while transferring the knowledge to the client's team to sustain the impact."
+        },
+        "assessments": {
+          "title": "Conduct Qualitative  and Quantitative Assessments Including Culture, Engagement and Values by OHX-RAY",
+          "description": "Conduct  a qualitative assessment through SEVEN actions and quantitative customized health checks creating a baseline to change.  CCS model OHX-Ray will measure your organization culture, engagement and values which allow you to better understand the underlying mind-sets and behaviors in your organization."
+        },
+        "leadership": {
+          "title": "Facilitate Leadership's Effectiveness of Culture Change Journey",
+          "description": "Align and activate leaders to be role-models and enablers to achieve human-level business breakthroughs through employee engagement, manager effectiveness, and high-performing teams. Breaking down silos and increasing cross-division/cross-border collaboration. "
+        },
+        "values": {
+          "title": "Values Creation & Adoption Management",
+          "description": "Define values to be the DNA and Brand of culture, and align them with organizational goals, strategy, and brand. Ensure value implementation starting with assessment at all levels of the organization. We also enable the current value across organization. Furthermore, creating compelling storytelling to engage employees in the value."
+        },
+        "changeManagement": {
+          "title": "Build & Enable Change Management Strategy",
+          "description": "Plan, lead, and manage organizational change where people are the critical differentiator to success by focusing on change leadership, change communications, and culture change, and empowering change management teams with structure, mandate and digital solution (CMDP)."
+        },
+        "influencers": {
+          "title": "Build the Influencers Model to Enable change network",
+          "description": "Identify, engage & coach change champions and influencers to assure immaculate change management across the organizations through clear structure and criteria for influencers selection."
+        },
+        "diversity": {
+          "title": "Build a Culture of Diversity and Inclusion",
+          "description": "Strengthen your organization by creating a culture grounded in purpose, belonging, and impact that focuses more on neglected groups  and try to engage them, which not only includes males and females but also age groups."
+        },
+        "communication": {
+          "title": "Build Integrated Cultural Communication",
+          "description": "Increase engagement, create buy-in, and maintain credibility by improving the strategy and execution of your cultural communications. Emphasis more on  employee meetings , events, and executive communications through different channels to aim create a One Voice across the organization."
+        }
+      }
+    },
+    "about": {
+      "vision": {
+        "title": "CCS VISION",
+        "content": "Sustaining organizations transformation"
+      },
+      "mission": {
+        "title": "CCS MISSION",
+        "content": "Helping organization thrive through a culture change journey by building awareness, creating commitment, and enabling ownership"
+      },
+      "values": {
+        "title": "CCS CORE VALUES",
+        "commitment": {
+          "title": "COMMITMENT",
+          "description": "We are committed to our clients' success"
+        },
+        "collaboration": {
+          "title": "COLLABORATION",
+          "description": "We believe in the power of collaboration"
+        },
+        "sustainability": {
+          "title": "SUSTAINABILITY",
+          "description": "We are committed to sustainable solutions"
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "form": {
+        "email": "Your Email:",
+        "subject": "Subject:",
+        "body": "Body:",
+        "submit": "Submit"
+      },
+      "messages": {
+        "success": "Message sent successfully!",
+        "error": "Failed to send message. Please try again."
+      }
+    },
+    "ohxray": {
+      "intro": {
+        "title": "Introduction to OHX-RAY System",
+        "subtitle": "OHX-RAY is a comprehensive tool for measuring organizational culture"
+      },
+      "unique": {
+        "title": "What Makes OHX-RAY Unique?"
+      },
+      "certificates": {
+        "verified": "Verified",
+        "certified": "Certified",
+        "excellence": "Excellence",
+        "winner": "Winner"
+      },
+      "accreditation": {
+        "title": "Accreditation Journey"
+      },
+      "benefits": {
+        "title": "Benefits"
+      }
+    },
+    "ohxrayDemo": {
+      "title": "Demo",
+      "intro": "Welcome to the OHX-RAY Demo",
+      "support": "Need help? Contact our support team"
+    },
+    "cmdp": {
+      "title": "Change Management Digital Platform",
+      "sections": {
+        "structure": "CMDP Structure",
+        "overview": "General Overview",
+        "technical": "Technical & Compliance Questions",
+        "customization": "Customization & Functionality",
+        "value": "Value, Impact & Measurement",
+        "additional": "Additional Questions"
+      }
+    },
+    "ccsProgram": {
+      "title": "Sign up for the Culture Change Solutions Program",
+      "form": {
+        "fullName": "Full Name",
+        "mobile": "Mobile Number",
+        "email": "Email Address",
+        "organization": "Organization",
+        "specialization": "Specialization / Department",
+        "experience": "Years of Experience",
+        "submit": "Submit"
+      },
+      "messages": {
+        "success": "Registration successful!",
+        "error": "Registration failed. Please try again."
+      }
+    },
+    "training": {
+      "title": "Organization Culture Training Accreditation",
+      "overview": {
+        "title": "Program Overview"
+      },
+      "benefits": {
+        "title": "Program Benefits"
+      },
+      "methodology": {
+        "title": "Integrated Methodology",
+        "diagnosis": "Diagnosis",
+        "design": "Design & Deliver",
+        "sustainability": "Sustainability"
+      }
+    }
+  }
+}

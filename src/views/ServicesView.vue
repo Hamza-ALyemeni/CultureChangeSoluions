@@ -2,17 +2,15 @@
   <MainHeader/>
   <v-container>
     <div class="services-banner">
-      <div class="services-banner__title">We are here to help you</div>
-      <div class="services-banner__description">We are a team of experienced consultants who are passionate about
-        helping organizations achieve their goals. We are here to help you build a healthy organizational culture that
-        will help you achieve your goals.
+      <div class="services-banner__title">{{ $t('pages.services.banner.title') }}</div>
+      <div class="services-banner__description">{{ $t('pages.services.banner.description') }}
       </div>
       <div class="services-banner__button">
-        <router-link to="/contact" class="button button--red">Contact Us</router-link>
+        <router-link to="/contact" class="button button--red">{{ $t('pages.services.banner.button') }}</router-link>
       </div>
     </div>
     <div class="services">
-      <div class="services__title green">Our Services</div>
+      <div class="services__title green">{{ $t('pages.services.title') }}</div>
       <div class="services__list">
         <div v-for="(service, index) in services" :key="index" class="services__card">
           <div class="services__card-front">
@@ -42,51 +40,51 @@ import MainFooter from "@/components/layout/MainFooter.vue";
 export default defineComponent({
   name: "ServicesView",
   components: {MainFooter, MainHeader},
-  data() {
-    return {
-      services: [
+  computed: {
+    services() {
+      return [
         {
-          title: "Build healthy organizational culture",
+          title: this.$t('pages.services.items.healthyCulture.title'),
           image: "/assets/images/services/Build healthy organizational culture.png",
-          description: "Articulate mechanisms that lead to the creation and maintenance of a healthy organizational culture through 3Ds model. This process will begin with diagnosing the current culture, then designing tailored solutions to address diagnosis gaps, then delivering the solutions while transferring the knowledge to the client’s team to sustain the impact."
+          description: this.$t('pages.services.items.healthyCulture.description')
         },
         {
-          title: "Conduct Qualitative  and Quantitative Assessments Including Culture, Engagement and Values by OHX-RAY",
+          title: this.$t('pages.services.items.assessments.title'),
           image: "/assets/images/services/Health & culture Check.png",
-          description: "Conduct  a qualitative assessment through SEVEN actions and quantitative customized health checks creating a baseline to change.  CCS model OHX-Ray will measure your organization culture, engagement and values which allow you to better understand the underlying mind-sets and behaviors in your organization."
+          description: this.$t('pages.services.items.assessments.description')
         },
         {
-          title: "Facilitate Leadership’s Effectiveness of Culture Change Journey",
+          title: this.$t('pages.services.items.leadership.title'),
           image: "/assets/images/services/Organizational Leaders effectiveness .png",
-          description: "Align and activate leaders to be role-models and enablers to achieve human-level business breakthroughs through employee engagement, manager effectiveness, and high-performing teams. Breaking down silos and increasing cross-division/cross-border collaboration. "
+          description: this.$t('pages.services.items.leadership.description')
         },
         {
-          title: "Values Creation & Adoption Management",
+          title: this.$t('pages.services.items.values.title'),
           image: '/assets/images/services/Value Creation & Management.png',
-          description: "Define values to be the DNA and Brand of culture, and align them with organizational goals, strategy, and brand. Ensure value implementation starting with assessment at all levels of the organization. We also enable the current value across organization. Furthermore, creating compelling storytelling to engage employees in the value."
+          description: this.$t('pages.services.items.values.description')
         },
         {
-          title: "Build & Enable Change Management Strategy",
+          title: this.$t('pages.services.items.changeManagement.title'),
           image: '/assets/images/services/Change management strategy.png',
-          description: "Plan, lead, and manage organizational change where people are the critical differentiator to success by focusing on change leadership, change communications, and culture change, and empowering change management teams with structure, mandate and digital solution (CMDP)."
+          description: this.$t('pages.services.items.changeManagement.description')
         },
         {
-          title: "Build the Influencers Model to Enable change network",
+          title: this.$t('pages.services.items.influencers.title'),
           image: '/assets/images/services/Change Networks and influencers .png',
-          description: "Identify, engage & coach change champions and influencers to assure immaculate change management across the organizations through clear structure and criteria for influencers selection."
+          description: this.$t('pages.services.items.influencers.description')
         },
         {
-          title: "Build a Culture of Diversity and Inclusion",
+          title: this.$t('pages.services.items.diversity.title'),
           image: '/assets/images/services/Internal communication.png',
-          description: "Strengthen your organization by creating a culture grounded in purpose, belonging, and impact that focuses more on neglected groups  and try to engage them, which not only includes males and females but also age groups."
+          description: this.$t('pages.services.items.diversity.description')
         },
         {
-          title: "Build Integrated Cultural Communication",
+          title: this.$t('pages.services.items.communication.title'),
           image: '/assets/images/services/Diversity, and Inclusion.png',
-          description: "Increase engagement, create buy-in, and maintain credibility by improving the strategy and execution of your cultural communications. Emphasis more on  employee meetings , events, and executive communications through different channels to aim create a One Voice across the organization."
+          description: this.$t('pages.services.items.communication.description')
         }
       ]
-    };
+    }
   }
 })
 </script>

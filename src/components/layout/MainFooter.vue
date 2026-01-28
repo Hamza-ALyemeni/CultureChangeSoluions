@@ -8,20 +8,19 @@
           </li>
           <li>
             <b class="green">
-              CCS Consulting
-            </b> has a solid track record of assisting organizations in planning culture change journeys and effectively
-            connecting the change journey to the organization's strategic objectives.
+              {{ $t('footer.companyName') }}
+            </b> {{ $t('footer.description') }}
           </li>
         </ul>
         <ul class="footer-list">
           <li>
             <b>
-              Contact Us
+              {{ $t('footer.contactUs') }}
             </b>
           </li>
           <li>
             <b>
-              Email:
+              {{ $t('footer.email') }}
             </b>
             <a href="mailto:info@ccsconsulting.com.sa">
               info@ccsconsulting.com.sa
@@ -29,7 +28,7 @@
           </li>
           <li>
             <b>
-              Phone:
+              {{ $t('footer.phone') }}
             </b>
             <a href="tel:00966554603030">
               +966554603030
@@ -37,12 +36,12 @@
           </li>
           <li>
             <b>
-              Office Address:
+              {{ $t('footer.officeAddress') }}
             </b>
-            Riyadh - King Abdulaziz Road - Aban Center - Second Floor - Office 213
+            {{ $t('footer.address') }}
           </li>
           <li>
-            <b>Follow us:</b>
+            <b>{{ $t('footer.followUs') }}</b>
           </li>
           <li>
             <ul class="footer-social">

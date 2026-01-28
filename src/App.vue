@@ -1,27 +1,26 @@
 <template>
-  <v-app>
+  <v-app :dir="isRTL ? 'rtl' : 'ltr'" :lang="currentLocale">
     <v-main style="overflow: hidden !important;">
       <router-view/>
     </v-main>
   </v-app>
 </template>
 
-<script lang="ts">
-import {defineComponent} from 'vue'
+<script lang="ts" setup>
+import { onMounted } from 'vue'
+import { useLanguage } from '@/composables/useLanguage'
 
-export default defineComponent({
-  name: 'App',
+const { currentLocale, isRTL, initLanguage } = useLanguage()
 
-  data() {
-    return {
-      //
-    }
-  },
+onMounted(() => {
+  initLanguage()
 })
 </script>
 
 
 <style lang="scss">
+@import './styles/rtl.scss';
+
 .green {
   color: #4D8D3E;
 }

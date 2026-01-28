@@ -5,13 +5,13 @@
         <div class="banner-start">
           <h1 class="banner-title fade-in-scale-up">
                     <span class="banner-title-bold">
-                        We Help you to
+                        {{ $t('pages.home.banner.titleStart') }}
                                   <span class="banner-block"></span>
                     </span>
-            scale up your organization culture
+            {{ $t('pages.home.banner.titleEnd') }}
           </h1>
           <p class="banner-description">
-            We believe in <b class="green">'being' culture not 'doing culture</b>, and we provide tangible solutions
+            We believe in <b class="green">'{{ $t('pages.home.banner.descriptionBold') }}'</b>, and we provide tangible solutions
             designed to overcome any
             cultural challenge by leveraging our deep understanding and awareness of Saudi Cultural context.
           </p>
