@@ -40,7 +40,24 @@
           </p>
         </div>
         <div class="overview__brochure">
-          <img src="@/assets/images/Training-Brochure.JPG" alt="Training brochure">
+          <div class="brochure-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+          </div>
+          <h3>Training Program Details</h3>
+          <p class="brochure-description">Download the complete program details.</p>
+          <a href="/pdf/training-brochure.pdf" download="CCS-Training-Program-Brochure.pdf" class="download-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Brochure
+          </a>
         </div>
       </section>
 
@@ -203,28 +220,67 @@ import MainHeader from '@/components/layout/MainHeader.vue'
 
 .overview__brochure {
   background: #fff;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   border-left: 4px solid #db0812;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.2rem;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
 .overview__brochure h3 {
   margin: 0;
   color: #331B3B;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.overview__brochure img {
-  width: 100%;
-  height: auto;
-  max-width: 420px;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+.brochure-icon {
+  color: #db0812;
+  margin-bottom: 0.5rem;
+}
+
+.brochure-description {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #4d8d3e, #3a6e2f);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(77, 141, 62, 0.3);
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(77, 141, 62, 0.4);
+  background: linear-gradient(135deg, #5aa049, #4d8d3e);
+}
+
+.download-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(77, 141, 62, 0.3);
+}
+
+.download-button svg {
+  width: 20px;
+  height: 20px;
 }
 
 .overview__card h3 {

@@ -2,8 +2,8 @@
   <div class="ohxray-page">
     <MainHeader/>
         <section class="intro">
-          <h2> <span class="brand-green">OHX-</span><span class="brand-red">RAY</span> مقدمة تعريفية عن نظام </h2>
-          <p class="intro-subtitle">نظرة شاملة توضح مؤشرات الصحة الثقافية داخل المنظمة</p>
+          <h2>An Introductory Overview of the <span class="brand-green">OHX-</span><span class="brand-red">RAY</span> System</h2>
+          <p class="intro-subtitle">A comprehensive overview highlighting cultural health indicators within the organization.</p>
           <div class="intro-actions">
             <RouterLink class="primary-cta" to="/ohxray-demo">Free Live Demo</RouterLink>
           </div>
