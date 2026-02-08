@@ -1,57 +1,67 @@
 <template>
   <header class="header">
     <v-container>
-      <nav class="header-nav">
+      <nav class="header-nav" :class="{ 'rtl-layout': currentLocale === 'ar' }">
+        <!-- Mobile: Logo + Burger grouped together -->
+        <div class="mobile-header-group">
+          <div class="header-logo">
+            <img src="@/assets/images/logo.svg" alt="CSS | KSA" width="200" height="100" class="header-logo-img">
+          </div>
+          <div class="burger-menu" @click="showMobileMenu = !showMobileMenu">
+            <div class="burger-menu-line"></div>
+            <div class="burger-menu-line"></div>
+            <div class="burger-menu-line"></div>
+          </div>
+        </div>
+
+        <!-- Desktop: Logo shown separately -->
+        <div class="header-logo desktop-logo">
+          <img src="@/assets/images/logo.svg" alt="CSS | KSA" width="200" height="100" class="header-logo-img">
+        </div>
+
         <ul class="header-nav-list">
           <li>
-            <router-link to="/">
+            <router-link :to="lp('/')">
               {{ $t('common.home') }}
             </router-link>
           </li>
           <li>
-            <router-link to="/services">
+            <router-link :to="lp('/services')">
               {{ $t('common.services') }}
             </router-link>
           </li>
           <li v-if="false">
-            <router-link to="/about">
+            <router-link :to="lp('/about')">
               {{ $t('common.about') }}
             </router-link>
           </li>
           <li>
-            <router-link to="/about">
+            <router-link :to="lp('/about')">
               {{ $t('common.about') }}
             </router-link>
           </li>
           <li>
-            <router-link to="/ohxray" style="white-space: nowrap;">
+            <router-link :to="lp('/ohxray')" style="white-space: nowrap;">
               <span style="color:#4d8d3e">OHX-</span><span style="color:#db0e15;">RAY</span>
             </router-link>
           </li>
           <li>
-            <router-link to="/cmdp">
+            <router-link :to="lp('/cmdp')">
               {{ $t('common.cmdp') }}
             </router-link>
           </li>
           <li>
-            <router-link to="/contact">
+            <router-link :to="lp('/contact')">
               {{ $t('common.contact') }}
             </router-link>
           </li>
           <li>
-            <router-link to="/training-program" class="nav-cta">
+            <router-link :to="lp('/training-program')" class="nav-cta">
               {{ $t('header.nav.training') }}
             </router-link>
           </li>
-
         </ul>
-        <!--   burger menu      -->
-        <div class="burger-menu" @click="showMobileMenu = !showMobileMenu">
-          <div class="burger-menu-line"></div>
-          <div class="burger-menu-line"></div>
-          <div class="burger-menu-line"></div>
-        </div>
-        <!--   burger menu      -->
+
         <transition name="fade">
           <ul class="header-nav-list-mobile" v-show="showMobileMenu">
             <li>
@@ -63,63 +73,54 @@
               </div>
             </li>
             <li>
-              <router-link to="/">
+              <router-link :to="lp('/')">
                 {{ $t('common.home') }}
               </router-link>
             </li>
             <li>
-              <router-link to="/services">
+              <router-link :to="lp('/services')">
                 {{ $t('common.services') }}
               </router-link>
             </li>
             <li>
-              <router-link to="/cmdp">
+              <router-link :to="lp('/cmdp')">
                 {{ $t('common.cmdp') }}
               </router-link>
             </li>
-
             <li>
-              <router-link to="/ohxray" style="white-space: nowrap;">
+              <router-link :to="lp('/ohxray')" style="white-space: nowrap;">
                 <span style="color:#4d8d3e">OHX-</span><span style="color:#db0e15;">RAY</span>
               </router-link>
             </li>
             <li>
-              <router-link to="/about">
+              <router-link :to="lp('/about')">
                 {{ $t('common.about') }}
               </router-link>
             </li>
             <li>
-              <router-link to="/contact">
+              <router-link :to="lp('/contact')">
                 {{ $t('common.contact') }}
               </router-link>
             </li>
-               <li>
-              <router-link to="/training-program" class="nav-cta">
+            <li>
+              <router-link :to="lp('/training-program')" class="nav-cta">
                  {{ $t('header.nav.training') }}
               </router-link>
             </li>
-            <!-- HIDDEN: Language toggle - uncomment to re-enable -->
-            <!--
             <li class="language-toggle-item">
               <button @click="switchLanguage(currentLocale === 'en' ? 'ar' : 'en')" class="mobile-language-btn">
                 {{ currentLocale === 'en' ? 'العربية' : 'English' }}
               </button>
             </li>
-            -->
           </ul>
         </transition>
+
         <div class="header-right">
-          <!-- HIDDEN: Language toggle - uncomment to re-enable -->
-          <!--
           <button @click="switchLanguage(currentLocale === 'en' ? 'ar' : 'en')"
                   class="language-toggle-btn"
                   :aria-label="currentLocale === 'en' ? 'Switch to Arabic' : 'Switch to English'">
             {{ currentLocale === 'en' ? 'العربية' : 'English' }}
           </button>
-          -->
-          <div class="header-logo">
-            <img src="@/assets/images/logo.svg" alt="CSS | KSA" width="200" height="100" class="header-logo-img">
-          </div>
         </div>
       </nav>
     </v-container>
@@ -144,6 +145,36 @@
     padding: 1rem 2rem;
     @media screen and (max-width: 768px) {
       padding: 0;
+      justify-content: space-between;
+    }
+
+    &.rtl-layout {
+      flex-direction: row-reverse;
+
+      .header-nav-list {
+        flex-direction: row-reverse;
+        padding: 0 0 0 1.5rem;
+      }
+
+      .header-right {
+        margin-left: 0;
+        margin-right: auto;
+        padding-right: 0;
+        padding-left: 2rem;
+
+        @media screen and (max-width: 768px) {
+          padding-left: 0;
+        }
+      }
+
+      .mobile-header-group {
+        flex-direction: row-reverse;
+
+         @media screen and (max-width: 768px) {
+          padding-left: 0;
+          
+        }
+      }
     }
 
     &-list {
@@ -273,10 +304,10 @@
 
   &-logo {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 1rem 0 1rem 1.5rem;
+    padding: 1rem 1.5rem;
     @media screen and (max-width: 768px) {
       padding: 0;
     }
@@ -307,6 +338,28 @@
   }
 }
 
+// Mobile header group: keeps logo and burger together
+.mobile-header-group {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+// Desktop logo: hidden on mobile
+.desktop-logo {
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
 .header-right {
   margin-left: auto;
   display: flex;
@@ -314,11 +367,11 @@
   gap: 1rem;
   padding-right: 2rem;
   @media screen and (max-width: 768px) {
-    padding-right: 0;
+    display: none;
   }
 }
 
-.burger-menu{
+.burger-menu {
   display: none;
   @media screen and (max-width: 768px) {
     display: block;
@@ -329,7 +382,7 @@
     z-index: 999;
   }
 
-  &-line{
+  &-line {
     width: 100%;
     height: 2px;
     background: #331B3B;
@@ -469,9 +522,12 @@
 </style>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useLanguage } from '@/composables/useLanguage'
 
 const showMobileMenu = ref(false)
 const { currentLocale, switchLanguage } = useLanguage()
+
+// Helper to prefix routes with current locale
+const lp = (path: string) => path === '/' ? `/${currentLocale.value}` : `/${currentLocale.value}${path}`
 </script>

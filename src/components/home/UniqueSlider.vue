@@ -5,7 +5,7 @@
         <h2 class="unique-title" ref="fromLeft" :class="{'is-animating': isAnimating}">
           <b>
                       <span class="position-relative">
-            WHAT MAKE <span class="green">
+            {{ $t('pages.home.unique.titleStart') }} <span class="green">
             CCS
           </span>
                           <span class="unique-block">
@@ -14,12 +14,11 @@
           </b>
 
           <br>
-          UNIQUE IN SAUDI MARKET
+          {{ $t('pages.home.unique.titleEnd') }}
 
         </h2>
         <p class="unique-subtitle">
-          Our primary focus is on the human side of business. We create organizations in which both business and people
-          thrive.
+          {{ $t('pages.home.unique.subtitle') }}
         </p>
       </div>
       <div class="unique-slider">
@@ -72,29 +71,7 @@ export default defineComponent({
   name: "UniqueSlider",
   data() {
     return {
-      isAnimating: false,
-      items: [
-        {
-          title: "Saudi cultural context",
-          description: "SAUDI trusted brand and Local National Player. Which has a thorough understanding of the Saudi cultural context."
-        },
-        {
-          title: "KSA Vision 2030",
-          description: "Contribute of the Ambitious KSA Vision 2030 anticipates to cultivate and thrive new vibrant environment driven by deep rooted values."
-        },
-        {
-          title: "Cultural deep capabilities",
-          description: "Has a cultural deep capabilities that can guide organizations through transformation journey."
-        },
-        {
-          title: "Saudi team",
-          description: "Supported by a Saudi team with a rich history of multiple successful private and public transformations since 1999 in such a dynamic and challenging domain."
-        },
-        {
-          title: "Professional Support",
-          description: "Providing implementation support throughout the transformation journey that is not typically provided by others."
-        }
-      ]
+      isAnimating: false
     }
   },
   components: {
@@ -103,6 +80,13 @@ export default defineComponent({
     SplideTrack
   },
   computed: {
+    items() {
+      const keys = ['saudiContext', 'vision2030', 'capabilities', 'team', 'support'];
+      return keys.map(key => ({
+        title: this.$t(`pages.home.unique.items.${key}.title`),
+        description: this.$t(`pages.home.unique.items.${key}.description`)
+      }));
+    },
     options() {
       return {
         perPage: 3,

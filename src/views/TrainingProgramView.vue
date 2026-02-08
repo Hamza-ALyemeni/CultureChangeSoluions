@@ -3,41 +3,20 @@
     <MainHeader />
     <v-container class="page-body">
       <section class="hero">
-        <p class="hero__eyebrow">Organization Culture Training Accreditation</p>
-        <h1 class="hero__title">A 3-day CCS Training Program to equip participants with skills and confidence</h1>
+        <p class="hero__eyebrow">{{ $t('pages.training.hero.eyebrow') }}</p>
+        <h1 class="hero__title">{{ $t('pages.training.hero.title') }}</h1>
         <p class="hero__subtitle">
-          Accredited certificates included.
+          {{ $t('pages.training.hero.subtitle') }}
         </p>
       </section>
 
       <section class="overview">
         <div class="overview__content">
-          <h2 class="section-title">Program Overview</h2>
-          <p>
-            Our accredited training programs are designed to develop individuals by
-            introducing them to the culture from diagnosis to solutions and practical
-            applications, not just theoretical knowledge transfer.
-          </p>
-          <p>
-            With over 25 years of experience, our training program offers practical tools
-            and techniques led by certified trainers with deep field experience in
-            organizational culture, institutional development, and change management.
-          </p>
-          <p>
-            Our training focuses on supporting leaders and teams in understanding the
-            organization's cultural reality, analyzing behavioral and organizational
-            challenges, and then designing applicable solutions that translate into daily
-            practices that improve the working environment and performance.
-          </p>
-          <p>
-            Our programs are supported by accredited certificates from international and
-            local bodies and employ an integrated methodology that combines diagnosis,
-            analysis, design, and delivery, ensuring that learning is a practical
-            experience with a sustainable impact in the organization. Our goal is not
-            just training for the sake of knowledge, but empowering trainees to transform
-            what they learn into tangible behaviors practiced daily to support their
-            organizations' success.
-          </p>
+          <h2 class="section-title">{{ $t('pages.training.overview.title') }}</h2>
+          <p>{{ $t('pages.training.overview.paragraph1') }}</p>
+          <p>{{ $t('pages.training.overview.paragraph2') }}</p>
+          <p>{{ $t('pages.training.overview.paragraph3') }}</p>
+          <p>{{ $t('pages.training.overview.paragraph4') }}</p>
         </div>
         <div class="overview__brochure">
           <div class="brochure-icon">
@@ -48,71 +27,71 @@
               <line x1="9" y1="15" x2="15" y2="15"></line>
             </svg>
           </div>
-          <h3>Training Program Details</h3>
-          <p class="brochure-description">Download the complete program details.</p>
+          <h3>{{ $t('pages.training.brochure.title') }}</h3>
+          <p class="brochure-description">{{ $t('pages.training.brochure.description') }}</p>
           <a href="/pdf/training-brochure.pdf" download="CCS-Training-Program-Brochure.pdf" class="download-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            Download Brochure
+            {{ $t('pages.training.brochure.button') }}
           </a>
         </div>
       </section>
 
       <section class="grid-section">
-        <h2 class="section-title">Program Benefits</h2>
+        <h2 class="section-title">{{ $t('pages.training.benefits.title') }}</h2>
         <div class="highlights">
-          <article >
-            <h3>Accredited Trainers in Organizational Culture Change</h3>
+          <article>
+            <h3>{{ $t('pages.training.benefits.items.trainers') }}</h3>
           </article>
-          <article >
-            <h3>Interactive Approach Through Various Exercises to Facilitate Information Retention</h3>
+          <article>
+            <h3>{{ $t('pages.training.benefits.items.interactive') }}</h3>
           </article>
-          <article >
-            <h3>A Practical, Step-by-Step Approach</h3>
+          <article>
+            <h3>{{ $t('pages.training.benefits.items.practical') }}</h3>
           </article>
-          <article >
-            <h3>Accredited Diagnostic and Measurement Tools</h3>
+          <article>
+            <h3>{{ $t('pages.training.benefits.items.diagnostic') }}</h3>
           </article>
-          <article >
-            <h3>Local &amp; Global Real-Life Business Cases</h3>
+          <article>
+            <h3>{{ $t('pages.training.benefits.items.cases') }}</h3>
           </article>
-          <article >
-            <h3>Unique Templates, Guides and Workbooks to Support Learning</h3>
+          <article>
+            <h3>{{ $t('pages.training.benefits.items.templates') }}</h3>
           </article>
         </div>
       </section>
 
       <section class="methodology">
-        <h2 class="section-title">Integrated Methodology</h2>
+        <h2 class="section-title">{{ $t('pages.training.methodology.title') }}</h2>
         <div class="steps">
           <div class="step">
             <span>01</span>
-            <h3>Diagnosis</h3>
-            <p>Use effective tools to identify cultural strengths and gaps.</p>
+            <h3>{{ $t('pages.training.methodology.diagnosis.title') }}</h3>
+            <p>{{ $t('pages.training.methodology.diagnosis.description') }}</p>
           </div>
           <div class="step">
             <span>02</span>
-            <h3>Design & Deliver</h3>
-            <p>Design effective solutions and implement them to address cultural gaps in the organization.</p>
+            <h3>{{ $t('pages.training.methodology.design.title') }}</h3>
+            <p>{{ $t('pages.training.methodology.design.description') }}</p>
           </div>
           <div class="step">
             <span>03</span>
-            <h3>Sustainability</h3>
-            <p>Use KPIs and dashboards to document the progress and identify areas of improvement in the organizational culture.</p>
+            <h3>{{ $t('pages.training.methodology.sustainability.title') }}</h3>
+            <p>{{ $t('pages.training.methodology.sustainability.description') }}</p>
           </div>
         </div>
       </section>
 
       <section class="cta-section">
         <div>
-          <h2>Ready to lead culture change in your organization?</h2>
-          <p>Secure your place in CCS Training Program.</p>
+          <h2>{{ $t('pages.training.cta.title') }}</h2>
+          <p>{{ $t('pages.training.cta.subtitle') }}</p>
         </div>
        <a href="https://training.ccsconsulting.com.sa/" class="cta-button">
-          Reserve Your Seat
+          {{ $t('pages.training.cta.button') }}
         </a>
       </section>
     </v-container>
@@ -137,7 +116,7 @@ import MainHeader from '@/components/layout/MainHeader.vue'
 }
 
 .hero {
-  text-align: center;
+  text-align: center !important;
   margin-bottom: 2.5rem;
 }
 
@@ -305,6 +284,7 @@ import MainHeader from '@/components/layout/MainHeader.vue'
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center !important;
 }
 
 

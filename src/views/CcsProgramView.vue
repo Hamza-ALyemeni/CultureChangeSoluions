@@ -3,71 +3,71 @@
     <MainHeader />
     <v-container class="py-12 page-body">
       <section class="hero">
-        <p class="hero__eyebrow">CCS Program</p>
-        <h1 class="hero__title">Sign up for the Culture Change Solutions Program</h1>
+        <p class="hero__eyebrow">{{ $t('pages.ccsProgram.eyebrow') }}</p>
+        <h1 class="hero__title">{{ $t('pages.ccsProgram.title') }}</h1>
         <p class="hero__subtitle">
-          Share a few details and we will reserve a spot for you.
+          {{ $t('pages.ccsProgram.subtitle') }}
         </p>
       </section>
 
       <section class="form-card">
         <div class="form-card__header">
-          <h2>Register your interest</h2>
-          <p>Our team will contact you with next steps once submissions open.</p>
+          <h2>{{ $t('pages.ccsProgram.registerTitle') }}</h2>
+          <p>{{ $t('pages.ccsProgram.registerSubtitle') }}</p>
         </div>
         <form class="form-card__form" @submit.prevent="handleSubmit">
           <div class="form-card__field">
-            <label for="fullName">Full Name</label>
+            <label for="fullName">{{ $t('pages.ccsProgram.form.fullName') }}</label>
             <input
               id="fullName"
               v-model="form.fullName"
               type="text"
               required
-              placeholder="Enter your full name"
+              :placeholder="$t('pages.ccsProgram.form.fullNamePlaceholder')"
             />
           </div>
           <div class="form-card__field">
-            <label for="phone">Mobile Number</label>
+            <label for="phone">{{ $t('pages.ccsProgram.form.mobile') }}</label>
             <input
               id="phone"
               v-model="form.phone"
               type="tel"
               required
-              placeholder="05XXXXXXXX"
+              :placeholder="$t('pages.ccsProgram.form.mobilePlaceholder')"
             />
           </div>
           <div class="form-card__field">
-            <label for="email">Email Address</label>
+            <label for="email">{{ $t('pages.ccsProgram.form.email') }}</label>
             <input
               id="email"
               v-model="form.email"
               type="email"
               required
-              placeholder="name@example.com"
+              :placeholder="$t('pages.ccsProgram.form.emailPlaceholder')"
             />
           </div>
           <div class="form-card__field">
-            <label for="organization">Organization</label>
+            <label for="organization">{{ $t('pages.ccsProgram.form.organization') }}</label>
             <input
               id="organization"
               v-model="form.organization"
               type="text"
               required
-              placeholder="Company / Organization name"
+              :placeholder="$t('pages.ccsProgram.form.organizationPlaceholder')"
             />
           </div>
           <div class="form-card__field">
-            <label for="department">Specialization / Department</label>
+            <label for="department">{{ $t('pages.ccsProgram.form.specialization') }}</label>
             <input
               id="department"
               v-model="form.department"
               type="text"
               required
-              placeholder="e.g., HR, Operations, Strategy"
+              :placeholder="$t('pages.ccsProgram.form.specializationPlaceholder')"
             />
           </div>
           <div class="form-card__field">
-            <label for="experience">Years of Experience</label>
+            <label for="experience">{{ $t('pages.ccsProgram.form.experience') }}</label>
             <input
               id="experience"
               v-model.number="form.yearsExperience"
@@ -75,11 +75,11 @@
               min="0"
               step="1"
               required
-              placeholder="e.g., 5"
+              :placeholder="$t('pages.ccsProgram.form.experiencePlaceholder')"
             />
           </div>
           <button class="form-card__submit" type="submit" :disabled="submitting">
-            {{ submitting ? 'Saving...' : 'Submit' }}
+            {{ submitting ? $t('pages.ccsProgram.form.saving') : $t('pages.ccsProgram.form.submit') }}
           </button>
           
         </form>
@@ -151,7 +151,7 @@ export default defineComponent({
         )
 
         if (!response.ok) {
-          let errorMessage = 'Something went wrong. Please try again.'
+          let errorMessage = this.$t('pages.ccsProgram.messages.error')
           try {
             const errorBody = await response.json()
             if (errorBody?.message) {
@@ -163,7 +163,7 @@ export default defineComponent({
           throw new Error(errorMessage)
         }
 
-        this.statusMessage = 'Thank you! Your registration has been received.'
+        this.statusMessage = this.$t('pages.ccsProgram.messages.success')
         this.form = {
           fullName: '',
           phone: '',
@@ -174,7 +174,7 @@ export default defineComponent({
         }
       } catch (error) {
         this.statusMessage =
-          error instanceof Error ? error.message : 'Unable to submit the form right now.'
+          error instanceof Error ? error.message : this.$t('pages.ccsProgram.messages.fallbackError')
       } finally {
         this.submitting = false
         if (this.statusMessage) {

@@ -1,8 +1,8 @@
 <template>
   <section class="clients-section">
     <div class="container">
-      <h2 class="section-title">Our Clients</h2>
-      <p class="section-subtitle">Trusted by industry leaders across sectors</p>
+      <h2 class="section-title">{{ $t('pages.home.clients.title') }}</h2>
+      <p class="section-subtitle">{{ $t('pages.home.clients.subtitle') }}</p>
 
       <div class="clients-grid">
         <div class="client-card" v-for="client in clients" :key="client.id">

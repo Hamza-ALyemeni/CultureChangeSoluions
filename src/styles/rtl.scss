@@ -1,11 +1,22 @@
 // RTL-specific styles for Arabic language support
 
 [dir="rtl"] {
-  // Text alignment for all text elements
-  text-align: right;
 
+  nav{
+    white-space: nowrap;
+  }
+  // Text alignment for all text elements
+  // text-align: right;
+
+  ul, .certificate-criteria {
+    direction: ltr !important;
+  }
+  div p ,li , .container, #second-stats-text , #emp-numbers , .contact-form__field__label, .value-title, .services__card-description, .steps, .cta-section, .footer-list{
+    direction: rtl !important;
+  }
+  
   // Ensure paragraphs, headings, and text elements respect RTL
-  p, h1, h2, h3, h4, h5, h6, li, div {
+  .services__title, .banner-title, .about-title, .unique-title, .contact-form__field__label, .about-page-start, .about-page-end, .value-card-title,  .section-title, .question, .section-subtitle, .highlights, .steps, .footer-list, .journey-benefits__title, h5, h6, li  {
     text-align: right !important;
   }
 

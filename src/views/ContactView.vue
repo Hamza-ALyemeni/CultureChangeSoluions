@@ -1,13 +1,15 @@
 <template>
   <div style="position: relative">
     <MainHeader/>
-    <div class="toast" :class="{'toast--show': toastActive}">
+    <div class="toast" :class="{'toast--show': toastActive, 'toast--error': !toastSuccess}">
       <div class="toast__wrapper">
         <div class="toast__wrapper__content">
           <div class="toast__wrapper__content__text">
-            <p class="toast__wrapper__content__text__title">Message Sent Successfully</p>
+            <p class="toast__wrapper__content__text__title">
+              {{ toastSuccess ? $t('pages.contact.messages.successTitle') : $t('pages.contact.messages.errorTitle') }}
+            </p>
             <p class="toast__wrapper__content__text__body">
-              Thank you, We will get back to you as soon as possible and you can also contact us on our whatsapp number.
+              {{ toastSuccess ? $t('pages.contact.messages.successBody') : $t('pages.contact.messages.errorBody') }}
             </p>
           </div>
         </div>
@@ -20,21 +22,23 @@
       <div class="contact-wrapper">
         <section id="contact-from">
           <div class="contact-form">
-            <h1 class="contact-form__title">Contact Us</h1>
+            <h1 class="contact-form__title">{{ $t('pages.contact.title') }}</h1>
             <form @submit.prevent="submitForm" class="contact-form__form">
               <div class="contact-form__field">
-                <label for="sender-email" class="contact-form__field__label">Your Email:</label>
+                <label for="sender-email" class="contact-form__field__label">{{ $t('pages.contact.form.email') }}</label>
                 <input type="email" id="sender-email" v-model="senderEmail" required class="contact-form__field__input">
               </div>
               <div class="contact-form__field">
-                <label for="subject" class="contact-form__field__label">Subject:</label>
+                <label for="subject" class="contact-form__field__label">{{ $t('pages.contact.form.subject') }}</label>
                 <input type="text" id="subject" v-model="subject" required class="contact-form__field__input">
               </div>
               <div class="contact-form__field">
-                <label for="body" class="contact-form__field__label">Body:</label>
+                <label for="body" class="contact-form__field__label">{{ $t('pages.contact.form.body') }}</label>
                 <textarea id="body" v-model="body" required class="contact-form__field__textarea"></textarea>
               </div>
-              <button type="submit" class="contact-form__submit-button">Submit</button>
+              <button type="submit" class="contact-form__submit-button" :disabled="isSubmitting">
+                {{ isSubmitting ? $t('pages.contact.form.sending') : $t('pages.contact.form.submit') }}
+              </button>
             </form>
           </div>
         </section>
@@ -59,34 +63,45 @@ export default defineComponent({
       subject: "",
       body: "",
       toastActive: false,
+      toastSuccess: true,
+      isSubmitting: false,
     };
   },
   methods: {
     async submitForm() {
-      this.toastActive = true;
+      if (this.isSubmitting) return;
+      this.isSubmitting = true;
+
       try {
-        const res = await emailjs.send('service_f4mmjce',
-            'template_tdtda6k',
+        const res = await emailjs.send('service_8xzimni',
+            'template_r90y0c9',
             {
               from_name: this.senderEmail,
               to_name: 'CCS',
+              reply_to: this.senderEmail,
               title: this.subject,
               message: this.body,
             },
-            'YTtNjPStHutOJvcMs'
+            'hWgmh_M3vpfuywTir'
         )
         console.log(res, 'res');
-      } catch (e) {
-        console.log(e, 'error');
-      } finally {
-
-        setTimeout(() => {
-          this.toastActive = false;
-        }, 3000);
-        //clear form
+        // Show success toast only after email is sent
+        this.toastSuccess = true;
+        this.toastActive = true;
+        // Clear form on success
         this.senderEmail = "";
         this.subject = "";
         this.body = "";
+      } catch (e) {
+        console.log(e, 'error');
+        // Show error toast
+        this.toastSuccess = false;
+        this.toastActive = true;
+      } finally {
+        this.isSubmitting = false;
+        setTimeout(() => {
+          this.toastActive = false;
+        }, 3000);
       }
     },
   },

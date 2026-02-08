@@ -10,11 +10,7 @@
                     </span>
             {{ $t('pages.home.banner.titleEnd') }}
           </h1>
-          <p class="banner-description">
-            We believe in <b class="green">'{{ $t('pages.home.banner.descriptionBold') }}'</b>, and we provide tangible solutions
-            designed to overcome any
-            cultural challenge by leveraging our deep understanding and awareness of Saudi Cultural context.
-          </p>
+          <p class="banner-description" v-html="$t('pages.home.banner.description')"></p>
         </div>
         <div class="banner-end">
           <div class="banner-image-container">

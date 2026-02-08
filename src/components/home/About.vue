@@ -10,20 +10,12 @@
         <div class="about-end">
           <h2 class="about-title " ref="aboutSection" :class="{ 'is-animating': isAnimating }">
             <span class="position-relative">
-              About Us
+              {{ $t('pages.home.about.title') }}
              <span class="about-block">
             </span>
             </span>
           </h2>
-          <p class="about-description">
-          <span>
-            <b>
-              CCS
-            </b>
-          </span> is a Saudi Company Specialized in organizations culture and change management,
-           provide consultancy services through the best-in-class Saudi and non-Saudi experts for private,
-            public and non-profit sectors.
-          </p>
+          <p class="about-description" v-html="$t('pages.home.about.description')"></p>
         </div>
       </div>
     </v-container>

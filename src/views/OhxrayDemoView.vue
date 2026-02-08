@@ -4,27 +4,27 @@
 
     <section class="intro">
       <h2>
-        <span class="brand-green">OHX-</span><span class="brand-red">RAY</span> Demo
+        <span class="brand-green">OHX-</span><span class="brand-red">RAY</span> {{ $t('pages.ohxrayDemo.title') }}
       </h2>
-      <p class="intro-subtitle">Step-by-step guide to create, send, and report surveys.</p>
+      <p class="intro-subtitle">{{ $t('pages.ohxrayDemo.subtitle') }}</p>
 
       <div class="intro-actions">
-        <a class="demo-link" href="https://demo.ohxray.com" target="_blank" rel="noopener">Start Free Live Demo</a>
+        <a class="demo-link" href="https://demo.ohxray.com" target="_blank" rel="noopener">{{ $t('pages.ohxrayDemo.startDemo') }}</a>
       </div>
     </section>
 
     <section class="demo-section">
       <div class="demo-header">
-        <h3>Survey system steps to start free survey</h3>
-        <p>Use the steps below to explore the full workflow inside the demo environment.</p>
+        <h3>{{ $t('pages.ohxrayDemo.stepsTitle') }}</h3>
+        <p>{{ $t('pages.ohxrayDemo.stepsSubtitle') }}</p>
       </div>
 
       <div class="demo-steps">
         <div class="demo-step">
           <div class="step-number">1</div>
           <div class="step-content">
-            <h5>Register as an organization</h5>
-            <p>Create an account to onboard your company into the platform.</p>
+            <h5>{{ $t('pages.ohxrayDemo.steps.step1.title') }}</h5>
+            <p>{{ $t('pages.ohxrayDemo.steps.step1.description') }}</p>
             <div class="step-image">
               <img :src="rigesterDemo" alt="Registration screen demo" />
             </div>
@@ -34,8 +34,8 @@
         <div class="demo-step">
           <div class="step-number">2</div>
           <div class="step-content">
-            <h5>Log in</h5>
-            <p>Sign in with your new credentials to access your dashboard.</p>
+            <h5>{{ $t('pages.ohxrayDemo.steps.step2.title') }}</h5>
+            <p>{{ $t('pages.ohxrayDemo.steps.step2.description') }}</p>
             <div class="step-image">
               <img :src="demoLogin" alt="Login and dashboard access" />
             </div>
@@ -45,8 +45,8 @@
         <div class="demo-step">
           <div class="step-number">3</div>
           <div class="step-content">
-            <h5>Go to the Organization page</h5>
-            <p>Open the organization section to manage company details and data.</p>
+            <h5>{{ $t('pages.ohxrayDemo.steps.step3.title') }}</h5>
+            <p>{{ $t('pages.ohxrayDemo.steps.step3.description') }}</p>
             <div class="step-image">
               <img :src="dashboardDemo" alt="Organization page navigation" />
             </div>
@@ -56,8 +56,8 @@
         <div class="demo-step">
           <div class="step-number">4</div>
           <div class="step-content">
-            <h5>Click “Add New” to add employees</h5>
-            <p>Start building your employee list for the survey audience.</p>
+            <h5>{{ $t('pages.ohxrayDemo.steps.step4.title') }}</h5>
+            <p>{{ $t('pages.ohxrayDemo.steps.step4.description') }}</p>
             <div class="step-image">
               <img :src="addEmployee" alt="Add new employee action" />
             </div>
@@ -67,8 +67,8 @@
         <div class="demo-step">
           <div class="step-number">5</div>
           <div class="step-content">
-            <h5>Fill employees’ data</h5>
-            <p>Enter the required employee information to include them in the survey.</p>
+            <h5>{{ $t('pages.ohxrayDemo.steps.step5.title') }}</h5>
+            <p>{{ $t('pages.ohxrayDemo.steps.step5.description') }}</p>
             <div class="step-image">
               <img :src="fillEmployeeData" alt="Employee data entry form" />
             </div>
@@ -78,8 +78,8 @@
         <div class="demo-step">
           <div class="step-number">6</div>
           <div class="step-content">
-            <h5>Go to the Surveys tab</h5>
-            <p>Access available surveys from the surveys area.</p>
+            <h5>{{ $t('pages.ohxrayDemo.steps.step6.title') }}</h5>
+            <p>{{ $t('pages.ohxrayDemo.steps.step6.description') }}</p>
             <div class="step-image">
               <img :src="surveyTab" alt="Surveys tab view" />
             </div>
@@ -89,8 +89,8 @@
         <div class="demo-step">
           <div class="step-number">7</div>
           <div class="step-content">
-            <h5>Send the surveys</h5>
-            <p>Dispatch surveys to the employees you added.</p>
+            <h5>{{ $t('pages.ohxrayDemo.steps.step7.title') }}</h5>
+            <p>{{ $t('pages.ohxrayDemo.steps.step7.description') }}</p>
             <div class="step-image">
               <img :src="sendSurvey" alt="Send survey screen" />
             </div>
@@ -100,8 +100,8 @@
         <div class="demo-step">
           <div class="step-number">8</div>
           <div class="step-content">
-            <h5>Go to the Surveys tab</h5>
-            <p>Upon completion of the employee surveys, please proceed to the designated survey area</p>
+            <h5>{{ $t('pages.ohxrayDemo.steps.step8.title') }}</h5>
+            <p>{{ $t('pages.ohxrayDemo.steps.step8.description') }}</p>
             <div class="step-image">
               <img :src="surveyTab" alt="Surveys tab view" />
             </div>
@@ -111,8 +111,8 @@
          <div class="demo-step">
           <div class="step-number">9</div>
           <div class="step-content">
-            <h5>Review Survey Results</h5>
-            <p>Click the Survey Report button to view the results.</p>
+            <h5>{{ $t('pages.ohxrayDemo.steps.step9.title') }}</h5>
+            <p>{{ $t('pages.ohxrayDemo.steps.step9.description') }}</p>
             <div class="step-image">
               <img :src="goSurveysTabReport" alt="Surveys tab view" />
             </div>
@@ -121,8 +121,8 @@
       </div>
 
       <div class="support-callout">
-        <h5>Need help with the demo?</h5>
-        <p>If you need any support please contact support at <a href="mailto:info@ohxray.com">info@ohxray.com</a>.</p>
+        <h5>{{ $t('pages.ohxrayDemo.supportTitle') }}</h5>
+        <p>{{ $t('pages.ohxrayDemo.supportText') }} <a href="mailto:info@ohxray.com">info@ohxray.com</a>.</p>
       </div>
 
     </section>

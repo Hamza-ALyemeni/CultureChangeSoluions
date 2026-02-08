@@ -1,8 +1,8 @@
 <template>
   <section class="success-partners-section">
     <div class="container">
-      <h2 class="section-title">Success Partners</h2>
-      <p class="section-subtitle">Proudly partnering with leading organizations</p>
+      <h2 class="section-title">{{ $t('pages.home.successPartners.title') }}</h2>
+      <p class="section-subtitle">{{ $t('pages.home.successPartners.subtitle') }}</p>
 
       <div class="partners-grid">
         <div class="partner-card" v-for="partner in partners" :key="partner.id">

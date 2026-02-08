@@ -6,7 +6,7 @@
       <div class="services-banner__description">{{ $t('pages.services.banner.description') }}
       </div>
       <div class="services-banner__button">
-        <router-link to="/contact" class="button button--red">{{ $t('pages.services.banner.button') }}</router-link>
+        <router-link :to="`/${$route.params.locale}/contact`" class="button button--red">{{ $t('pages.services.banner.button') }}</router-link>
       </div>
     </div>
     <div class="services">

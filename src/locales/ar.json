@@ -1,196 +1,508 @@
 {
   "common": {
-    "home": "Home",
-    "services": "Services",
-    "about": "About",
-    "contact": "Contact",
+    "home": "الرئيسية",
+    "services": "الخدمات",
+    "about": "من نحن",
+    "contact": "تواصل معنا",
     "cmdp": "CMDP",
     "ohxray": "OHX-RAY",
-    "contactUs": "Contact Us"
+    "contactUs": "تواصل معنا"
   },
   "header": {
     "nav": {
-      "training": "Join Our Training Program"
+      "training": "انضم إلى برنامجنا التدريبي"
     }
   },
   "footer": {
-    "companyName": "CCS Consulting",
-    "description": "has a solid track record of assisting organizations in planning culture change journeys and effectively connecting the change journey to the organization's strategic objectives.",
-    "contactUs": "Contact Us",
-    "email": "Email:",
-    "phone": "Phone:",
-    "officeAddress": "Office Address:",
-    "address": "Riyadh - King Abdulaziz Road - Aban Center - Second Floor - Office 213",
-    "followUs": "Follow us:"
+    "companyName": "شركة سي سي إس للاستشارات",
+    "description": "تمتلك سجلًا قويًا في مساعدة المؤسسات على تخطيط رحلات التغيير الثقافي وربط رحلة التغيير بشكل فعّال بالأهداف الاستراتيجية للمؤسسة.",
+    "contactUs": "تواصل معنا",
+    "email": "البريد الإلكتروني:",
+    "phone": "الهاتف:",
+    "officeAddress": "عنوان المكتب:",
+    "address": "الرياض – طريق الملك عبدالعزيز – مركز آبان – الدور الثاني – مكتب 213",
+    "followUs": "تابعنا على:"
   },
   "pages": {
     "home": {
       "banner": {
-        "titleStart": "We Help you to",
-        "titleEnd": "scale up your organization culture",
-        "description": "We believe in <b class='green'>'being' culture not 'doing culture</b>, and we provide tangible solutions designed to overcome any cultural challenge by leveraging our deep understanding and awareness of Saudi Cultural context.",
-        "descriptionBold": "'being' culture not 'doing culture"
+        "titleStart": "نساعدك على",
+        "titleEnd": "تطوير ثقافة مؤسستك",
+        "description": "نؤمن بـ <b class='green'>'أن نكون الثقافة وليس مجرد تطبيقها'</b>، ونقدم حلولًا عملية مصممة لتجاوز أي تحدٍ ثقافي من خلال فهمنا العميق للسياق الثقافي السعودي.",
+        "descriptionBold": "أن نكون الثقافة وليس مجرد تطبيقها"
       },
       "whatWeDo": {
-        "title": "What We Do",
-        "forYour": "For Your organization"
+        "title": "ماذا نقدم",
+        "forYour": "لمؤسستك",
+        "items": {
+          "experience": {
+            "title": "الخبرة والكفاءة",
+            "description": "نقدم خبرتنا وكفاءاتنا لمساعدتك في تحديد التغيير وتنفيذه. نحن لا نكتفي بتقديم الاقتراحات أو إخبارك بما يجب فعله."
+          },
+          "tangible": {
+            "title": "تغيير ثقافي ملموس",
+            "description": "نقدم خدمة تغيير ثقافي ملموس، بالتعاون معك على جميع مستويات مؤسستك لتحديد التحديات التي تواجهها والأسباب الجذرية لتلك التحديات."
+          },
+          "pricing": {
+            "title": "أسعار معقولة",
+            "description": "لدينا نظام تسعير معقول وسنتركك مستقلًا. نريد لكل شركة نعمل معها أن تزدهر وأن تكون قادرة على تعزيز ثقافة تبرز أفضل ما لدى موظفيها."
+          },
+          "solutions": {
+            "title": "حلول متعددة",
+            "description": "تقدم CCS حلولًا متعددة لثقافة مؤسستك تتيح لك فهم أفضل للعقليات والسلوكيات الأساسية التي تدفع الأداء."
+          },
+          "roadmap": {
+            "title": "خارطة طريق بسيطة وفعّالة",
+            "description": "تقدم CCS خارطة طريق بسيطة لكنها فعّالة للقادة والمديرين لتحسين صحة المؤسسة."
+          }
+        }
       },
       "about": {
-        "title": "About CCS"
+        "title": "من نحن",
+        "description": "<b>CCS</b> شركة سعودية متخصصة في ثقافة المؤسسات وإدارة التغيير، تقدم خدمات استشارية من خلال أفضل الخبراء السعوديين وغير السعوديين للقطاعات الخاصة والعامة وغير الربحية."
       },
       "successPartners": {
-        "title": "Our Success Partners"
+        "title": "شركاء النجاح",
+        "subtitle": "بشراكة فخورة مع المؤسسات الرائدة"
       },
       "clients": {
-        "title": "Our Clients"
+        "title": "عملاؤنا",
+        "subtitle": "موثوق به من قبل رواد الصناعة في مختلف القطاعات"
+      },
+      "unique": {
+        "titleStart": "ما الذي يجعل",
+        "titleEnd": "فريدة في السوق السعودي",
+        "subtitle": "تركيزنا الأساسي على الجانب الإنساني في الأعمال. نبني مؤسسات يزدهر فيها كل من العمل والأفراد.",
+        "items": {
+          "saudiContext": {
+            "title": "السياق الثقافي السعودي",
+            "description": "علامة تجارية سعودية موثوقة ولاعب وطني محلي يمتلك فهمًا عميقًا للسياق الثقافي السعودي."
+          },
+          "vision2030": {
+            "title": "رؤية المملكة 2030",
+            "description": "المساهمة في رؤية المملكة الطموحة 2030 التي تسعى لتنمية وازدهار بيئة نابضة بالحياة مدفوعة بقيم متجذرة."
+          },
+          "capabilities": {
+            "title": "قدرات ثقافية عميقة",
+            "description": "تمتلك قدرات ثقافية عميقة تمكنها من توجيه المؤسسات خلال رحلة التحول."
+          },
+          "team": {
+            "title": "فريق سعودي",
+            "description": "مدعوم بفريق سعودي يمتلك تاريخًا غنيًا من التحولات الناجحة المتعددة في القطاعين الخاص والعام منذ 1999."
+          },
+          "support": {
+            "title": "دعم احترافي",
+            "description": "تقديم دعم تنفيذي طوال رحلة التحول لا يقدمه الآخرون عادةً."
+          }
+        }
       }
     },
     "services": {
       "banner": {
-        "title": "We are here to help you",
-        "description": "We are a team of experienced consultants who are passionate about helping organizations achieve their goals. We are here to help you build a healthy organizational culture that will help you achieve your goals.",
-        "button": "Contact Us"
+        "title": "نحن هنا لمساعدتك",
+        "description": "نحن فريق من المستشارين ذوي الخبرة والشغف لمساعدة المؤسسات على تحقيق أهدافها وبناء ثقافة تنظيمية صحية تدعم النجاح المستدام.",
+        "button": "تواصل معنا"
       },
-      "title": "Our Services",
+      "title": "خدماتنا",
       "items": {
         "healthyCulture": {
-          "title": "Build healthy organizational culture",
-          "description": "Articulate mechanisms that lead to the creation and maintenance of a healthy organizational culture through 3Ds model. This process will begin with diagnosing the current culture, then designing tailored solutions to address diagnosis gaps, then delivering the solutions while transferring the knowledge to the client's team to sustain the impact."
+          "title": "بناء ثقافة تنظيمية صحية",
+          "description": "صياغة آليات تؤدي إلى إنشاء والحفاظ على ثقافة تنظيمية صحية من خلال نموذج 3Ds. تبدأ العملية بتشخيص الثقافة الحالية، ثم تصميم حلول مخصصة لمعالجة الفجوات، ثم تنفيذ الحلول مع نقل المعرفة لفريق العميل لضمان استدامة الأثر."
         },
         "assessments": {
-          "title": "Conduct Qualitative  and Quantitative Assessments Including Culture, Engagement and Values by OHX-RAY",
-          "description": "Conduct  a qualitative assessment through SEVEN actions and quantitative customized health checks creating a baseline to change.  CCS model OHX-Ray will measure your organization culture, engagement and values which allow you to better understand the underlying mind-sets and behaviors in your organization."
+          "title": "تنفيذ التقييمات النوعية والكمية بما في ذلك الثقافة والمشاركة والقيم عبر OHX-RAY",
+          "description": "تنفيذ تقييم نوعي من خلال سبعة محاور، وتقييمات كمية مخصصة لإنشاء خط أساس للتغيير. يقوم نموذج OHX-RAY من CCS بقياس ثقافة المؤسسة ومستوى المشاركة والقيم لفهم أنماط التفكير والسلوكيات الأساسية."
         },
         "leadership": {
-          "title": "Facilitate Leadership's Effectiveness of Culture Change Journey",
-          "description": "Align and activate leaders to be role-models and enablers to achieve human-level business breakthroughs through employee engagement, manager effectiveness, and high-performing teams. Breaking down silos and increasing cross-division/cross-border collaboration. "
+          "title": "تعزيز فاعلية القيادة في رحلة التغيير الثقافي",
+          "description": "مواءمة وتمكين القادة ليكونوا قدوة ومحفزين لتحقيق اختراقات أعمال على المستوى الإنساني من خلال تعزيز مشاركة الموظفين، وفعالية المديرين، وبناء فرق عالية الأداء، وكسر الحواجز التنظيمية."
         },
         "values": {
-          "title": "Values Creation & Adoption Management",
-          "description": "Define values to be the DNA and Brand of culture, and align them with organizational goals, strategy, and brand. Ensure value implementation starting with assessment at all levels of the organization. We also enable the current value across organization. Furthermore, creating compelling storytelling to engage employees in the value."
+          "title": "بناء القيم وإدارة تبنيها",
+          "description": "تحديد القيم لتكون الحمض النووي وهوية الثقافة وربطها بالأهداف والاستراتيجية والعلامة التجارية. ضمان تطبيق القيم عبر تقييم شامل لجميع المستويات، وتمكين القيم الحالية، وبناء قصص مؤثرة لتعزيز التفاعل."
         },
         "changeManagement": {
-          "title": "Build & Enable Change Management Strategy",
-          "description": "Plan, lead, and manage organizational change where people are the critical differentiator to success by focusing on change leadership, change communications, and culture change, and empowering change management teams with structure, mandate and digital solution (CMDP)."
+          "title": "بناء وتمكين استراتيجية إدارة التغيير",
+          "description": "تخطيط وقيادة وإدارة التغيير التنظيمي مع التركيز على القيادة والتواصل الثقافي وتمكين فرق إدارة التغيير من خلال هيكل واضح وصلاحيات وحلول رقمية (CMDP)."
         },
         "influencers": {
-          "title": "Build the Influencers Model to Enable change network",
-          "description": "Identify, engage & coach change champions and influencers to assure immaculate change management across the organizations through clear structure and criteria for influencers selection."
+          "title": "بناء نموذج المؤثرين لتمكين شبكة التغيير",
+          "description": "تحديد وإشراك وتدريب أبطال التغيير والمؤثرين لضمان تطبيق فعّال لإدارة التغيير عبر المؤسسة من خلال هيكل ومعايير اختيار واضحة."
         },
         "diversity": {
-          "title": "Build a Culture of Diversity and Inclusion",
-          "description": "Strengthen your organization by creating a culture grounded in purpose, belonging, and impact that focuses more on neglected groups  and try to engage them, which not only includes males and females but also age groups."
+          "title": "بناء ثقافة التنوع والشمول",
+          "description": "تعزيز قوة المؤسسة من خلال بناء ثقافة قائمة على الهدف والانتماء والتأثير، مع التركيز على الفئات الأقل تمثيلًا بما يشمل الجنس والفئات العمرية."
         },
         "communication": {
-          "title": "Build Integrated Cultural Communication",
-          "description": "Increase engagement, create buy-in, and maintain credibility by improving the strategy and execution of your cultural communications. Emphasis more on  employee meetings , events, and executive communications through different channels to aim create a One Voice across the organization."
+          "title": "بناء تواصل ثقافي متكامل",
+          "description": "زيادة التفاعل وبناء الثقة من خلال تحسين استراتيجية وتنفيذ التواصل الثقافي، مع التركيز على اجتماعات الموظفين والفعاليات والتواصل التنفيذي عبر قنوات متعددة لتحقيق صوت موحد داخل المؤسسة."
         }
       }
     },
     "about": {
       "vision": {
-        "title": "CCS VISION",
-        "content": "Sustaining organizations transformation"
+        "title": "رؤية CCS",
+        "content": "أن نكون الشركة السعودية الأولى المفضلة للقطاعين العام والخاص الذين يريدون وضع موظفيهم في صميم استراتيجيتهم."
       },
       "mission": {
-        "title": "CCS MISSION",
-        "content": "Helping organization thrive through a culture change journey by building awareness, creating commitment, and enabling ownership"
+        "title": "رسالة CCS",
+        "content": "نؤمن بأن الأفراد هم مفتاح الميزة التنافسية للمؤسسة. رسالتنا هي مساعدة المؤسسات على الاستفادة من الإمكانات الكاملة لموظفيها وتبني بيئة عمل إيجابية ومتطورة."
       },
       "values": {
-        "title": "CCS CORE VALUES",
+        "title": "القيم الأساسية لـ CCS",
         "commitment": {
-          "title": "COMMITMENT",
-          "description": "We are committed to our clients' success"
+          "title": "الالتزام",
+          "description": "نلتزم بوعودنا تجاه عملائنا وبعضنا البعض والمؤسسات. نتحمل مسؤولية عملنا ونحاسب أنفسنا على النتائج."
         },
         "collaboration": {
-          "title": "COLLABORATION",
-          "description": "We believe in the power of collaboration"
+          "title": "التعاون",
+          "description": "نؤمن بأن الأفراد هم محرك النجاح. نعمل معًا كشركة ومع عملائنا لمشاركة المعرفة وتعزيز الابتكار وحل المشكلات وتقديم نتائج عالية الجودة."
         },
         "sustainability": {
-          "title": "SUSTAINABILITY",
-          "description": "We are committed to sustainable solutions"
+          "title": "الاستدامة",
+          "description": "نؤمن بنقل المعرفة وبناء القدرات مع عملائنا وشركائنا وموظفينا ومجتمعنا. نمو ونجاح أعمالنا متجذران في العلاقات طويلة الأمد وولاء العملاء العميق الذي بنيناه على مر السنين."
         }
       }
     },
     "contact": {
-      "title": "Contact Us",
+      "title": "تواصل معنا",
       "form": {
-        "email": "Your Email:",
-        "subject": "Subject:",
-        "body": "Body:",
-        "submit": "Submit"
+        "email": "بريدك الإلكتروني:",
+        "subject": "الموضوع:",
+        "body": "نص الرسالة:",
+        "submit": "إرسال",
+        "sending": "جارٍ الإرسال..."
       },
       "messages": {
-        "success": "Message sent successfully!",
-        "error": "Failed to send message. Please try again."
+        "successTitle": "تم إرسال الرسالة بنجاح",
+        "successBody": "شكرًا لك، سنعود إليك في أقرب وقت ممكن ويمكنك أيضًا التواصل معنا عبر رقم الواتساب.",
+        "errorTitle": "فشل إرسال الرسالة",
+        "errorBody": "حدث خطأ ما. يرجى المحاولة مرة أخرى أو التواصل معنا مباشرة على info@ccsconsulting.com.sa",
+        "success": "تم إرسال الرسالة بنجاح!",
+        "error": "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى."
       }
     },
     "ohxray": {
       "intro": {
-        "title": "Introduction to OHX-RAY System",
-        "subtitle": "OHX-RAY is a comprehensive tool for measuring organizational culture"
+        "title": "نظرة تعريفية عن نظام",
+        "subtitle": "نظرة شاملة تسلط الضوء على مؤشرات الصحة الثقافية داخل المؤسسة."
       },
+      "freeLiveDemo": "عرض تجريبي مجاني",
+      "videoNotSupported": "متصفحك لا يدعم تشغيل الفيديو.",
       "unique": {
-        "title": "What Makes OHX-RAY Unique?"
+        "title": "ما الذي يميز OHX-RAY",
+        "titleBreak": "عن غيره؟",
+        "description": "يحتوي <span style=\"color: #db0e15; font-weight: bold;\">OHX-RAY</span> على <span style=\"font-weight: bold;\"> 34 مؤشرًا </span> لقياس صحة الثقافة التنظيمية مما يتيح مقارنة معيارية قيّمة عبر <span style=\"font-weight: bold;\">أربع</span> فئات ديموغرافية (الجنس، العمر، المستوى والجنسية).",
+        "orgCount": "+25",
+        "orgText": "مؤسسة في مختلف القطاعات (خاص، عام وغير ربحي)",
+        "empCount": "+26 ألف",
+        "empText": "ملاحظة موظف تضمن قيمة كبيرة للمقارنة المعيارية."
       },
+      "experience": {
+        "title": "OHX-RAY منتج كمّي من خبرة عملية واسعة",
+        "description": "إن <span style=\"font-weight:bold\"> OHX-RAY </span> هو نتاج 25 عامًا من البحث المستمر والدراسات والفهم العميق للنماذج العالمية، صممت CCS إطار نموذج الفحص الصحي مقدمةً فوائد متعددة لإدارة المؤسسات."
+      },
+      "samples": {
+        "title": "نماذج تقارير",
+        "titleBreak": "OHX-RAY عن الثقافة",
+        "holisticImage": "صورة شاملة",
+        "benchmarkReport": "تقرير المقارنة المعيارية"
+      },
+      "recognition": {
+        "title": "تكريم المؤسسات",
+        "description": "ليس مجرد تقييم... بل <span class=\"bold\">ختم ثقة</span> يشير إلى ثقافة مكان عمل صحية وموثوقة ويعزز سمعة مؤسستك وعلامتها التجارية داخليًا وخارجيًا."
+      },
+      "certificateLevel": "مستوى الشهادة",
       "certificates": {
-        "verified": "Verified",
-        "certified": "Certified",
-        "excellence": "Excellence",
-        "winner": "Winner"
+        "verified": "موثّق",
+        "certified": "معتمد",
+        "excellence": "تميز",
+        "winner": "فائز",
+        "winnerCriteria": "≥90% وضمن أعلى 10% من المؤسسات"
       },
       "accreditation": {
-        "title": "Accreditation Journey"
-      },
-      "benefits": {
-        "title": "Benefits"
+        "title": "رحلة اعتماد المؤسسة الصحية",
+        "subtitle": "ستحصل المؤسسات المحققة على شهادة ثقافة صحية.",
+        "benefitsTitle": "الفوائد والقيمة المضافة من الاعتماد",
+        "steps": {
+          "kickoff": "انطلاق OHX-RAY",
+          "diagnostic": "نتائج التشخيص والتقارير",
+          "scoring": "التحقق من الدرجات ومراجعة مجلس CCS",
+          "badge": "منح الشارة",
+          "celebrating": "الاحتفال بالاعتماد",
+          "feedback": "تقرير الملاحظات والخطوات التالية"
+        },
+        "benefits": {
+          "credibility": "المصداقية.",
+          "benchmarking": "المقارنة المعيارية.",
+          "alignment": "التوافق الداخلي.",
+          "recognition": "الاعتراف العام.",
+          "improvement": "التحسين المستمر.",
+          "recruitment": "جاذبية التوظيف والاحتفاظ بالكفاءات."
+        }
       }
     },
     "ohxrayDemo": {
-      "title": "Demo",
-      "intro": "Welcome to the OHX-RAY Demo",
-      "support": "Need help? Contact our support team"
+      "title": "العرض التجريبي",
+      "subtitle": "دليل خطوة بخطوة لإنشاء الاستبيانات وإرسالها وإعداد التقارير.",
+      "startDemo": "ابدأ العرض التجريبي المجاني",
+      "stepsTitle": "خطوات نظام الاستبيان لبدء استبيان مجاني",
+      "stepsSubtitle": "استخدم الخطوات أدناه لاستكشاف سير العمل الكامل داخل بيئة العرض التجريبي.",
+      "steps": {
+        "step1": {
+          "title": "التسجيل كمؤسسة",
+          "description": "أنشئ حسابًا لإدراج شركتك في المنصة."
+        },
+        "step2": {
+          "title": "تسجيل الدخول",
+          "description": "سجّل الدخول ببيانات الاعتماد الجديدة للوصول إلى لوحة التحكم."
+        },
+        "step3": {
+          "title": "الانتقال إلى صفحة المؤسسة",
+          "description": "افتح قسم المؤسسة لإدارة بيانات وتفاصيل الشركة."
+        },
+        "step4": {
+          "title": "انقر على \"إضافة جديد\" لإضافة موظفين",
+          "description": "ابدأ ببناء قائمة الموظفين لجمهور الاستبيان."
+        },
+        "step5": {
+          "title": "تعبئة بيانات الموظفين",
+          "description": "أدخل معلومات الموظف المطلوبة لإدراجهم في الاستبيان."
+        },
+        "step6": {
+          "title": "الانتقال إلى تبويب الاستبيانات",
+          "description": "الوصول إلى الاستبيانات المتاحة من منطقة الاستبيانات."
+        },
+        "step7": {
+          "title": "إرسال الاستبيانات",
+          "description": "أرسل الاستبيانات إلى الموظفين الذين أضفتهم."
+        },
+        "step8": {
+          "title": "الانتقال إلى تبويب الاستبيانات",
+          "description": "بعد إكمال الموظفين للاستبيانات، يرجى الانتقال إلى منطقة الاستبيانات المخصصة."
+        },
+        "step9": {
+          "title": "مراجعة نتائج الاستبيان",
+          "description": "انقر على زر تقرير الاستبيان لعرض النتائج."
+        }
+      },
+      "supportTitle": "هل تحتاج مساعدة في العرض التجريبي؟",
+      "supportText": "إذا كنت بحاجة إلى أي دعم يرجى التواصل مع الدعم على"
     },
     "cmdp": {
-      "title": "Change Management Digital Platform",
+      "title": "منصة إدارة التغيير الرقمية",
+      "subtitle": "CMDP – الأسئلة الشائعة",
       "sections": {
-        "structure": "CMDP Structure",
-        "overview": "General Overview",
-        "technical": "Technical & Compliance Questions",
-        "customization": "Customization & Functionality",
-        "value": "Value, Impact & Measurement",
-        "additional": "Additional Questions"
+        "structure": "هيكل منصة CMDP",
+        "overview": "نظرة عامة",
+        "technical": "الأسئلة التقنية والامتثال",
+        "customization": "التخصيص والوظائف",
+        "value": "القيمة والأثر والقياس",
+        "additional": "أسئلة إضافية"
+      },
+      "q1": {
+        "question": "س1: ما هي منصة إدارة التغيير الرقمية؟",
+        "a1": "منصة إدارة التغيير الرقمية هي حل سحابي SaaS مصمم لمساعدة المؤسسات على تنفيذ وإدارة وقياس مبادرات التحول واسعة النطاق.",
+        "a2": "تتجاوز أنظمة التدريب التقليدية من خلال تمكين الموظفين من تطبيق مبادئ إدارة التغيير والمشاركة في البرامج التفاعلية وتتبع تأثير مبادرات التحول.",
+        "a3": "قابلة للتخصيص بالكامل لتعكس علامتك التجارية وهيكلك وبرامجك الداخلية."
+      },
+      "summary": {
+        "p1": "منصة إدارة التغيير الرقمية أكثر من مجرد أداة تعلم رقمية — إنها نظام بيئي مدعوم بالذكاء الاصطناعي للنمو المؤسسي.",
+        "p2": "تساعد الموظفين على بناء العادات، والقادة على قياس التقدم، والمؤسسات على استدامة التحول الثقافي.",
+        "p3": "من خلال الجمع بين التعلم والمشاركة والأثر القابل للقياس، تحول إدارة التغيير إلى تجربة مستمرة وتمكينية للجميع."
+      },
+      "q2": {
+        "question": "س2: أين يتم استضافة المنصة؟",
+        "answer": "سيتم استضافة المنصة بشكل آمن على خوادم سحابية في المملكة العربية السعودية، مما يضمن أداءً عاليًا وموثوقية والتزامًا بمتطلبات إقامة البيانات."
+      },
+      "q3": {
+        "question": "س3: كيف يتم التعامل مع خصوصية البيانات؟",
+        "a1": "تتبع المنصة معايير حماية البيانات المتوافقة مع GDPR، مما يضمن التعامل مع معلومات المستخدم بشكل آمن وشفاف.",
+        "a2": "جميع البيانات مشفرة أثناء النقل وفي حالة السكون، وسياسات الخصوصية متوافقة مع أفضل الممارسات العالمية."
+      },
+      "q4": {
+        "question": "س4: هل يمكن للمنصة التكامل مع أنظمتنا الحالية؟",
+        "a1": "نعم. المنصة صديقة لواجهات API ويمكن دمجها بسهولة مع أنظمتك الحالية مثل منصات الموارد البشرية وأنظمة CRM أو أدوات LMS.",
+        "a2": "يتيح ذلك المزامنة السلسة لبيانات المستخدم ومقاييس الأداء والتقارير."
+      },
+      "q5": {
+        "question": "س5: هل هي شراء لمرة واحدة أم نموذج اشتراك؟",
+        "answer": "تُقدم المنصة بنموذج اشتراك SaaS، مع تحديثات مستمرة وقابلية التوسع والصيانة والدعم دون الحاجة لبنية تحتية داخلية."
+      },
+      "q6": {
+        "question": "س6: كيف تختلف هذه المنصة عن نظام إدارة التعلم التقليدي (LMS)؟",
+        "a1": "بينما يركز LMS التقليدي بشكل أساسي على تقديم التدريب، صُممت هذه المنصة لدفع التمكين والمشاركة والتحول.",
+        "a2": "تدمج ميزات مدعومة بالذكاء الاصطناعي تشمل:",
+        "features": {
+          "f1": "تخصيص رحلة التعلم لكل موظف.",
+          "f2": "تقديم ملاحظات فورية وتوصيات وتوجيه من خلال مساعدين بالذكاء الاصطناعي.",
+          "f3": "تحليل المشاركة والتقدم لتحديد من يحتاج دعمًا إضافيًا أو تقديرًا.",
+          "f4": "تشجيع التعلم بين الأقران والتعاون من خلال أدوات تفاعلية.",
+          "f5": "تتبع قصص النجاح والنتائج الملموسة، وربط التعلم بالتغيير السلوكي الحقيقي والنتائج المؤسسية.",
+          "f6": "دمج مدربي ذكاء اصطناعي وأدوات AI لتمكين الموظفين."
+        },
+        "conclusion": "باختصار، الأمر لا يتعلق فقط بالتعلم — بل بتفعيل واستدامة التغيير عبر المؤسسة."
+      },
+      "q7": {
+        "question": "س7: هل يمكن تخصيص المنصة لمؤسستنا؟",
+        "a1": "نعم. المنصة قابلة للتخصيص بالكامل ومرنة للغاية لتتناسب مع علامتك التجارية وهيكلك وثقافة التعلم.",
+        "a2": "يمكنك تخصيص كل جانب — من التصميم والتخطيط إلى المحتوى وسير العمل والتكاملات — لضمان تجربة سلسة وملائمة لموظفيك.",
+        "a3": "تشمل خيارات التخصيص:",
+        "options": {
+          "branding": "العلامة التجارية:",
+          "brandingDesc": "شعارك وألوانك ونبرة التواصل والمظهر العام.",
+          "content": "المحتوى:",
+          "contentDesc": "مسارات تعلم مخصصة وتقييمات وبرامج تدريبية.",
+          "ai": "قدرات الذكاء الاصطناعي:",
+          "aiDesc": "توصيات ذكية وتتبع التقدم ورحلات تعلم مخصصة.",
+          "integrations": "التكاملات:",
+          "integrationsDesc": "الاتصال بالأنظمة الحالية مثل منصات الموارد البشرية وCRM أو الأدوات الداخلية."
+        },
+        "a4": "تتيح هذه المرونة للمنصة التوافق التام مع أهداف مؤسستك وثقافتها واستراتيجية التحول."
+      },
+      "q8": {
+        "question": "س8: هل تدعم المنصة لغات متعددة؟",
+        "answer": "نعم. تدعم المنصة وظائف متعددة اللغات بما في ذلك الإنجليزية والعربية، مع إمكانية إضافة لغات إضافية حسب الحاجة."
+      },
+      "q9": {
+        "question": "س9: كيف تدعم هذه المنصة برامج إدارة التغيير؟",
+        "a1": "توفر المنصة أساسًا رقميًا لدمج إدارة التغيير في ممارسات العمل اليومية.",
+        "a2": "تقدم تعلمًا منظمًا وتشجع المشاركة من خلال تنبيهات مدعومة بالذكاء الاصطناعي وتساعد الموظفين على ترجمة التدريب إلى إجراءات عملية.",
+        "a3": "من خلال التقاط قصص النجاح ومقاييس المشاركة والنتائج، تساعد فرق القيادة على تصور كيفية تقدم التغيير عبر المؤسسة."
+      },
+      "q10": {
+        "question": "س10: كيف تقيس المنصة النتائج أو الأثر؟",
+        "a1": "تتضمن المنصة لوحات تحكم تفاعلية وتحليلات تتبع المشاركة والتفاعل والتقدم.",
+        "a2": "تقيس مؤشرات رئيسية مثل:",
+        "indicators": {
+          "i1": "معدلات الإنجاز والنشاط،",
+          "i2": "تطبيق المهارات والتغييرات السلوكية،",
+          "i3": "قصص النجاح والنتائج المبلغ عنها،",
+          "i4": "تقدم التحول الإجمالي على مستوى الفريق أو المؤسسة."
+        },
+        "a3": "يتيح ذلك للقيادة اتخاذ قرارات مبنية على البيانات وقياس العائد الحقيقي على الاستثمار لبرامج التطوير."
+      },
+      "q11": {
+        "question": "س11: ما مدى أمان المنصة؟",
+        "a1": "تستخدم المنصة البنية التحتية الأمنية المتقدمة للخادم السحابي، مما يضمن حماية البيانات من خلال التشفير متعدد الطبقات والتحكم في الوصول والمراقبة المستمرة.",
+        "a2": "جميع بيانات العملاء مخزنة بشكل آمن داخل الخوادم السحابية للامتثال للمعايير المحلية والدولية."
+      },
+      "q12": {
+        "question": "س12: هل يمكن استضافة المنصة على خوادم العميل الداخلية؟",
+        "answer": "نعم. يمكن نشر واستضافة المنصة بشكل آمن على خوادم العميل الداخلية إذا تطلبت ذلك البنية التحتية لتكنولوجيا المعلومات أو سياسات أمن البيانات."
+      },
+      "q13": {
+        "question": "س13: كيف تتم إدارة حسابات المستخدمين والوصول؟",
+        "a1": "تتم إدارة الوصول من خلال صلاحيات قائمة على الأدوار، مما يضمن أن المستخدمين يرون فقط ما يتعلق بهم (مثل الموظفين والمديرين والمسؤولين).",
+        "a2": "تدعم المنصة أيضًا تسجيل الدخول الموحد (SSO) للوصول السلس والآمن عبر مؤسستك."
+      },
+      "q14": {
+        "question": "س14: ما نوع الدعم الذي تقدمونه؟",
+        "a1": "نقدم دعمًا شاملًا من البداية إلى النهاية يشمل:",
+        "items": {
+          "i1": "التنفيذ والإعداد،",
+          "i2": "الإعداد التقني والتخصيص،",
+          "i3": "الصيانة والتحديثات المستمرة،",
+          "i4": "دعم مخصص لنجاح العملاء للمسؤولين والمستخدمين."
+        },
+        "a2": "هدفنا ضمان عمل منصتك بسلاسة وتقديم نتائج قابلة للقياس طوال فترة الشراكة."
+      },
+      "q15": {
+        "question": "س15: هل يمكننا تتبع التقدم على مستوى الفرد والقسم؟",
+        "answer": "نعم. توفر المنصة لوحات تحكم للتتبع في الوقت الفعلي تعرض التقدم ومستويات المشاركة ونتائج التعلم لموظفيك وأقسامك."
+      },
+      "q16": {
+        "question": "س16: هل يمكننا مواءمة المنصة مع أهدافنا الداخلية أو مؤشرات الأداء؟",
+        "answer": "نعم. يمكن تكوين المنصة لتتوافق مع أهدافك الاستراتيجية ومؤشرات الأداء المؤسسية، مما يضمن أن جهود التعلم والتمكين تدعم مباشرة النتائج القابلة للقياس."
+      },
+      "q17": {
+        "question": "س17: هل المنصة قابلة للتوسع للمؤسسات الكبيرة؟",
+        "a1": "نعم. المنصة قابلة للتوسع بشكل كبير وقادرة على دعم الفرق الصغيرة والمؤسسات الكبيرة عبر مواقع متعددة.",
+        "a2": "كحل SaaS، يمكنها النمو بسهولة مع احتياجات مؤسستك."
+      },
+      "q18": {
+        "question": "س18: كم يستغرق الإعداد والإطلاق؟",
+        "a1": "تعتمد الجداول الزمنية للنشر على مستوى التخصيص، لكن التكوين القياسي يمكن أن يبدأ العمل خلال 2-4 أسابيع.",
+        "a2": "يشمل ذلك الإعداد والتكوين والعلامة التجارية والتدريب الأولي للمسؤولين."
       }
     },
     "ccsProgram": {
-      "title": "Sign up for the Culture Change Solutions Program",
+      "eyebrow": "برنامج CCS",
+      "title": "التسجيل في برنامج حلول التغيير الثقافي",
+      "subtitle": "شارك بعض التفاصيل وسنحجز لك مقعدًا.",
+      "registerTitle": "سجّل اهتمامك",
+      "registerSubtitle": "سيتواصل فريقنا معك بالخطوات التالية بمجرد فتح باب التقديم.",
       "form": {
-        "fullName": "Full Name",
-        "mobile": "Mobile Number",
-        "email": "Email Address",
-        "organization": "Organization",
-        "specialization": "Specialization / Department",
-        "experience": "Years of Experience",
-        "submit": "Submit"
+        "fullName": "الاسم الكامل",
+        "fullNamePlaceholder": "أدخل اسمك الكامل",
+        "mobile": "رقم الجوال",
+        "mobilePlaceholder": "05XXXXXXXX",
+        "email": "البريد الإلكتروني",
+        "emailPlaceholder": "name@example.com",
+        "organization": "الجهة",
+        "organizationPlaceholder": "اسم الشركة / المؤسسة",
+        "specialization": "التخصص / القسم",
+        "specializationPlaceholder": "مثال: موارد بشرية، عمليات، استراتيجية",
+        "experience": "سنوات الخبرة",
+        "experiencePlaceholder": "مثال: 5",
+        "saving": "جارِ الحفظ...",
+        "submit": "إرسال"
       },
       "messages": {
-        "success": "Registration successful!",
-        "error": "Registration failed. Please try again."
+        "error": "حدث خطأ. يرجى المحاولة مرة أخرى.",
+        "success": "شكرًا لك! تم استلام تسجيلك.",
+        "fallbackError": "تعذر إرسال النموذج حاليًا."
       }
     },
     "training": {
-      "title": "Organization Culture Training Accreditation",
+      "title": "اعتماد التدريب على الثقافة المؤسسية",
+      "hero": {
+        "eyebrow": "اعتماد التدريب على الثقافة المؤسسية",
+        "title": "برنامج تدريبي من CCS لمدة 3 أيام لتزويد المشاركين بالمهارات والثقة",
+        "subtitle": "شهادات معتمدة مضمّنة."
+      },
       "overview": {
-        "title": "Program Overview"
+        "title": "نظرة عامة على البرنامج",
+        "paragraph1": "صُممت برامجنا التدريبية المعتمدة لتطوير الأفراد من خلال تعريفهم بالثقافة من التشخيص إلى الحلول والتطبيقات العملية، وليس مجرد نقل المعرفة النظرية.",
+        "paragraph2": "بخبرة تزيد عن 25 عامًا، يقدم برنامجنا التدريبي أدوات وتقنيات عملية بقيادة مدربين معتمدين ذوي خبرة ميدانية عميقة في الثقافة المؤسسية والتطوير المؤسسي وإدارة التغيير.",
+        "paragraph3": "يركز تدريبنا على دعم القادة والفرق في فهم الواقع الثقافي للمؤسسة، وتحليل التحديات السلوكية والتنظيمية، ثم تصميم حلول قابلة للتطبيق تترجم إلى ممارسات يومية تحسن بيئة العمل والأداء.",
+        "paragraph4": "برامجنا مدعومة بشهادات معتمدة من هيئات دولية ومحلية وتستخدم منهجية متكاملة تجمع بين التشخيص والتحليل والتصميم والتنفيذ، مما يضمن أن التعلم تجربة عملية ذات أثر مستدام. هدفنا ليس مجرد التدريب من أجل المعرفة، بل تمكين المتدربين من تحويل ما يتعلمونه إلى سلوكيات ملموسة تُمارس يوميًا لدعم نجاح مؤسساتهم."
+      },
+      "brochure": {
+        "title": "تفاصيل البرنامج التدريبي",
+        "description": "حمّل تفاصيل البرنامج الكاملة.",
+        "button": "تحميل الكتيب"
       },
       "benefits": {
-        "title": "Program Benefits"
+        "title": "فوائد البرنامج",
+        "items": {
+          "trainers": "مدربون معتمدون في التغيير الثقافي المؤسسي",
+          "interactive": "نهج تفاعلي من خلال تمارين متنوعة لتسهيل استيعاب المعلومات",
+          "practical": "نهج عملي خطوة بخطوة",
+          "diagnostic": "أدوات تشخيص وقياس معتمدة",
+          "cases": "حالات أعمال حقيقية محلية وعالمية",
+          "templates": "قوالب وأدلة وكتب عمل فريدة لدعم التعلم"
+        }
       },
       "methodology": {
-        "title": "Integrated Methodology",
-        "diagnosis": "Diagnosis",
-        "design": "Design & Deliver",
-        "sustainability": "Sustainability"
+        "title": "المنهجية المتكاملة",
+        "diagnosis": {
+          "title": "التشخيص",
+          "description": "استخدام أدوات فعّالة لتحديد نقاط القوة والفجوات الثقافية."
+        },
+        "design": {
+          "title": "التصميم والتنفيذ",
+          "description": "تصميم حلول فعّالة وتنفيذها لمعالجة الفجوات الثقافية في المؤسسة."
+        },
+        "sustainability": {
+          "title": "الاستدامة",
+          "description": "استخدام مؤشرات الأداء ولوحات التحكم لتوثيق التقدم وتحديد مجالات التحسين في الثقافة المؤسسية."
+        }
+      },
+      "cta": {
+        "title": "هل أنت مستعد لقيادة التغيير الثقافي في مؤسستك؟",
+        "subtitle": "احجز مكانك في برنامج CCS التدريبي.",
+        "button": "احجز مقعدك"
       }
     }
   }

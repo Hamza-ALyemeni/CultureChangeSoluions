@@ -1,54 +1,82 @@
 import {createRouter, createWebHistory, RouteRecordRaw} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import { defaultLocale, supportedLocales, type Locale } from '@/locales'
 
-const routes: Array<RouteRecordRaw> = [
+const childRoutes: Array<RouteRecordRaw> = [
     {
-        path: '/',
+        path: '',
         name: 'home',
         component: HomeView
     },
     {
-        path: '/about',
+        path: 'about',
         name: 'about',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
     },
     {
-        path: '/contact',
+        path: 'contact',
         name: 'contact',
         component: () => import(/* webpackChunkName: "contact" */ '../views/ContactView.vue')
     },
     {
-        path: '/ohxray',
+        path: 'ohxray',
         name: 'ohxray',
         component: () => import(/* webpackChunkName: "contact" */ '../views/OhxrayView.vue')
     },
     {
-        path: '/ohxray-demo',
+        path: 'ohxray-demo',
         name: 'ohxray-demo',
         component: () => import(/* webpackChunkName: "ohxray-demo" */ '../views/OhxrayDemoView.vue')
     },
     {
-        path:'/services',
-        name:'services',
+        path: 'services',
+        name: 'services',
         component: () => import(/* webpackChunkName: "services" */ '../views/ServicesView.vue')
     },
     {
-        path:'/cmdp',
-        name:'cmdp',
+        path: 'cmdp',
+        name: 'cmdp',
         component: () => import(/* webpackChunkName: "cmdp" */ '../views/CMDPView.vue')
     },
     {
-        path:'/ccs-program',
-        name:'ccs-program',
+        path: 'ccs-program',
+        name: 'ccs-program',
         component: () => import(/* webpackChunkName: "ccs-program" */ '../views/CcsProgramView.vue')
     },
     {
-        path: '/training-program',
+        path: 'training-program',
         name: 'training-program',
         component: () => import(/* webpackChunkName: "training-program" */ '../views/TrainingProgramView.vue')
+    }
+]
+
+const routes: Array<RouteRecordRaw> = [
+    {
+        path: '/:locale',
+        children: childRoutes,
+        beforeEnter(to, _from, next) {
+            const locale = to.params.locale as string
+            if (!supportedLocales.includes(locale as Locale)) {
+                return next(`/${defaultLocale}${to.path}`)
+            }
+            next()
+        }
+    },
+    {
+        path: '/',
+        redirect: () => {
+            const saved = localStorage.getItem('preferred-language')
+            const locale = saved && supportedLocales.includes(saved as Locale) ? saved : defaultLocale
+            return `/${locale}`
+        }
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        redirect: (to) => {
+            const saved = localStorage.getItem('preferred-language')
+            const locale = saved && supportedLocales.includes(saved as Locale) ? saved : defaultLocale
+            return `/${locale}${to.path}`
+        }
     }
 ]
 

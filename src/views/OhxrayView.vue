@@ -2,16 +2,16 @@
   <div class="ohxray-page">
     <MainHeader/>
         <section class="intro">
-          <h2>An Introductory Overview of the <span class="brand-green">OHX-</span><span class="brand-red">RAY</span> System</h2>
-          <p class="intro-subtitle">A comprehensive overview highlighting cultural health indicators within the organization.</p>
+          <h2>{{ $t('pages.ohxray.intro.title') }} <span class="brand-green">OHX-</span><span class="brand-red">RAY</span></h2>
+          <p class="intro-subtitle">{{ $t('pages.ohxray.intro.subtitle') }}</p>
           <div class="intro-actions">
-            <RouterLink class="primary-cta" to="/ohxray-demo">Free Live Demo</RouterLink>
+            <RouterLink class="primary-cta" :to="`/${$route.params.locale}/ohxray-demo`">{{ $t('pages.ohxray.freeLiveDemo') }}</RouterLink>
           </div>
         </section>
         <div class="video-wrapper">
            <video ref="ohxVideo" class="hero-video" controls>
                 <source src="@/assets/OHX-RAY_VIDEO.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
+                {{ $t('pages.ohxray.videoNotSupported') }}
             </video>
         </div>
         <!-- Mobile image -->
@@ -19,16 +19,16 @@
         <div class="equal-container">
 
             <div class="equal-box Ohxray-Unique first-section">
-                <h4>What Makes OHX-RAY <br/> Unique?</h4>
-                <p>The <span style="color: #db0e15; font-weight: bold;">OHX-RAY</span> has a total of <span style="font-weight: bold;"> 34 indicators </span> to measure organizational culture health allowing for great value benchmarking across <span style="font-weight: bold;">FOUR</span> different demographics (Gender, Age, Level and Nationality).</p>
+                <h4>{{ $t('pages.ohxray.unique.title') }} <br/> {{ $t('pages.ohxray.unique.titleBreak') }}</h4>
+                <p v-html="$t('pages.ohxray.unique.description')"></p>
                 <div class="stats">
                     <div id="first-stats">
-                        <div id="org-numbers">+25</div>
-                        <div id="first-stats-text">organizations in different industries (Private, Public & Non-Profit)</div>
+                        <div id="org-numbers">{{ $t('pages.ohxray.unique.orgCount') }}</div>
+                        <div id="first-stats-text">{{ $t('pages.ohxray.unique.orgText') }}</div>
                     </div>
                     <div id="second-stats">
-                        <div id="emp-numbers">+26K</div>
-                        <div  id="second-stats-text">employee feedback ensuring significant value for benchmarking.</div>
+                        <div id="emp-numbers">{{ $t('pages.ohxray.unique.empCount') }}</div>
+                        <div  id="second-stats-text">{{ $t('pages.ohxray.unique.empText') }}</div>
                     </div>
                 </div>
             </div>
@@ -41,16 +41,16 @@
                 <img src="@/assets/images/just-dimenstions.png" alt="ohxray" class="desktop-image" style="height:500px">
             </div>
             <div class="equal-box Ohxray-Unique">
-                <h4 class="second-section">OHX-RAY a Quantitative Product of Vast Practical Experience</h4>
-                <p>The <span style="font-weight:bold" > OHX-RAY </span> is a product of 25 years of continuous research, studies and deep understanding of global models, CCS designed its health check model framework introducing multiple benefits to organization management.</p>
+                <h4 class="second-section">{{ $t('pages.ohxray.experience.title') }}</h4>
+                <p v-html="$t('pages.ohxray.experience.description')"></p>
             </div>
         </div>
          <div class="equal-container samples">
             <div class="equal-box Ohxray-Unique">
-                <h4>OHX-RAY Sample <br/> Reports on Culture</h4>
+                <h4>{{ $t('pages.ohxray.samples.title') }} <br/> {{ $t('pages.ohxray.samples.titleBreak') }}</h4>
                 <ul>
-                    <li>Holistic Image</li>
-                    <li>Benchmark report</li>
+                    <li>{{ $t('pages.ohxray.samples.holisticImage') }}</li>
+                    <li>{{ $t('pages.ohxray.samples.benchmarkReport') }}</li>
                 </ul>
             </div>
             <div class="equal-box" style="display: flex; flex-direction: column;">
@@ -66,14 +66,12 @@
 
         <section class="recognition-section">
             <div class="recognition-header">
-                <h3>Recognizing Organizations</h3>
-                <p class="lede">
-                    Not just an evaluation... but a <span class="bold">SEAL OF TRUST</span> that signals a healthy, reliable workplace culture and strengthens your organization's reputation and brand internally and externally.
-                </p>
+                <h3>{{ $t('pages.ohxray.recognition.title') }}</h3>
+                <p class="lede" v-html="$t('pages.ohxray.recognition.description')"></p>
             </div>
             <div class="certificate-table">
                 <div class="certificate-label">
-                    <span>Certificate Level</span>
+                    <span>{{ $t('pages.ohxray.certificateLevel') }}</span>
                 </div>
                 <div class="certificate-cards">
                     <div v-for="level in certificateLevels" :key="level.label" class="certificate-card">
@@ -87,8 +85,8 @@
 
         <section class="accreditation-section">
             <div class="accreditation-header">
-                <h3 >Healthy Organizational Accreditation Journey</h3>
-                <p class="lede">Achieving organizations will earn a certificate for a healthy culture.</p>
+                <h3>{{ $t('pages.ohxray.accreditation.title') }}</h3>
+                <p class="lede">{{ $t('pages.ohxray.accreditation.subtitle') }}</p>
             </div>
             <div class="accreditation-grid">
                 <div class="journey-track">
@@ -102,7 +100,7 @@
                     </div>
                 </div>
                 <div class="journey-benefits">
-                    <h4 class="journey-benefits__title">Benefits and Added Value from Accreditation</h4>
+                    <h4 class="journey-benefits__title">{{ $t('pages.ohxray.accreditation.benefitsTitle') }}</h4>
                     <ul>
                         <li v-for="benefit in accreditationBenefits" :key="benefit">{{ benefit }}</li>
                     </ul>
@@ -116,7 +114,8 @@
 </template>
 
 <script setup lang="ts">
-    import { ref, onMounted } from 'vue';
+    import { ref, computed, onMounted } from 'vue';
+    import { useI18n } from 'vue-i18n';
     import MainHeader from "@/components/layout/MainHeader.vue";
     import MainFooter from "@/components/layout/MainFooter.vue";
     import badge70 from "@/assets/images/badge-70.svg";
@@ -124,32 +123,33 @@
     import badge85 from "@/assets/images/badge-85.svg";
     import badge90 from "@/assets/images/badge-90.svg";
 
+    const { t } = useI18n();
     const ohxVideo = ref<HTMLVideoElement | null>(null);
 
-    const accreditationSteps = [
-        "Kick-off OHX-RAY",
-        "Diagnostic Results & Reporting",
-        "Scoring Verification & CCS Board Review",
-        "Badge Award",
-        "Celebrating the Accreditation",
-        "Feedback Report and WHAT NEXT"
-    ];
+    const accreditationSteps = computed(() => [
+        t('pages.ohxray.accreditation.steps.kickoff'),
+        t('pages.ohxray.accreditation.steps.diagnostic'),
+        t('pages.ohxray.accreditation.steps.scoring'),
+        t('pages.ohxray.accreditation.steps.badge'),
+        t('pages.ohxray.accreditation.steps.celebrating'),
+        t('pages.ohxray.accreditation.steps.feedback')
+    ]);
 
-    const accreditationBenefits = [
-        "Credibility.",
-        "Benchmarking.",
-        "Internal alignment.",
-        "Public recognition.",
-        "Continuous improvement.",
-        "Recruitment & retention appeal."
-    ];
+    const accreditationBenefits = computed(() => [
+        t('pages.ohxray.accreditation.benefits.credibility'),
+        t('pages.ohxray.accreditation.benefits.benchmarking'),
+        t('pages.ohxray.accreditation.benefits.alignment'),
+        t('pages.ohxray.accreditation.benefits.recognition'),
+        t('pages.ohxray.accreditation.benefits.improvement'),
+        t('pages.ohxray.accreditation.benefits.recruitment')
+    ]);
 
-    const certificateLevels = [
-        { label: "Verified", criteria: "≥70%", image: badge70 },
-        { label: "Certified", criteria: "≥75%", image: badge75 },
-        { label: "Excellence", criteria: "≥85%", image: badge85 },
-        { label: "Winner", criteria: "≥90% and within the 10% top-quartile organization", image: badge90 }
-    ];
+    const certificateLevels = computed(() => [
+        { label: t('pages.ohxray.certificates.verified'), criteria: "≥70%", image: badge70 },
+        { label: t('pages.ohxray.certificates.certified'), criteria: "≥75%", image: badge75 },
+        { label: t('pages.ohxray.certificates.excellence'), criteria: "≥85%", image: badge85 },
+        { label: t('pages.ohxray.certificates.winner'), criteria: t('pages.ohxray.certificates.winnerCriteria'), image: badge90 }
+    ]);
 
     onMounted(() => {
     if (ohxVideo.value) {

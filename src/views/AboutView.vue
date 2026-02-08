@@ -6,26 +6,18 @@
                 <div class="about-page-wrapper">
                     <div class="about-page-start">
                         <p class="about-page-title">
-                            CCS VISION
+                            {{ $t('pages.about.vision.title') }}
                         </p>
                         <p class="about-page-content">
-                            To be the first Saudi firm of
-                            choice for public and
-                            private sectors who want
-                            to put their people at the
-                            core of their strategy.
+                            {{ $t('pages.about.vision.content') }}
                         </p>
                     </div>
                     <div class="about-page-end">
                         <p class="about-page-title red">
-                            CCS MISSION
+                            {{ $t('pages.about.mission.title') }}
                         </p>
                         <p class="about-page-content">
-                            We believe people are the key to an
-                            organization's competitive advantage. Our
-                            mission is to help organizations leverage the
-                            full potential of their people and adopt a
-                            positive ever-changing working.
+                            {{ $t('pages.about.mission.content') }}
                         </p>
                     </div>
                 </div>
@@ -40,7 +32,7 @@
             <v-container>
                 <div class="d-flex justify-center align-center mb-3">
                     <h2 class="value-title">
-                        CCS CORE VALUES
+                        {{ $t('pages.about.values.title') }}
                     </h2>
                 </div>
                 <div class="value-slider">
@@ -77,44 +69,25 @@
 <script setup lang="ts">
 import MainHeader from "@/components/layout/MainHeader.vue";
 import MainFooter from "@/components/layout/MainFooter.vue";
-import {ref} from "vue";
+import {computed} from "vue";
+import {useI18n} from "vue-i18n";
 
-const items = ref(
-    [
-        {
-            title: "COMMITMENT",
-            description: "We honor our commitments to\n" +
-                "clients, each other, and the\n" +
-                "organizations. We take\n" +
-                "ownership of our work and\n" +
-                "hold ourselves accountable for\n" +
-                "results."
-        },
-        {
-            title: "COLLABORATION",
-            description: "We recognize that people drive\n" +
-                "success. We work together,\n" +
-                "both as a company and with\n" +
-                "our clients, to share\n" +
-                "knowledge, foster innovation,\n" +
-                "solve problems, and deliver\n" +
-                "quality results."
-        },
-        {
-            title: "SUSTAINABILITY",
-            description: "We believe in transferring\n" +
-                "knowledge and building\n" +
-                "capabilities with our clients,\n" +
-                "partners, employees, and\n" +
-                "community. The growth and\n" +
-                "success of our business are\n" +
-                "rooted in the long-term\n" +
-                "relationships and deep\n" +
-                "customer loyalty we have\n" +
-                "forged over the years."
-        },
-    ]
-);
+const {t} = useI18n();
+
+const items = computed(() => [
+    {
+        title: t('pages.about.values.commitment.title'),
+        description: t('pages.about.values.commitment.description')
+    },
+    {
+        title: t('pages.about.values.collaboration.title'),
+        description: t('pages.about.values.collaboration.description')
+    },
+    {
+        title: t('pages.about.values.sustainability.title'),
+        description: t('pages.about.values.sustainability.description')
+    },
+]);
 
 </script>
 

@@ -3,14 +3,13 @@
         <v-container>
             <h2 class="do-title">
                 <b class="position-relative">
-                    What We Do
+                    {{ $t('pages.home.whatWeDo.title') }}
                     <span class="do-block">
 
         </span>
                 </b>
                 <br>
-                For Your
-                organization
+                {{ $t('pages.home.whatWeDo.forYour') }}
             </h2>
             <div class="do-slider">
                 <Splide
@@ -61,38 +60,19 @@ import '@splidejs/vue-splide/css';
 
 export default defineComponent({
     name: "WhatWeDo",
-    data() {
-        return {
-            items: [
-                {
-                    title: "Experience and expertise",
-                    description: "We provide experience and expertise to assist you in identifying and implementing change. We don't just make suggestions or tell you what needs to be done."
-                },
-                {
-                    title: "Tangible cultural change",
-                    description: "We provide a tangible cultural change service, collaborating with you at all levels of your organization to identify the challenges you face and the root causes of those challenges."
-                },
-                {
-                    title: "Reasonable pricing scheme",
-                    description: "We have reasonable pricing scheme and will leave you self-sufficient. We want every company we work with to thrive and to be able to foster a culture that brings out the best in its employees."
-                },
-                {
-                    title: "Many solutions",
-                    description: "CCS provides many solutions to your organization‘s culture which allow you better understand the underlying mind-sets and behaviors that drive performance."
-                },
-                {
-                    title: "Simple but powerful road map",
-                    description: "CCS providing a simple but powerful road map for leaders and managers to improve organizational health."
-                }
-            ]
-        }
-    },
     components: {
         Splide,
         SplideSlide,
         SplideTrack
     },
     computed: {
+        items() {
+            const keys = ['experience', 'tangible', 'pricing', 'solutions', 'roadmap'];
+            return keys.map(key => ({
+                title: this.$t(`pages.home.whatWeDo.items.${key}.title`),
+                description: this.$t(`pages.home.whatWeDo.items.${key}.description`)
+            }));
+        },
         options() {
             return {
                 perPage: 3,

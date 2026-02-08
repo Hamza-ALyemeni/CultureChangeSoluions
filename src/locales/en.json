@@ -33,16 +33,68 @@
       },
       "whatWeDo": {
         "title": "What We Do",
-        "forYour": "For Your organization"
+        "forYour": "For Your organization",
+        "items": {
+          "experience": {
+            "title": "Experience and expertise",
+            "description": "We provide experience and expertise to assist you in identifying and implementing change. We don't just make suggestions or tell you what needs to be done."
+          },
+          "tangible": {
+            "title": "Tangible cultural change",
+            "description": "We provide a tangible cultural change service, collaborating with you at all levels of your organization to identify the challenges you face and the root causes of those challenges."
+          },
+          "pricing": {
+            "title": "Reasonable pricing scheme",
+            "description": "We have reasonable pricing scheme and will leave you self-sufficient. We want every company we work with to thrive and to be able to foster a culture that brings out the best in its employees."
+          },
+          "solutions": {
+            "title": "Many solutions",
+            "description": "CCS provides many solutions to your organization's culture which allow you better understand the underlying mind-sets and behaviors that drive performance."
+          },
+          "roadmap": {
+            "title": "Simple but powerful road map",
+            "description": "CCS providing a simple but powerful road map for leaders and managers to improve organizational health."
+          }
+        }
       },
       "about": {
-        "title": "About CCS"
+        "title": "About Us",
+        "description": "<b>CCS</b> is a Saudi Company Specialized in organizations culture and change management, provide consultancy services through the best-in-class Saudi and non-Saudi experts for private, public and non-profit sectors."
       },
       "successPartners": {
-        "title": "Our Success Partners"
+        "title": "Success Partners",
+        "subtitle": "Proudly partnering with leading organizations"
       },
       "clients": {
-        "title": "Our Clients"
+        "title": "Our Clients",
+        "subtitle": "Trusted by industry leaders across sectors"
+      },
+      "unique": {
+        "titleStart": "WHAT MAKE",
+        "titleEnd": "UNIQUE IN SAUDI MARKET",
+        "subtitle": "Our primary focus is on the human side of business. We create organizations in which both business and people thrive.",
+        "items": {
+          "saudiContext": {
+            "title": "Saudi cultural context",
+            "description": "SAUDI trusted brand and Local National Player. Which has a thorough understanding of the Saudi cultural context."
+          },
+          "vision2030": {
+            "title": "KSA Vision 2030",
+            "description": "Contribute of the Ambitious KSA Vision 2030 anticipates to cultivate and thrive new vibrant environment driven by deep rooted values."
+          },
+          "capabilities": {
+            "title": "Cultural deep capabilities",
+            "description": "Has a cultural deep capabilities that can guide organizations through transformation journey."
+          },
+          "team": {
+            "title": "Saudi team",
+            "description": "Supported by a Saudi team with a rich history of multiple successful private and public transformations since 1999 in such a dynamic and challenging domain."
+          },
+          "support": {
+            "title": "Professional Support",
+            "description": "Providing implementation support throughout the transformation journey that is not typically provided by others."
+          }
+        }
       }
     },
     "services": {
@@ -90,25 +142,25 @@
     "about": {
       "vision": {
         "title": "CCS VISION",
-        "content": "Sustaining organizations transformation"
+        "content": "To be the first Saudi firm of choice for public and private sectors who want to put their people at the core of their strategy."
       },
       "mission": {
         "title": "CCS MISSION",
-        "content": "Helping organization thrive through a culture change journey by building awareness, creating commitment, and enabling ownership"
+        "content": "We believe people are the key to an organization's competitive advantage. Our mission is to help organizations leverage the full potential of their people and adopt a positive ever-changing working."
       },
       "values": {
         "title": "CCS CORE VALUES",
         "commitment": {
           "title": "COMMITMENT",
-          "description": "We are committed to our clients' success"
+          "description": "We honor our commitments to clients, each other, and the organizations. We take ownership of our work and hold ourselves accountable for results."
         },
         "collaboration": {
           "title": "COLLABORATION",
-          "description": "We believe in the power of collaboration"
+          "description": "We recognize that people drive success. We work together, both as a company and with our clients, to share knowledge, foster innovation, solve problems, and deliver quality results."
         },
         "sustainability": {
           "title": "SUSTAINABILITY",
-          "description": "We are committed to sustainable solutions"
+          "description": "We believe in transferring knowledge and building capabilities with our clients, partners, employees, and community. The growth and success of our business are rooted in the long-term relationships and deep customer loyalty we have forged over the years."
         }
       }
     },
@@ -118,41 +170,128 @@
         "email": "Your Email:",
         "subject": "Subject:",
         "body": "Body:",
-        "submit": "Submit"
+        "submit": "Submit",
+        "sending": "Sending..."
       },
       "messages": {
+        "successTitle": "Message Sent Successfully",
+        "successBody": "Thank you, We will get back to you as soon as possible and you can also contact us on our whatsapp number.",
+        "errorTitle": "Failed to Send Message",
+        "errorBody": "Something went wrong. Please try again or contact us directly at info@ccsconsulting.com.sa",
         "success": "Message sent successfully!",
         "error": "Failed to send message. Please try again."
       }
     },
     "ohxray": {
       "intro": {
-        "title": "Introduction to OHX-RAY System",
-        "subtitle": "OHX-RAY is a comprehensive tool for measuring organizational culture"
+        "title": "An Introductory Overview of the",
+        "subtitle": "A comprehensive overview highlighting cultural health indicators within the organization."
       },
+      "freeLiveDemo": "Free Live Demo",
+      "videoNotSupported": "Your browser does not support the video tag.",
       "unique": {
-        "title": "What Makes OHX-RAY Unique?"
+        "title": "What Makes OHX-RAY",
+        "titleBreak": "Unique?",
+        "description": "The <span style=\"color: #db0e15; font-weight: bold;\">OHX-RAY</span> has a total of <span style=\"font-weight: bold;\"> 34 indicators </span> to measure organizational culture health allowing for great value benchmarking across <span style=\"font-weight: bold;\">FOUR</span> different demographics (Gender, Age, Level and Nationality).",
+        "orgCount": "+25",
+        "orgText": "organizations in different industries (Private, Public & Non-Profit)",
+        "empCount": "+26K",
+        "empText": "employee feedback ensuring significant value for benchmarking."
       },
+      "experience": {
+        "title": "OHX-RAY a Quantitative Product of Vast Practical Experience",
+        "description": "The <span style=\"font-weight:bold\"> OHX-RAY </span> is a product of 25 years of continuous research, studies and deep understanding of global models, CCS designed its health check model framework introducing multiple benefits to organization management."
+      },
+      "samples": {
+        "title": "OHX-RAY Sample",
+        "titleBreak": "Reports on Culture",
+        "holisticImage": "Holistic Image",
+        "benchmarkReport": "Benchmark report"
+      },
+      "recognition": {
+        "title": "Recognizing Organizations",
+        "description": "Not just an evaluation... but a <span class=\"bold\">SEAL OF TRUST</span> that signals a healthy, reliable workplace culture and strengthens your organization's reputation and brand internally and externally."
+      },
+      "certificateLevel": "Certificate Level",
       "certificates": {
         "verified": "Verified",
         "certified": "Certified",
         "excellence": "Excellence",
-        "winner": "Winner"
+        "winner": "Winner",
+        "winnerCriteria": "≥90% and within the 10% top-quartile organization"
       },
       "accreditation": {
-        "title": "Accreditation Journey"
-      },
-      "benefits": {
-        "title": "Benefits"
+        "title": "Healthy Organizational Accreditation Journey",
+        "subtitle": "Achieving organizations will earn a certificate for a healthy culture.",
+        "benefitsTitle": "Benefits and Added Value from Accreditation",
+        "steps": {
+          "kickoff": "Kick-off OHX-RAY",
+          "diagnostic": "Diagnostic Results & Reporting",
+          "scoring": "Scoring Verification & CCS Board Review",
+          "badge": "Badge Award",
+          "celebrating": "Celebrating the Accreditation",
+          "feedback": "Feedback Report and WHAT NEXT"
+        },
+        "benefits": {
+          "credibility": "Credibility.",
+          "benchmarking": "Benchmarking.",
+          "alignment": "Internal alignment.",
+          "recognition": "Public recognition.",
+          "improvement": "Continuous improvement.",
+          "recruitment": "Recruitment & retention appeal."
+        }
       }
     },
     "ohxrayDemo": {
       "title": "Demo",
-      "intro": "Welcome to the OHX-RAY Demo",
-      "support": "Need help? Contact our support team"
+      "subtitle": "Step-by-step guide to create, send, and report surveys.",
+      "startDemo": "Start Free Live Demo",
+      "stepsTitle": "Survey system steps to start free survey",
+      "stepsSubtitle": "Use the steps below to explore the full workflow inside the demo environment.",
+      "steps": {
+        "step1": {
+          "title": "Register as an organization",
+          "description": "Create an account to onboard your company into the platform."
+        },
+        "step2": {
+          "title": "Log in",
+          "description": "Sign in with your new credentials to access your dashboard."
+        },
+        "step3": {
+          "title": "Go to the Organization page",
+          "description": "Open the organization section to manage company details and data."
+        },
+        "step4": {
+          "title": "Click \"Add New\" to add employees",
+          "description": "Start building your employee list for the survey audience."
+        },
+        "step5": {
+          "title": "Fill employees' data",
+          "description": "Enter the required employee information to include them in the survey."
+        },
+        "step6": {
+          "title": "Go to the Surveys tab",
+          "description": "Access available surveys from the surveys area."
+        },
+        "step7": {
+          "title": "Send the surveys",
+          "description": "Dispatch surveys to the employees you added."
+        },
+        "step8": {
+          "title": "Go to the Surveys tab",
+          "description": "Upon completion of the employee surveys, please proceed to the designated survey area"
+        },
+        "step9": {
+          "title": "Review Survey Results",
+          "description": "Click the Survey Report button to view the results."
+        }
+      },
+      "supportTitle": "Need help with the demo?",
+      "supportText": "If you need any support please contact support at"
     },
     "cmdp": {
       "title": "Change Management Digital Platform",
+      "subtitle": "CMDP – FAQs",
       "sections": {
         "structure": "CMDP Structure",
         "overview": "General Overview",
@@ -160,37 +299,210 @@
         "customization": "Customization & Functionality",
         "value": "Value, Impact & Measurement",
         "additional": "Additional Questions"
+      },
+      "q1": {
+        "question": "Q1: What is the Change Management Digital Platform?",
+        "a1": "The Change Management Digital Platform is a cloud-based SaaS solution designed to help organizations deliver, manage, and measure large-scale transformation initiatives.",
+        "a2": "It goes beyond traditional training systems by empowering employees to apply change management principles, participate in interactive programs, and track the impact of transformation initiatives.",
+        "a3": "It is fully customizable to reflect your organization's brand, structure, and internal programs."
+      },
+      "summary": {
+        "p1": "The Change Management Digital Platform is more than a digital learning tool — it's an AI-powered ecosystem for organizational growth.",
+        "p2": "It helps employees build habits, leaders measure progress, and organizations sustain cultural transformation.",
+        "p3": "By combining learning, engagement, and measurable impact, it turns change management into a continuous, empowering experience for everyone involved."
+      },
+      "q2": {
+        "question": "Q2: Where is the platform hosted?",
+        "answer": "The platform will be securely hosted on cloud servers located in the KSA, ensuring high performance, reliability, and data residency compliance."
+      },
+      "q3": {
+        "question": "Q3: How is data privacy handled?",
+        "a1": "The platform follows GDPR-compliant data protection standards, ensuring that user information is handled securely and transparently.",
+        "a2": "All data is encrypted in transit and at rest, and privacy policies are aligned with global best practices."
+      },
+      "q4": {
+        "question": "Q4: Can the platform integrate with our existing systems?",
+        "a1": "Yes. The platform is API-friendly and can be easily integrated with your organization's existing API-friendly systems, such as HR platforms, CRMs, or LMS tools.",
+        "a2": "This allows for seamless synchronization of user data, performance metrics, and reporting."
+      },
+      "q5": {
+        "question": "Q5: Is it a one-time purchase or a subscription model?",
+        "answer": "The platform is provided on a subscription-based SaaS model, offering ongoing updates, scalability, maintenance, and support without requiring internal infrastructure or IT overhead."
+      },
+      "q6": {
+        "question": "Q6: How is this platform different from a traditional Learning Management System (LMS)?",
+        "a1": "While a traditional LMS focuses mainly on training delivery, this platform is designed to drive empowerment, engagement, and transformation.",
+        "a2": "It integrates AI-driven features that:",
+        "features": {
+          "f1": "Personalize the learning journey for each employee.",
+          "f2": "Provide real-time feedback, recommendations, and coaching through AI assistants.",
+          "f3": "Analyze engagement and progress to identify who needs additional support or recognition.",
+          "f4": "Encourage peer learning and collaboration through interactive tools.",
+          "f5": "Track success stories and tangible outcomes, linking learning to real behavioral change and organizational results.",
+          "f6": "Integrate AI Coaches and AI tools to empower employees."
+        },
+        "conclusion": "In short, it's not just about learning—it's about activating and sustaining change across the organization."
+      },
+      "q7": {
+        "question": "Q7: Can the platform be customized for our organization?",
+        "a1": "Yes. The platform is fully customizable and highly flexible to fit your organization's brand, structure, and learning culture.",
+        "a2": "You can personalize every aspect — from design and layout to content, workflows, and integrations — ensuring a seamless and relevant experience for your employees.",
+        "a3": "Customization options include:",
+        "options": {
+          "branding": "Branding:",
+          "brandingDesc": "Your logo, colors, tone of communication, and overall look and feel.",
+          "content": "Content:",
+          "contentDesc": "Tailored learning paths, assessments, and training programs.",
+          "ai": "AI capabilities:",
+          "aiDesc": "Intelligent recommendations, progress tracking, and personalized learning journeys.",
+          "integrations": "Integrations:",
+          "integrationsDesc": "Connection with existing systems such as HR platforms, CRMs, or internal tools."
+        },
+        "a4": "This flexibility allows the platform to align perfectly with your organization's goals, culture, and transformation strategy."
+      },
+      "q8": {
+        "question": "Q8: Does the platform support multiple languages?",
+        "answer": "Yes. The platform supports multilingual functionality, including English and Arabic, with the option to add additional languages as needed."
+      },
+      "q9": {
+        "question": "Q9: How does this platform support Change Management programs?",
+        "a1": "The platform provides a digital foundation for embedding Change Management into daily work practices.",
+        "a2": "It delivers structured learning, encourages participation through AI-driven nudges, and helps employees translate training into real-world actions.",
+        "a3": "By capturing success stories, engagement metrics, and outcomes, it helps leadership teams visualize how change is progressing across the organization."
+      },
+      "q10": {
+        "question": "Q10: How does the platform measure results or impact?",
+        "a1": "The platform includes interactive dashboards and analytics that track participation, engagement, and progress.",
+        "a2": "It measures key indicators such as:",
+        "indicators": {
+          "i1": "Completion and activity rates,",
+          "i2": "Skill application and behavior changes,",
+          "i3": "Reported success stories and outcomes, and",
+          "i4": "Overall transformation progress at the team or organizational level."
+        },
+        "a3": "This allows leadership to make data-driven decisions and measure the true ROI of development programs."
+      },
+      "q11": {
+        "question": "Q11: How secure is the platform?",
+        "a1": "The platform uses the cloud server's enterprise-grade security infrastructure, ensuring data protection through multi-layered encryption, controlled access, and regular monitoring.",
+        "a2": "All client data is stored securely within the cloud servers to comply with local and international data standards."
+      },
+      "q12": {
+        "question": "Q12: Can the platform be hosted on the client's on-premise servers?",
+        "answer": "Yes. The platform can be securely deployed and hosted on the client's on-premise servers if required by their IT infrastructure or data security policies. This setup ensures full control over data management, compliance, and system integration within the client's environment."
+      },
+      "q13": {
+        "question": "Q13: How are user accounts and access managed?",
+        "a1": "Access is managed through role-based permissions, ensuring users only see what's relevant to them (e.g., employees, managers, administrators).",
+        "a2": "The platform also supports Single Sign-On (SSO) for seamless and secure access across your organization."
+      },
+      "q14": {
+        "question": "Q14: What type of support do you provide?",
+        "a1": "We provide comprehensive, end-to-end support that includes:",
+        "items": {
+          "i1": "Implementation and onboarding,",
+          "i2": "Technical setup and customization,",
+          "i3": "Ongoing maintenance and updates, and",
+          "i4": "Dedicated customer success support for administrators and users."
+        },
+        "a2": "Our goal is to ensure that your platform runs smoothly and delivers measurable results throughout the partnership."
+      },
+      "q15": {
+        "question": "Q15: Can we track progress at both the individual and department levels?",
+        "answer": "Yes. The platform provides real-time tracking dashboards that display progress, engagement levels, and learning outcomes for your employees and departments."
+      },
+      "q16": {
+        "question": "Q16: Can we align the platform with our internal goals or KPIs?",
+        "answer": "Yes. The platform can be configured to align with your strategic goals and organizational KPIs, ensuring that learning and empowerment efforts directly support measurable business outcomes."
+      },
+      "q17": {
+        "question": "Q17: Is it scalable for large organizations?",
+        "a1": "Yes. The platform is highly scalable, capable of supporting both small teams and large enterprises across multiple locations.",
+        "a2": "As a SaaS solution, it can easily grow with your organization's needs."
+      },
+      "q18": {
+        "question": "Q18: How long does it take to set up and launch?",
+        "a1": "Deployment timelines depend on the level of customization, but a standard configuration can go live in 2–4 weeks.",
+        "a2": "This includes setup, configuration, branding, and initial training for your administrators."
       }
     },
     "ccsProgram": {
+      "eyebrow": "CCS Program",
       "title": "Sign up for the Culture Change Solutions Program",
+      "subtitle": "Share a few details and we will reserve a spot for you.",
+      "registerTitle": "Register your interest",
+      "registerSubtitle": "Our team will contact you with next steps once submissions open.",
       "form": {
         "fullName": "Full Name",
+        "fullNamePlaceholder": "Enter your full name",
         "mobile": "Mobile Number",
+        "mobilePlaceholder": "05XXXXXXXX",
         "email": "Email Address",
+        "emailPlaceholder": "name@example.com",
         "organization": "Organization",
+        "organizationPlaceholder": "Company / Organization name",
         "specialization": "Specialization / Department",
+        "specializationPlaceholder": "e.g., HR, Operations, Strategy",
         "experience": "Years of Experience",
+        "experiencePlaceholder": "e.g., 5",
+        "saving": "Saving...",
         "submit": "Submit"
       },
       "messages": {
-        "success": "Registration successful!",
-        "error": "Registration failed. Please try again."
+        "error": "Something went wrong. Please try again.",
+        "success": "Thank you! Your registration has been received.",
+        "fallbackError": "Unable to submit the form right now."
       }
     },
     "training": {
       "title": "Organization Culture Training Accreditation",
+      "hero": {
+        "eyebrow": "Organization Culture Training Accreditation",
+        "title": "A 3-day CCS Training Program to equip participants with skills and confidence",
+        "subtitle": "Accredited certificates included."
+      },
       "overview": {
-        "title": "Program Overview"
+        "title": "Program Overview",
+        "paragraph1": "Our accredited training programs are designed to develop individuals by introducing them to the culture from diagnosis to solutions and practical applications, not just theoretical knowledge transfer.",
+        "paragraph2": "With over 25 years of experience, our training program offers practical tools and techniques led by certified trainers with deep field experience in organizational culture, institutional development, and change management.",
+        "paragraph3": "Our training focuses on supporting leaders and teams in understanding the organization's cultural reality, analyzing behavioral and organizational challenges, and then designing applicable solutions that translate into daily practices that improve the working environment and performance.",
+        "paragraph4": "Our programs are supported by accredited certificates from international and local bodies and employ an integrated methodology that combines diagnosis, analysis, design, and delivery, ensuring that learning is a practical experience with a sustainable impact in the organization. Our goal is not just training for the sake of knowledge, but empowering trainees to transform what they learn into tangible behaviors practiced daily to support their organizations' success."
+      },
+      "brochure": {
+        "title": "Training Program Details",
+        "description": "Download the complete program details.",
+        "button": "Download Brochure"
       },
       "benefits": {
-        "title": "Program Benefits"
+        "title": "Program Benefits",
+        "items": {
+          "trainers": "Accredited Trainers in Organizational Culture Change",
+          "interactive": "Interactive Approach Through Various Exercises to Facilitate Information Retention",
+          "practical": "A Practical, Step-by-Step Approach",
+          "diagnostic": "Accredited Diagnostic and Measurement Tools",
+          "cases": "Local & Global Real-Life Business Cases",
+          "templates": "Unique Templates, Guides and Workbooks to Support Learning"
+        }
       },
       "methodology": {
         "title": "Integrated Methodology",
-        "diagnosis": "Diagnosis",
-        "design": "Design & Deliver",
-        "sustainability": "Sustainability"
+        "diagnosis": {
+          "title": "Diagnosis",
+          "description": "Use effective tools to identify cultural strengths and gaps."
+        },
+        "design": {
+          "title": "Design & Deliver",
+          "description": "Design effective solutions and implement them to address cultural gaps in the organization."
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "description": "Use KPIs and dashboards to document the progress and identify areas of improvement in the organizational culture."
+        }
+      },
+      "cta": {
+        "title": "Ready to lead culture change in your organization?",
+        "subtitle": "Secure your place in CCS Training Program.",
+        "button": "Reserve Your Seat"
       }
     }
   }
