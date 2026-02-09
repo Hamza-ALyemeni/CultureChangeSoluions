@@ -108,7 +108,74 @@
             </div>
         </section>
 
-        
+        <!-- Scientific Validation Section -->
+        <section class="validation-section">
+            <div class="validation-header">
+                <span class="validation-badge">{{ $t('pages.ohxray.validation.badge') }}</span>
+                <h3>{{ $t('pages.ohxray.validation.title') }} <span class="highlight">{{ $t('pages.ohxray.validation.titleHighlight') }}</span></h3>
+                <p class="validation-intro" v-html="validationIntroText"></p>
+            </div>
+
+            <div class="validation-methods">
+                <div class="method-card">
+                    <div class="method-icon alpha-icon">
+                        <span class="greek-letter">α</span>
+                    </div>
+                    <h4 class="method-title">{{ $t('pages.ohxray.validation.cronbach.title') }}</h4>
+                    <p class="method-desc" v-html="cronbachDescription"></p>
+                    <div class="validation-badges">
+                        <div class="stat-badge">
+                            <div class="stat-icon reliable">✓</div>
+                            <span>{{ $t('pages.ohxray.validation.cronbach.badge') }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon efa-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <circle cx="6" cy="6" r="2"/>
+                            <circle cx="18" cy="6" r="2"/>
+                            <circle cx="6" cy="18" r="2"/>
+                            <circle cx="18" cy="18" r="2"/>
+                            <line x1="12" y1="9" x2="7" y2="7"/>
+                            <line x1="12" y1="9" x2="17" y2="7"/>
+                            <line x1="12" y1="15" x2="7" y2="17"/>
+                            <line x1="12" y1="15" x2="17" y2="17"/>
+                        </svg>
+                    </div>
+                    <h4 class="method-title">{{ $t('pages.ohxray.validation.efa.title') }}</h4>
+                    <p class="method-desc">{{ $t('pages.ohxray.validation.efa.description') }}</p>
+                    <div class="validation-badges">
+                        <div class="stat-badge">
+                            <div class="stat-icon sound">✓</div>
+                            <span>{{ $t('pages.ohxray.validation.efa.badge') }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon cfa-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <circle cx="12" cy="12" r="9"/>
+                            <path d="M12 3v2M12 19v2M3 12h2M19 12h2"/>
+                        </svg>
+                    </div>
+                    <h4 class="method-title">{{ $t('pages.ohxray.validation.cfa.title') }}</h4>
+                    <p class="method-desc" v-html="cfaDescription"></p>
+                    <div class="validation-badges">
+                        <div class="stat-badge">
+                            <div class="stat-icon accurate">✓</div>
+                            <span>{{ $t('pages.ohxray.validation.cfa.badge') }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     <MainFooter/>
   </div>
 </template>
@@ -150,6 +217,25 @@
         { label: t('pages.ohxray.certificates.excellence'), criteria: "≥85%", image: badge85 },
         { label: t('pages.ohxray.certificates.winner'), criteria: t('pages.ohxray.certificates.winnerCriteria'), image: badge90 }
     ]);
+
+    // Validation section computed properties
+    const validationIntroText = computed(() => {
+        const intro = t('pages.ohxray.validation.intro');
+        const ohxrayBrand = '<span class="brand-green">OHX-</span><span class="brand-red">RAY</span>';
+        return intro.replace('{ohxray}', ohxrayBrand);
+    });
+
+    const cronbachDescription = computed(() => {
+        const desc = t('pages.ohxray.validation.cronbach.description');
+        const highlight = t('pages.ohxray.validation.cronbach.highlight');
+        return desc.replace('{highlight}', `<strong>${highlight}</strong>`);
+    });
+
+    const cfaDescription = computed(() => {
+        const desc = t('pages.ohxray.validation.cfa.description');
+        const highlight = t('pages.ohxray.validation.cfa.highlight');
+        return desc.replace('{highlight}', `<strong>${highlight}</strong>`);
+    });
 
     onMounted(() => {
     if (ohxVideo.value) {
@@ -654,6 +740,300 @@ h4{
 
     .certificate-card img{
         max-width:150px;
+    }
+}
+
+/* Scientific Validation Section */
+.validation-section {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #f8fafc 0%, #e8f5e9 100%);
+}
+
+.validation-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.validation-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #4d8d3e, #3f7433);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.validation-header h3 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2933;
+    margin: 0 0 20px;
+}
+
+.validation-header h3 .highlight {
+    color: #4d8d3e;
+}
+
+.validation-intro {
+    font-size: 18px;
+    color: #4b5563;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.validation-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto 50px;
+}
+
+.method-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(77, 141, 62, 0.15);
+}
+
+.method-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alpha-icon {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.alpha-icon .greek-letter {
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Times New Roman', serif;
+}
+
+.efa-icon {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.efa-icon svg {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+.cfa-icon {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.cfa-icon svg {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+.method-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2933;
+    margin: 0 0 12px;
+    background: none;
+    width: auto;
+    border-radius: 0;
+    padding: 0;
+}
+
+.method-desc {
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.7;
+    margin: 0 0 20px;
+}
+
+.method-badge {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #4d8d3e;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.validation-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+}
+
+.content-card {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+    align-items: flex-start;
+}
+
+.content-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #4d8d3e, #3f7433);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-icon svg {
+    width: 26px;
+    height: 26px;
+    color: #fff;
+}
+
+.content-text h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f2933;
+    margin: 0 0 10px;
+    background: none;
+    width: auto;
+    border-radius: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.content-text p {
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.validation-badges {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    padding: 16px 28px;
+    border-radius: 50px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border: 2px solid #4d8d3e;
+}
+
+.stat-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+}
+
+.stat-icon.reliable {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.stat-icon.sound {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.stat-icon.accurate {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.stat-badge span {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1f2933;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .validation-header h3 {
+        font-size: 26px;
+    }
+
+    .validation-intro {
+        font-size: 16px;
+    }
+
+    .method-card {
+        padding: 24px;
+    }
+
+    .method-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .alpha-icon .greek-letter {
+        font-size: 32px;
+    }
+
+    .efa-icon svg,
+    .cfa-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .content-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-icon {
+        margin: 0 auto;
+    }
+
+    .content-text h4 {
+        text-align: center;
+    }
+
+    .validation-badges {
+        gap: 16px;
+    }
+
+    .stat-badge {
+        padding: 12px 20px;
+    }
+
+    .stat-badge span {
+        font-size: 12px;
     }
 }
 

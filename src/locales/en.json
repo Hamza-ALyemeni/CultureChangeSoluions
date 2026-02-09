@@ -240,6 +240,29 @@
           "improvement": "Continuous improvement.",
           "recruitment": "Recruitment & retention appeal."
         }
+      },
+      "validation": {
+        "badge": "SCIENTIFICALLY PROVEN",
+        "title": "Scientifically & Statistically",
+        "titleHighlight": "Validated Model",
+        "intro": "The Organizational Health X-RAY (OHX-RAY) is a scientifically and statistically validated diagnostic tool designed to help organizations understand the gaps and strengths of their cultural health that affect performance, engagement, and long-term sustainability.",
+        "cronbach": {
+          "title": "Cronbach's Alpha",
+          "description": "Tested {highlight} across the entire survey, ensuring reliable measurement.",
+          "highlight": "excellent internal consistency",
+          "badge": "RELIABILITY VERIFIED"
+        },
+        "efa": {
+          "title": "Exploratory Factor Analysis",
+          "description": "Tested the structure and key dimensions of the survey.",
+          "badge": "STRUCTURE VALIDATED"
+        },
+        "cfa": {
+          "title": "Confirmatory Factor Analysis",
+          "description": "Tested the survey to see its fit for real-world data.",
+          "highlight": "high level of accuracy",
+          "badge": "MODEL CONFIRMED"
+        }
       }
     },
     "ohxrayDemo": {

@@ -28,6 +28,7 @@ import partnerISRAR from '@/assets/images/ISRAR.jpg';
 import partnerEmdad from '@/assets/images/Emdad by elm.jpg';
 import partnerPotenial from '@/assets/images/Potential.png';
 import partnerTransfiguration from '@/assets/images/TRANSFIGURATION-ADVISORY.png';
+import partnerBCG from '@/assets/images/BCG.png';
 
 const partners = ref([
   { id: 1, name: "365", logo: partner365 },
@@ -42,6 +43,7 @@ const partners = ref([
   { id: 10, name: "Israr", logo: partnerISRAR },
   { id: 11, name: "Emdad", logo: partnerEmdad },
   { id: 12, name: "Potenial", logo: partnerPotenial },
+  { id: 13, name: "BCG", logo: partnerBCG },  
   { id: 13, name: "TRANSFIGURATION ADVISORY", logo: partnerTransfiguration },
 ]);
 </script>
