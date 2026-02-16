@@ -8,6 +8,12 @@
             <RouterLink class="primary-cta" :to="`/${$route.params.locale}/ohxray-demo`">{{ $t('pages.ohxray.freeLiveDemo') }}</RouterLink>
           </div>
         </section>
+
+        <div class="hero-images">
+            <img :src="certificatesImage" alt="Certificates" />
+            <img :src="scienceResultsImage" alt="Science Results" />
+        </div>
+
         <div class="video-wrapper">
            <video ref="ohxVideo" class="hero-video" controls>
                 <source src="@/assets/OHX-RAY_VIDEO.mp4" type="video/mp4" />
@@ -60,7 +66,7 @@
                     <img src="@/assets/images/Overall_Image_Sample.jpeg" alt="ohxray" class="desktop-image" style="height: 100%; width: 50%;">
                 </div>
                 <!-- Second Row: Third image below -->
-        <img src="@/assets/images/Benchmark_Sample.jpeg" alt="ohxray" class="desktop-image" style="height: 50%; width: 60%; margin-top: 20px; align-self: center;">
+                <img src="@/assets/images/Benchmark_Sample.jpeg" alt="ohxray" class="desktop-image" style="height: 50%; width: 60%; margin-top: 20px; align-self: center;">
             </div>
         </div>
 
@@ -118,58 +124,99 @@
 
             <div class="validation-methods">
                 <div class="method-card">
-                    <div class="method-icon alpha-icon">
-                        <span class="greek-letter">α</span>
-                    </div>
-                    <h4 class="method-title">{{ $t('pages.ohxray.validation.cronbach.title') }}</h4>
-                    <p class="method-desc" v-html="cronbachDescription"></p>
-                    <div class="validation-badges">
-                        <div class="stat-badge">
-                            <div class="stat-icon reliable">✓</div>
-                            <span>{{ $t('pages.ohxray.validation.cronbach.badge') }}</span>
+                    <div class="method-card-front">
+                        <div class="method-icon alpha-icon">
+                            <span class="greek-letter">α</span>
                         </div>
+                        <h4 class="method-title">{{ $t('pages.ohxray.validation.cronbach.title') }}</h4>
+                        <p class="method-desc" v-html="cronbachDescription"></p>
+                        <div class="validation-badges">
+                            <div class="stat-badge">
+                                <div class="stat-icon reliable">✓</div>
+                                <span>{{ $t('pages.ohxray.validation.cronbach.badge') }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method-card-back">
+                        <div class="method-icon alpha-icon">
+                            <span class="greek-letter">α</span>
+                        </div>
+                        <p class="method-result">Alpha results: <strong>0.9786</strong></p>
+                        <p class="method-result-label">Excellent internal consistency</p>
                     </div>
                 </div>
 
                 <div class="method-card">
-                    <div class="method-icon efa-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"/>
-                            <circle cx="6" cy="6" r="2"/>
-                            <circle cx="18" cy="6" r="2"/>
-                            <circle cx="6" cy="18" r="2"/>
-                            <circle cx="18" cy="18" r="2"/>
-                            <line x1="12" y1="9" x2="7" y2="7"/>
-                            <line x1="12" y1="9" x2="17" y2="7"/>
-                            <line x1="12" y1="15" x2="7" y2="17"/>
-                            <line x1="12" y1="15" x2="17" y2="17"/>
-                        </svg>
-                    </div>
-                    <h4 class="method-title">{{ $t('pages.ohxray.validation.efa.title') }}</h4>
-                    <p class="method-desc">{{ $t('pages.ohxray.validation.efa.description') }}</p>
-                    <div class="validation-badges">
-                        <div class="stat-badge">
-                            <div class="stat-icon sound">✓</div>
-                            <span>{{ $t('pages.ohxray.validation.efa.badge') }}</span>
+                    <div class="method-card-front">
+                        <div class="method-icon efa-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <circle cx="6" cy="6" r="2"/>
+                                <circle cx="18" cy="6" r="2"/>
+                                <circle cx="6" cy="18" r="2"/>
+                                <circle cx="18" cy="18" r="2"/>
+                                <line x1="12" y1="9" x2="7" y2="7"/>
+                                <line x1="12" y1="9" x2="17" y2="7"/>
+                                <line x1="12" y1="15" x2="7" y2="17"/>
+                                <line x1="12" y1="15" x2="17" y2="17"/>
+                            </svg>
                         </div>
+                        <h4 class="method-title">{{ $t('pages.ohxray.validation.efa.title') }}</h4>
+                        <p class="method-desc">{{ $t('pages.ohxray.validation.efa.description') }}</p>
+                        <div class="validation-badges">
+                            <div class="stat-badge">
+                                <div class="stat-icon sound">✓</div>
+                                <span>{{ $t('pages.ohxray.validation.efa.badge') }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method-card-back">
+                        <div class="method-icon efa-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <circle cx="6" cy="6" r="2"/>
+                                <circle cx="18" cy="6" r="2"/>
+                                <circle cx="6" cy="18" r="2"/>
+                                <circle cx="18" cy="18" r="2"/>
+                                <line x1="12" y1="9" x2="7" y2="7"/>
+                                <line x1="12" y1="9" x2="17" y2="7"/>
+                                <line x1="12" y1="15" x2="7" y2="17"/>
+                                <line x1="12" y1="15" x2="17" y2="17"/>
+                            </svg>
+                        </div>
+                        <p class="method-result">EFA results: KMO: <strong>0.9870</strong> Marvelous</p>
+                        <p class="method-result-label">Bartlett's: <strong>&lt; 0.001</strong> Excellent</p>
                     </div>
                 </div>
 
                 <div class="method-card">
-                    <div class="method-icon cfa-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 12l2 2 4-4"/>
-                            <circle cx="12" cy="12" r="9"/>
-                            <path d="M12 3v2M12 19v2M3 12h2M19 12h2"/>
-                        </svg>
-                    </div>
-                    <h4 class="method-title">{{ $t('pages.ohxray.validation.cfa.title') }}</h4>
-                    <p class="method-desc" v-html="cfaDescription"></p>
-                    <div class="validation-badges">
-                        <div class="stat-badge">
-                            <div class="stat-icon accurate">✓</div>
-                            <span>{{ $t('pages.ohxray.validation.cfa.badge') }}</span>
+                    <div class="method-card-front">
+                        <div class="method-icon cfa-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M12 3v2M12 19v2M3 12h2M19 12h2"/>
+                            </svg>
                         </div>
+                        <h4 class="method-title">{{ $t('pages.ohxray.validation.cfa.title') }}</h4>
+                        <p class="method-desc" v-html="cfaDescription"></p>
+                        <div class="validation-badges">
+                            <div class="stat-badge">
+                                <div class="stat-icon accurate">✓</div>
+                                <span>{{ $t('pages.ohxray.validation.cfa.badge') }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method-card-back">
+                        <div class="method-icon cfa-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M12 3v2M12 19v2M3 12h2M19 12h2"/>
+                            </svg>
+                        </div>
+                        <p class="method-result">CFA results: CFI <strong>0.9945</strong> Excellent, TLI <strong>0.9933</strong> Excellent</p>
+                        <p class="method-result-label">RMSEA <strong>0.0575</strong> Good, SRMR <strong>0.0249</strong> Excellent</p>
                     </div>
                 </div>
             </div>
@@ -189,8 +236,15 @@
     import badge75 from "@/assets/images/badge-75.svg";
     import badge85 from "@/assets/images/badge-85.svg";
     import badge90 from "@/assets/images/badge-90.svg";
+    import certificatesEn from "@/assets/images/Certificaties En.png";
+    import scienceResultsEn from "@/assets/images/Science-Results-Eng.png";
+    import certificatesAr from "@/assets/images/Certificates Arabic.png";
+    import scienceResultsAr from "@/assets/images/Science-Results-Arabic.png";
 
-    const { t } = useI18n();
+    const { t, locale } = useI18n();
+
+    const certificatesImage = computed(() => locale.value === 'ar' ? certificatesAr : certificatesEn);
+    const scienceResultsImage = computed(() => locale.value === 'ar' ? scienceResultsAr : scienceResultsEn);
     const ohxVideo = ref<HTMLVideoElement | null>(null);
 
     const accreditationSteps = computed(() => [
@@ -316,6 +370,23 @@
 .secondary-cta:hover{
     transform:translateY(-1px);
     box-shadow:0 10px 24px rgba(0,0,0,0.06);
+}
+
+.hero-images{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:24px;
+    padding:20px 16px 40px;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.hero-images img{
+    width:calc(50% - 12px);
+    max-width:550px;
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.06);
 }
 
 .video-wrapper{
@@ -452,6 +523,17 @@ h4{
 }
 
 @media screen and (max-width: 768px) {
+    .hero-images{
+        flex-direction:column;
+        gap:16px;
+        padding:16px 16px 24px;
+    }
+
+    .hero-images img{
+        width:100%;
+        max-width:400px;
+    }
+
     .intro h2{
         font-size:26px;
     }
@@ -479,7 +561,7 @@ h4{
 
     .Ohxray-Unique h4{
         font-size: 25px;
-        width: 372px;
+        width: 317px;
     }
 
     .Ohxray-Unique p{
@@ -795,18 +877,72 @@ h4{
 }
 
 .method-card {
-    background: #fff;
+    position: relative;
+    perspective: 1000px;
+    min-height: 350px;
+}
+
+.method-card-front,
+.method-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
     border-radius: 20px;
     padding: 30px;
     text-align: center;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
     border: 1px solid #e5e7eb;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.8s ease;
 }
 
-.method-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 50px rgba(77, 141, 62, 0.15);
+.method-card-front {
+    background: #fff;
+    transform: rotateY(0deg);
+}
+
+.method-card-back {
+    background: linear-gradient(135deg, rgba(77, 141, 62, 0.92), rgba(61, 117, 50, 0.95));
+    color: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.method-card:hover .method-card-front {
+    transform: rotateY(-180deg);
+}
+
+.method-card:hover .method-card-back {
+    transform: rotateY(0deg);
+}
+
+.method-result {
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0 0 8px;
+    color: #fff;
+}
+
+.method-result strong {
+    font-size: 20px;
+    color: #fff;
+}
+
+.method-result-label {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.method-result-label strong {
+    color: #fff;
+    font-size: 18px;
 }
 
 .method-icon {
@@ -993,6 +1129,11 @@ h4{
     }
 
     .method-card {
+        min-height: 320px;
+    }
+
+    .method-card-front,
+    .method-card-back {
         padding: 24px;
     }
 

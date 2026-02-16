@@ -108,7 +108,7 @@
               </router-link>
             </li>
             <li class="language-toggle-item">
-              <button @click="switchLanguage(currentLocale === 'en' ? 'ar' : 'en')" class="mobile-language-btn">
+              <button @click="switchLanguage(currentLocale === 'en' ? 'ar' : 'en'); " class="mobile-language-btn">
                 {{ currentLocale === 'en' ? 'العربية' : 'English' }}
               </button>
             </li>

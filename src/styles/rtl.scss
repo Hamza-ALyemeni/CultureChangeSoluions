@@ -7,11 +7,14 @@
   }
   // Text alignment for all text elements
   // text-align: right;
+  .hero__badge{
+    letter-spacing: 0px !important;
+  }
 
   ul, .certificate-criteria {
     direction: ltr !important;
   }
-  div p ,li , .container, #second-stats-text , #emp-numbers , .contact-form__field__label, .value-title, .services__card-description, .steps, .cta-section, .footer-list, .unique-header{
+  div p ,li , .container, #second-stats-text , #emp-numbers , .contact-form__field__label, .value-title, .services__card-description, .steps, .cta-section, .footer-list, .unique-header, .section-title, .hero__title , .demo-step, .key-benefits, .first-section, .methodology{
     direction: rtl !important;
   }
   

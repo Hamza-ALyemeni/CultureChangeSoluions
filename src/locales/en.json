@@ -245,7 +245,7 @@
         "badge": "SCIENTIFICALLY PROVEN",
         "title": "Scientifically & Statistically",
         "titleHighlight": "Validated Model",
-        "intro": "The Organizational Health X-RAY (OHX-RAY) is a scientifically and statistically validated diagnostic tool designed to help organizations understand the gaps and strengths of their cultural health that affect performance, engagement, and long-term sustainability.",
+        "intro": "The Organizational Health X-RAY (OHX-RAY) is a scientifically and statistically validated diagnostic tool that has been verified by three globally-recognized tests designed to test the validity and structure for surveys.",
         "cronbach": {
           "title": "Cronbach's Alpha",
           "description": "Tested {highlight} across the entire survey, ensuring reliable measurement.",
@@ -447,6 +447,43 @@
         "question": "Q18: How long does it take to set up and launch?",
         "a1": "Deployment timelines depend on the level of customization, but a standard configuration can go live in 2–4 weeks.",
         "a2": "This includes setup, configuration, branding, and initial training for your administrators."
+      },
+      "brochure": {
+        "platformTitlePre": "AI-Powered",
+        "platformTitleHighlight": "Change Management Platform",
+        "platformTitlePost": "for Organizational Growth",
+        "keyBenefits": "Key Benefits",
+        "benefits": {
+          "delivering": "Delivering",
+          "deliveringDesc": "AI-Driven & Structured Learning to Encourage Participation.",
+          "adopting": "Adopting",
+          "adoptingDesc": "Values in Daily Work Practices.",
+          "helping": "Helping",
+          "helpingDesc": "Employees Translate Training into Real-World Actions.",
+          "capturing": "Capturing",
+          "capturingDesc": "Success Stories, Engagement Metrics and Outcomes.",
+          "supporting": "Supporting",
+          "supportingDesc": "Leaderships Visualize Change Progress Across Organizations."
+        },
+        "ecosystemPre": "A unique",
+        "ecosystemHighlight1": "DIGITAL ECOSYSTEM",
+        "ecosystemMid": "that enables Organizational Changes through a sustainable platform – making",
+        "ecosystemHighlight2": "CHANGE MANAGEMENT",
+        "ecosystemPost": "practical, measurable and scalable.",
+        "pillars": {
+          "resources": "CM Resources",
+          "resourceAmbassadors": "Ambassadors",
+          "resourceProjects": "Projects",
+          "resourcePulseChecks": "Pulse Checks",
+          "training": "CM Training",
+          "trainingStrategy": "Strategy Course",
+          "trainingValues": "Values Course",
+          "trainingCustomized": "Customized Course",
+          "storytelling": "CM Story-Telling",
+          "storytellingNews": "CM News",
+          "storytellingSuccess": "Employee Success Stories",
+          "storytellingReward": "Reward & Recognition"
+        }
       }
     },
     "ccsProgram": {
@@ -481,11 +518,11 @@
       "title": "Organization Culture Training Accreditation",
       "hero": {
         "eyebrow": "Organization Culture Training Accreditation",
-        "title": "A 3-day CCS Training Program to equip participants with skills and confidence",
-        "subtitle": "Accredited certificates included."
+        "title": "Foundations of Organizational Culture Course Presented by CCS Consulting in 3 days",
+        "subtitle": "certificates included."
       },
       "overview": {
-        "title": "Program Overview",
+        "title": "Our Training Programs Overview",
         "paragraph1": "Our accredited training programs are designed to develop individuals by introducing them to the culture from diagnosis to solutions and practical applications, not just theoretical knowledge transfer.",
         "paragraph2": "With over 25 years of experience, our training program offers practical tools and techniques led by certified trainers with deep field experience in organizational culture, institutional development, and change management.",
         "paragraph3": "Our training focuses on supporting leaders and teams in understanding the organization's cultural reality, analyzing behavioral and organizational challenges, and then designing applicable solutions that translate into daily practices that improve the working environment and performance.",
@@ -494,7 +531,7 @@
       "brochure": {
         "title": "Training Program Details",
         "description": "Download the complete program details.",
-        "button": "Download Brochure"
+        "button": "Download Training Guide"
       },
       "benefits": {
         "title": "Program Benefits",
@@ -503,7 +540,7 @@
           "interactive": "Interactive Approach Through Various Exercises to Facilitate Information Retention",
           "practical": "A Practical, Step-by-Step Approach",
           "diagnostic": "Accredited Diagnostic and Measurement Tools",
-          "cases": "Local & Global Real-Life Business Cases",
+          "cases": "Studying real-life local and global case studies",
           "templates": "Unique Templates, Guides and Workbooks to Support Learning"
         }
       },
@@ -514,7 +551,7 @@
           "description": "Use effective tools to identify cultural strengths and gaps."
         },
         "design": {
-          "title": "Design & Deliver",
+          "title": "Design & Activate",
           "description": "Design effective solutions and implement them to address cultural gaps in the organization."
         },
         "sustainability": {
