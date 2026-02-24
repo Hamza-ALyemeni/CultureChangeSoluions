@@ -9,10 +9,7 @@
           </div>
         </section>
 
-        <div class="hero-images">
-            <img :src="certificatesImage" alt="Certificates" />
-            <img :src="scienceResultsImage" alt="Science Results" />
-        </div>
+
 
         <div class="video-wrapper">
            <video ref="ohxVideo" class="hero-video" controls>
@@ -138,6 +135,7 @@
                         </div>
                     </div>
                     <div class="method-card-back">
+                        <p class="method-result"> <strong> Ohxray Results: </strong> </p>
                         <div class="method-icon alpha-icon">
                             <span class="greek-letter">α</span>
                         </div>
@@ -171,6 +169,7 @@
                         </div>
                     </div>
                     <div class="method-card-back">
+                        <p class="method-result"> <strong> Ohxray Results: </strong> </p>
                         <div class="method-icon efa-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <circle cx="12" cy="12" r="3"/>
@@ -208,6 +207,7 @@
                         </div>
                     </div>
                     <div class="method-card-back">
+                        <p class="method-result"><strong> Ohxray Results: </strong> </p>
                         <div class="method-icon cfa-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M9 12l2 2 4-4"/>
@@ -236,15 +236,7 @@
     import badge75 from "@/assets/images/badge-75.svg";
     import badge85 from "@/assets/images/badge-85.svg";
     import badge90 from "@/assets/images/badge-90.svg";
-    import certificatesEn from "@/assets/images/Certificaties En.png";
-    import scienceResultsEn from "@/assets/images/Science-Results-Eng.png";
-    import certificatesAr from "@/assets/images/Certificates Arabic.png";
-    import scienceResultsAr from "@/assets/images/Science-Results-Arabic.png";
-
-    const { t, locale } = useI18n();
-
-    const certificatesImage = computed(() => locale.value === 'ar' ? certificatesAr : certificatesEn);
-    const scienceResultsImage = computed(() => locale.value === 'ar' ? scienceResultsAr : scienceResultsEn);
+    const { t } = useI18n();
     const ohxVideo = ref<HTMLVideoElement | null>(null);
 
     const accreditationSteps = computed(() => [
@@ -372,21 +364,109 @@
     box-shadow:0 10px 24px rgba(0,0,0,0.06);
 }
 
-.hero-images{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:24px;
-    padding:20px 16px 40px;
-    max-width:1200px;
-    margin:0 auto;
+.hero-previews {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    padding: 20px 16px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.hero-images img{
-    width:calc(50% - 12px);
-    max-width:550px;
-    border-radius:16px;
-    box-shadow:0 12px 30px rgba(0,0,0,0.06);
+.hero-preview-card {
+    flex: 1;
+    max-width: 550px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.hero-preview-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #4d8d3e, #3f7433);
+    margin: 0;
+    padding: 14px 20px;
+    text-align: center;
+    border-radius: 0;
+    width: auto;
+}
+
+.hero-preview-content {
+    padding: 16px;
+    transform: scale(0.85);
+    transform-origin: top center;
+}
+
+.hero-preview-content .certificate-table {
+    max-width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+    padding: 10px;
+}
+
+.hero-preview-content .validation-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 100%;
+    margin: 0;
+}
+
+.hero-preview-content .method-card {
+    min-height: 260px;
+    perspective: none;
+}
+
+.hero-preview-content .method-card-front {
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+}
+
+.hero-preview-content .method-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+}
+
+.hero-preview-content .alpha-icon .greek-letter {
+    font-size: 28px;
+}
+
+.hero-preview-content .efa-icon svg,
+.hero-preview-content .cfa-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.hero-preview-content .method-title {
+    font-size: 14px;
+    margin: 0 0 6px;
+}
+
+.hero-preview-content .method-desc {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+.hero-preview-content .stat-badge {
+    padding: 8px 12px;
+}
+
+.hero-preview-content .stat-badge span {
+    font-size: 10px;
+}
+
+.hero-preview-content .stat-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
 }
 
 .video-wrapper{
@@ -523,15 +603,35 @@ h4{
 }
 
 @media screen and (max-width: 768px) {
-    .hero-images{
-        flex-direction:column;
-        gap:16px;
-        padding:16px 16px 24px;
+    .hero-previews {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 16px 24px;
     }
 
-    .hero-images img{
-        width:100%;
-        max-width:400px;
+    .hero-preview-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hero-preview-content {
+        transform: scale(1);
+        padding: 12px;
+    }
+
+    .hero-preview-content .validation-methods {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .hero-preview-content .method-card {
+        min-height: auto;
+    }
+
+    .hero-preview-content .method-card-front {
+        position: relative;
+        padding: 16px;
     }
 
     .intro h2{

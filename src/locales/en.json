@@ -188,6 +188,10 @@
         "subtitle": "A comprehensive overview highlighting cultural health indicators within the organization."
       },
       "freeLiveDemo": "Free Live Demo",
+      "heroPreview": {
+        "certificates": "Recognition & Certification Levels",
+        "validation": "Scientific Validation Methods"
+      },
       "videoNotSupported": "Your browser does not support the video tag.",
       "unique": {
         "title": "What Makes OHX-RAY",
