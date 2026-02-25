@@ -7,6 +7,12 @@
         <p class="cmdp-subtitle">{{ $t('pages.cmdp.subtitle') }}</p>
       </div>
 
+      <!-- Infographic Section -->
+      <div class="cmdp-section infographic-section">
+        <h2 class="section-title">{{ $t('pages.cmdp.infographic.title') }}</h2>
+        <img :src="infographicImage" alt="CMDP Infographic" class="infographic-image" />
+      </div>
+
        <div class="cmdp-section structure-section">
         <h2 class="section-title">{{ $t('pages.cmdp.sections.structure') }}</h2>
         <div class="brochure-content">
@@ -289,6 +295,7 @@
 import MainHeader from "@/components/layout/MainHeader.vue";
 import MainFooter from "@/components/layout/MainFooter.vue";
 import laptopImage from "@/assets/images/laptop-picture.png";
+import infographicImage from "@/assets/images/CMDP Infographic 2.png";
 </script>
 
 <style lang="scss" scoped>
@@ -433,6 +440,13 @@ import laptopImage from "@/assets/images/laptop-picture.png";
       line-height: 1.6;
     }
   }
+}
+
+.infographic-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
 }
 
 /* Brochure Structured Content */

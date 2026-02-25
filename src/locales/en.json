@@ -327,6 +327,37 @@
         "value": "Value, Impact & Measurement",
         "additional": "Additional Questions"
       },
+      "infographic": {
+        "title": "From Change Planning to Change Adoption: Scaling Transformation Success",
+        "subtitle": "Demonstrating how the Change Management Digital Platform bridges the gap between strategy and real-world adoption through a structured, measurable system.",
+        "transformationGap": {
+          "heading": "The Transformation Gap",
+          "item1Title": "CHANGE FATIGUE & RESISTANCE",
+          "item1Desc": "Employees often attend training without shifting daily behaviors, leading to stalled initiatives.",
+          "item2Title": "LEADERSHIP BLIND SPOTS",
+          "item2Desc": "Decision-makers lack real-time visibility into whether change is actually taking hold across the organization.",
+          "item3Title": "STRATEGY VS. ADOPTION",
+          "item3Desc": "Most organizations invest in systems and strategy development, but employees remain disengaged or unclear on their roles."
+        },
+        "pillars": {
+          "heading": "The 3 Pillars of Real Adoption",
+          "pillar1Title": "PILLAR 1: ENABLE",
+          "pillar1Desc": "Activate engagement through ambassadors, pulse checks, and two-way participation tools to make employees feel heard.",
+          "pillar2Title": "PILLAR 2: EQUIP",
+          "pillar2Desc": "Build understanding via role-based learning journeys and strategy awareness to ensure teams know the \"why\" and \"how.\"",
+          "pillar3Title": "PILLAR 3: REINFORCE",
+          "pillar3Desc": "Embed change into culture through success storytelling, peer recognition, and AI-supported behavioral coaching."
+        },
+        "executiveValue": {
+          "heading": "Strategic Executive Value",
+          "item1Title": "DATA-DRIVEN DECISIONS",
+          "item1Desc": "Shift from assumptions to measurable metrics regarding engagement, participation, and transformation impact.",
+          "item2Title": "ENTERPRISE-SCALE VISIBILITY",
+          "item2Desc": "Gain the ability to detect resistance early and scale interventions across departments, regions, and entities.",
+          "item3Title": "SUSTAINABLE TRANSFORMATION",
+          "item3Desc": "A move beyond \"one-off projects\" to a permanent, people-first system for cultural alignment."
+        }
+      },
       "q1": {
         "question": "Q1: What is the Change Management Digital Platform?",
         "a1": "The Change Management Digital Platform is a cloud-based SaaS solution designed to help organizations deliver, manage, and measure large-scale transformation initiatives.",
