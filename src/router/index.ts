@@ -46,7 +46,10 @@ const childRoutes: Array<RouteRecordRaw> = [
     {
         path: 'training-program',
         name: 'training-program',
-        component: () => import(/* webpackChunkName: "training-program" */ '../views/TrainingProgramView.vue')
+        component: { template: '<div></div>' }, // 👈 dummy component
+        beforeEnter() {
+            window.location.href = 'https://training.ccsconsulting.com.sa/courses/foundations-of-organizational-culture/register'
+        }
     }
 ]
 
