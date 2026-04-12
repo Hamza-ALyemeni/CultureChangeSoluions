@@ -8,7 +8,7 @@
         <h1 class="hero__title">{{ $t('pages.training.hero.title') }}</h1>
         <p class="hero__subtitle">{{ $t('pages.training.hero.subtitle') }}</p>
         <div class="hero__actions">
-          <a href="https://training.ccsconsulting.com.sa/" class="btn btn--primary">
+          <a href="https://training.ccsconsulting.com.sa/courses/foundations-of-organizational-culture/register" class="btn btn--primary">
             {{ $t('pages.training.cta.button') }}
           </a>
           <a href="/pdf/training-brochure.pdf" download="CCS-Training-Program-Brochure.pdf" class="btn btn--outline-dark">
