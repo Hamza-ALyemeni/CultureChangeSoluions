@@ -6,7 +6,6 @@
     <section class="hero">
       <div class="hero__inner">
         <h1 class="hero__title">{{ $t('pages.training.hero.title') }}</h1>
-        <p class="hero__subtitle">{{ $t('pages.training.hero.subtitle') }}</p>
         <div class="hero__actions">
           <a href="https://training.ccsconsulting.com.sa/courses/foundations-of-organizational-culture/register" class="btn btn--primary">
             {{ $t('pages.training.cta.button') }}
